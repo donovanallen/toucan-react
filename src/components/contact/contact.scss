@@ -1,0 +1,78 @@
+@import "node_modules/nord/src/sass/nord.scss";
+
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 55%;
+  font-size: calc(12px + 3vmin);
+}
+
+.contact-heading-text {
+  color: $nord13;
+  text-transform: lowercase;
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.3rem;
+  text-shadow: $nord2 4px 4px;
+
+  &-landmark {
+    // color: $nord9;
+    // text-shadow: $nord7 2px 3px 1px;
+    // -webkit-background-clip: text;
+    // -moz-background-clip: text;
+    // background-clip: text;
+  }
+}
+
+.contact-heading-subtext {
+  text-transform: lowercase;
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: large;
+
+  margin: 1% 5%;
+
+  .contact-heading-link {
+    text-decoration: underline;
+    margin-left: 5px;
+    &:hover {
+      color: $nord12;
+      //   cursor: alias;
+    }
+  }
+}
+
+.contact-links {
+  display: flex;
+  align-items: center;
+
+  .icon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    .icon-grid-link,
+    .icon {
+      max-height: 50px;
+      width: 50px;
+      cursor: alias;
+    }
+    .icon {
+      // convert hex to css filter https://codepen.io/sosuke/pen/Pjoqqp
+      filter: invert(84%) sepia(16%) saturate(844%) hue-rotate(157deg)
+        brightness(88%) contrast(83%);
+      transition: all 0.25s ease;
+
+      &:hover {
+        filter: invert(92%) sepia(16%) saturate(1143%) hue-rotate(331deg)
+          brightness(96%) contrast(92%);
+      }
+    }
+  }
+}

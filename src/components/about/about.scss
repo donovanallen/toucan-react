@@ -1,0 +1,63 @@
+@import "node_modules/nord/src/sass/nord.scss";
+
+@mixin boxShadow($box-shadow) {
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  -ms-box-shadow: $box-shadow;
+  -o-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+.about {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  gap: 7%;
+  &-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    &-heading {
+      margin: 0;
+      line-height: 1rem;
+      font-size: 4rem;
+      letter-spacing: 0.1rem;
+      color: $nord12;
+      text-shadow: $nord3 3px 3px;
+      max-width: fit-content;
+    }
+
+    &-text {
+      line-height: 1.3rem;
+      letter-spacing: 0.04rem;
+      .flood-right {
+        @include transition(0.25s ease-in-out);
+        @include boxShadow(inset 0px 0 0 0 $nord13);
+        overflow: hidden;
+        &:hover {
+          color: $nord2;
+          @include boxShadow(inset 500px 0 0 0 $nord13);
+        }
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-content-secondary ul {
+    align-self: center;
+    text-align: right;
+    list-style: none;
+  }
+}
