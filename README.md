@@ -21,7 +21,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/donovanallen/toucan-react">
-    <img src="src/assets/d.allen-emb.png" alt="Logo" width="140" height="80">
+    <img src="src/assets/d.allen-emb.png" alt="Logo" width="160" height="80">
   </a>
 
   <h3 align="center">The Official Website for Donovan Allen</h3>
@@ -72,7 +72,7 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-Thanks for checking out my official site. This site was designed and developed by me from scratch in React using a variety of (awesome) open-source libraries and some general inspiration from some great tech minds on the web. Here you can find more information about how it was built and check out the code for yourself. Access the links above to report a bug or suggest a new feature.
+This site was designed and developed by me from scratch in React using a variety of (awesome) open-source libraries and some general inspiration from some great tech minds on the web. Here you can find more information about how it was built and check out the code for yourself. Access the links above to report a bug or suggest a new feature.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -83,15 +83,16 @@ Thanks for checking out my official site. This site was designed and developed b
 This site was built, hosted, and maintained using the following tools and technologies:
 
 <!-- - [![Next][next.js]][next-url] -->
+<!-- - [![React][react.js]][react-url] -->
 
-- [![React][react.js]][react-url]
-- !Sass
-- !Firebase
-- !Lucide Icons
-- !Nord Colors
-- !React Typed
-- !Baffle
-- !Mend Renovate
+- React
+- Sass
+- Firebase
+- Lucide Icons
+- Nord Colors
+- React Typed
+- Baffle
+- Mend Renovate
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,7 +101,7 @@ This site was built, hosted, and maintained using the following tools and techno
 <!-- This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps. -->
 
-Local developments instructions coming soon!
+Local development instructions coming soon!
 
 <!-- ### Prerequisites -->
 
