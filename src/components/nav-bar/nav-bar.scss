@@ -1,41 +1,40 @@
-@import "node_modules/nord/src/sass/nord.scss";
+@import 'node_modules/nord/src/sass/nord.scss';
 
 .nav-bar {
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  padding: 24px 48px;
-  align-items: center;
-  justify-content: space-between;
-  width: calc(100% - 100px);
+	display: flex;
+	flex-direction: row;
+	padding: 24px 48px;
+	align-items: center;
+	justify-content: space-between;
+	width: calc(100% - 100px);
 
-  .app-logo {
-    height: 5vmin;
-    pointer-events: none;
-  }
+	.app-logo {
+		height: 5vmin;
+		pointer-events: none;
+	}
 
-  .logo {
-    a {
-      font-weight: 900;
-      font-size: xx-large;
-      color: $nord3;
-      &:hover {
-        color: $nord12;
-      }
-    }
-  }
+	.logo {
+		a {
+			font-weight: 900;
+			font-size: xx-large;
+			color: $nord3;
+			&:hover {
+				color: $nord12;
+			}
+		}
+	}
 
-  .nav-links {
-    display: flex;
-    gap: 20px;
-    font-weight: 200;
-    letter-spacing: 0.1rem;
-  }
+	.nav-links {
+		display: flex;
+		gap: 20px;
+		font-weight: 200;
+		letter-spacing: 0.1rem;
+	}
 }
 
 .widget {
-  &:hover {
-  }
+	&:hover {
+	}
 }
 
 // @media (prefers-reduced-motion: no-preference) {
@@ -45,10 +44,10 @@
 // }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }

@@ -1,0 +1,45 @@
+.resume-container {
+	display: flex;
+	padding: 0 5%;
+	flex-direction: column;
+	overflow-y: scroll;
+
+	.resume-header {
+		display: flex;
+		width: 100%;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+
+		.resume-title {
+			font-size: 170px;
+		}
+
+		&-content {
+			ul {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+				padding: 0;
+				li {
+					list-style-type: none;
+				}
+			}
+		}
+	}
+
+	.resume-main-content {
+		display: flex;
+		&-left {
+			flex: 1;
+			h2 {
+				font-size: 80px;
+			}
+		}
+		&-right {
+			h3 {
+				font-size: 60px;
+			}
+		}
+	}
+}
