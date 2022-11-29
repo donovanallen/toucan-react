@@ -42,6 +42,7 @@ const Resume = () => {
 							<li>item 3</li>
 						</ul>
 					</div>
+					<hr />
 					<div className="resume-main-content-left-entry">
 						<p className="entry-title">
 							<span>sr. software engineer</span> |{' '}
@@ -57,6 +58,7 @@ const Resume = () => {
 							<li>item 3</li>
 						</ul>
 					</div>
+					<hr />
 					<div className="resume-main-content-left-entry">
 						<p className="entry-title">
 							<span>software consultant i</span> |{' '}
@@ -72,6 +74,7 @@ const Resume = () => {
 							<li>item 3</li>
 						</ul>
 					</div>
+					<hr />
 					<div className="resume-main-content-left-entry">
 						<p className="entry-title">
 							<span>operations lead</span> |{' '}

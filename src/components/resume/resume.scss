@@ -51,7 +51,14 @@
 		padding: 0 10%;
 		display: flex;
 		border-top: 1px solid $nord4;
-		overflow-y: auto;
+		overflow-y: scroll;
+		scrollbar-width: none; /* Firefox */
+		-ms-overflow-style: none; /* Internet Explorer 10+ */
+		&::-webkit-scrollbar {
+			/* WebKit */
+			width: 0;
+			height: 0;
+		}
 
 		&-left {
 			flex: 1;
@@ -61,7 +68,7 @@
 				color: $nord12;
 				font-weight: 500;
 				letter-spacing: 0.3rem;
-				margin: 5% auto;
+				margin: 10% auto;
 			}
 			&-entry {
 				.entry-title {
@@ -95,7 +102,7 @@
 				color: $nord12;
 				font-weight: 500;
 				letter-spacing: 0.3rem;
-				margin: 5% 0;
+				margin: 10% 0;
 			}
 		}
 	}
