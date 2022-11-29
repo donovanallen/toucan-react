@@ -3,10 +3,8 @@
 body {
 	background-color: $nord1;
 	color: $nord5;
-	height: 100%;
-	// width: 100%;
-	width: calc(100% - 100px);
-	// overflow: hidden;
+	width: 100%;
+	overflow-x: hidden;
 
 	// AURORA GRADIENT //
 	position: relative;
