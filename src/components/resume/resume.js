@@ -1,4 +1,5 @@
 import './resume.scss';
+import Contact from '../contact/contact.js';
 
 const Resume = () => {
 	return (
@@ -10,11 +11,8 @@ const Resume = () => {
 					{/* <button className="resume-title-btn">download</button> */}
 				</div>
 				<div className="resume-header-content">
-					{/* <ul>
-						<li>Location: Houston, TX</li>
-						<li>email: hello@donovanallen.dev</li>
-						<li>phone: 555-123-4567</li>
-					</ul> */}
+					{/* CONTACT */}
+					<div className="contact-container">{/* <Contact /> */}</div>
 				</div>
 			</header>
 
@@ -107,12 +105,6 @@ const Resume = () => {
 					<h3>toolkit</h3>
 					<h3>awards/honors/press</h3>
 				</div>
-			</div>
-
-			{/* CONTACT */}
-			<div className="contact-container">
-				<h3>contact me</h3>
-				{/* contact widget */}
 			</div>
 		</div>
 	);

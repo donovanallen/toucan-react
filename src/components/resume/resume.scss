@@ -68,9 +68,10 @@
 				color: $nord12;
 				font-weight: 500;
 				letter-spacing: 0.3rem;
-				margin: 10% auto;
+				margin: 9% auto;
 			}
 			&-entry {
+				padding: 2% 0;
 				.entry-title {
 					font-size: larger;
 					margin-bottom: 8px;
@@ -102,12 +103,8 @@
 				color: $nord12;
 				font-weight: 500;
 				letter-spacing: 0.3rem;
-				margin: 10% 0;
+				margin: 9% 0;
 			}
 		}
-	}
-
-	.contact-container {
-		text-align: center;
 	}
 }
