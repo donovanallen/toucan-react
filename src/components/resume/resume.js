@@ -1,5 +1,12 @@
 import './resume.scss';
 
+import dribbble from '../../assets/dribbble.svg';
+import github from '../../assets/github.svg';
+import gmail from '../../assets/gmail.svg';
+import linkedin from '../../assets/linkedin.svg';
+import soundcloud from '../../assets/soundcloud.svg';
+// import twitter from "../../assets/twitter.svg";
+
 const Resume = () => {
 	return (
 		<div className="resume-container">
@@ -11,7 +18,61 @@ const Resume = () => {
 				</div>
 				<div className="resume-header-content">
 					{/* CONTACT */}
-					<div className="contact-container">{/* <Contact /> */}</div>
+					<div className="contact-container">
+						<div className="contact-links">
+							<div className="icon-grid">
+								<div className="icon-grid-link">
+									<a href="mailto:hello@donovanallen.dev" target="_blank">
+										<img
+											className="icon float-shadow"
+											src={gmail}
+											alt="gmail icon"
+										/>
+									</a>
+								</div>
+								<div className="icon-grid-link">
+									<a href="https://www.github.com/donovanallen" target="_blank">
+										<img
+											className="icon float-shadow"
+											src={github}
+											alt="github icon"
+										/>
+									</a>
+								</div>
+								<div className="icon-grid-link">
+									<a
+										href="https://www.linkedin.com/in/donovan-allen"
+										target="_blank"
+									>
+										<img
+											className="icon float-shadow"
+											src={linkedin}
+											alt="linkedin icon"
+										/>
+									</a>
+								</div>
+								<div className="icon-grid-link">
+									<a href="https://dribbble.com/dnvn" target="_blank">
+										<img
+											className="icon float-shadow"
+											src={dribbble}
+											alt="dribbble icon"
+										/>
+									</a>
+								</div>
+
+								<div className="icon-grid-link">
+									<a href="https://soundcloud.com/itsdnvn" target="_blank">
+										<img
+											className="icon float-shadow"
+											src={soundcloud}
+											alt="soundcloud icon"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</header>
 
