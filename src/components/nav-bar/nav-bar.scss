@@ -1,7 +1,7 @@
 @import 'node_modules/nord/src/sass/nord.scss';
 
 .nav-bar {
-	position: fixed;
+	position: sticky;
 	display: flex;
 	flex-direction: row;
 	padding: 24px 48px;
