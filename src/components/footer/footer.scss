@@ -1,86 +1,87 @@
-@import "node_modules/nord/src/sass/nord.scss";
+@import 'node_modules/nord/src/sass/nord.scss';
 
 .show {
-  animation: show 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
-  overflow: hidden;
+	animation: show 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
+	overflow: hidden;
 }
 
 .hide {
-  animation: hide 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
-  overflow: hidden;
+	animation: hide 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
+	overflow: hidden;
 }
 
 @keyframes hide {
-  from {
-    margin-left: 0%;
-    width: 100%;
-  }
+	from {
+		margin-left: 0%;
+		width: 100%;
+	}
 
-  to {
-    margin-left: -100%;
-    width: 300%;
-  }
+	to {
+		margin-left: -100%;
+		width: 300%;
+	}
 }
 
 @keyframes show {
-  from {
-    margin-left: -100%;
-    width: 300%;
-  }
+	from {
+		margin-left: -100%;
+		width: 300%;
+	}
 
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-  // 0% {
-  //   transform: translateX(-50px);
-  // }
-  // 100% {
-  //   transform: translateX(0);
-  // }
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
+	// 0% {
+	//   transform: translateX(-50px);
+	// }
+	// 100% {
+	//   transform: translateX(0);
+	// }
 }
 
 .footer {
-  position: sticky;
-  padding: 24px 48px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+	position: sticky;
+	bottom: 0;
+	padding: 24px 48px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 
-  .footer-icon {
-  }
+	.footer-icon {
+	}
 
-  .footer-text {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: x-small;
-    font-weight: 400;
-    letter-spacing: 0.05rem;
-    overflow-x: hidden;
-    cursor: pointer;
-  }
+	.footer-text {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		font-size: x-small;
+		font-weight: 400;
+		letter-spacing: 0.05rem;
+		overflow-x: hidden;
+		cursor: pointer;
+	}
 }
 
 .footer-arrow:hover {
-  animation: none;
-  cursor: pointer;
+	animation: none;
+	cursor: pointer;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .footer-arrow {
-    animation: bounce 0.8s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-  }
+	.footer-arrow {
+		animation: bounce 0.8s;
+		animation-direction: alternate;
+		animation-iteration-count: infinite;
+	}
 }
 
 @keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-25px);
-  }
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-25px);
+	}
 }

@@ -1,16 +1,7 @@
 .app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 100vw;
-  /* // AURORA GRADIENT //
-  position: relative;
-  height: 100%;
-  background-color: #fff;
-  background-image: 
-    radial-gradient(at top left, #fff5e3, transparent),
-    radial-gradient(at top right, #bfbfbf, transparent),
-    radial-gradient(at bottom left, #ccbda1, transparent);
-  background-size: 100% 100%;
-  background-repeat: no-repeat; */
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
 }

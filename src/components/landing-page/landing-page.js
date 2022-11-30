@@ -1,6 +1,5 @@
 import './landing-page.scss';
 import Typed from 'react-typed';
-import Footer from '../footer/footer';
 
 const marqueeList = [
 	'web engineer',
@@ -71,7 +70,6 @@ const LandingPage = () => {
           <ArrowDown className="content-arrow-down" size={36} strokeWidth={1} /> */}
 				</div>
 			</div>
-			<Footer />
 		</div>
 	);
 };

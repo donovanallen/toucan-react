@@ -2,9 +2,9 @@
 
 .resume-container {
 	display: flex;
-	padding: 0 5%;
 	flex-direction: column;
-	height: 100vh;
+	padding: 0 5%;
+	overflow-y: auto;
 
 	.resume-header {
 		display: flex;
@@ -19,7 +19,7 @@
 			align-items: flex-end;
 			&-text {
 				font-size: 170px;
-				margin: 10% auto;
+				margin: 8% auto;
 				color: $nord7;
 				font-weight: 300;
 				letter-spacing: 0.5rem;
@@ -50,7 +50,9 @@
 	.resume-main-content {
 		padding: 0 10%;
 		display: flex;
+		gap: 10%;
 		border-top: 1px solid $nord4;
+
 		overflow-y: scroll;
 		scrollbar-width: none; /* Firefox */
 		-ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -58,6 +60,29 @@
 			/* WebKit */
 			width: 0;
 			height: 0;
+		}
+
+		.entry-title {
+			font-size: larger;
+			margin-bottom: 8px;
+			letter-spacing: 0.03rem;
+			color: $nord13;
+			font-weight: 600;
+			a {
+				color: $nord4;
+				font-weight: 500;
+			}
+			span {
+				font-weight: 400;
+			}
+		}
+
+		.entry-subtitle {
+			font-size: smaller;
+			margin: 5px auto;
+			color: $nord4;
+			letter-spacing: 0.02rem;
+			font-weight: 400;
 		}
 
 		&-left {
@@ -68,42 +93,45 @@
 				color: $nord12;
 				font-weight: 500;
 				letter-spacing: 0.3rem;
-				margin: 9% auto;
+				margin-top: 5%;
+				margin-bottom: 2%;
 			}
 			&-entry {
 				padding: 2% 0;
-				.entry-title {
-					font-size: larger;
-					margin-bottom: 8px;
-					letter-spacing: 0.03rem;
-					span {
-						color: $nord13;
-						font-weight: 600;
-					}
-					a {
-						font-weight: 500;
-					}
-				}
-
-				.entry-subtitle {
-					font-size: smaller;
-					margin: 5px auto;
-					color: $nord4;
-					letter-spacing: 0.02rem;
-					font-weight: 400;
-				}
 			}
 		}
 		&-right {
 			display: flex;
 			flex-direction: column;
 			text-align: end;
+			max-width: 40%;
+
 			h3 {
 				font-size: 65px;
 				color: $nord12;
 				font-weight: 500;
 				letter-spacing: 0.3rem;
-				margin: 9% 0;
+				margin-top: 5%;
+				margin-bottom: 2%;
+			}
+
+			h4 {
+				color: $nord13;
+				font-weight: 500;
+				letter-spacing: 0.2rem;
+				margin: 0;
+			}
+
+			.tools {
+				display: flex;
+				justify-content: end;
+				align-self: flex-end;
+				gap: 0.5rem;
+				list-style-type: none;
+				flex-wrap: wrap;
+				font-size: smaller;
+				letter-spacing: 0.01rem;
+				max-width: 75%;
 			}
 		}
 	}

@@ -32,7 +32,7 @@ function App() {
 		<div className="app">
 			<NavBar />
 			<RouterProvider router={router} />
-			{/* <Footer /> */}
+			<Footer />
 		</div>
 	);
 }

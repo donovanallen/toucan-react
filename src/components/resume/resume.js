@@ -1,5 +1,4 @@
 import './resume.scss';
-import Contact from '../contact/contact.js';
 
 const Resume = () => {
 	return (
@@ -27,83 +26,105 @@ const Resume = () => {
 					<h2 className="resume-main-content-left-title">experience</h2>
 					<div className="resume-main-content-left-entry">
 						<p className="entry-title">
-							<span>engineer ii</span> |{' '}
+							engineer ii{' '}
 							<a href="https://shop.luluemon.com" target="_blank">
-								lululemon
+								| lululemon
 							</a>
 						</p>
 						<p className="entry-subtitle">february 2022 - present</p>
 						<p className="entry-subtitle">remote/houston, tx</p>
-						<ul className="entry-items">
-							<li>item 1</li>
-							<li>item 2</li>
-							<li>item 3</li>
-						</ul>
 					</div>
 					<hr />
 					<div className="resume-main-content-left-entry">
 						<p className="entry-title">
-							<span>sr. software engineer</span> |{' '}
+							sr. software engineer{' '}
 							<a href="https://www.deloittedigital.com" target="_blank">
-								deloitte digital
+								| deloitte digital
 							</a>
 						</p>
 						<p className="entry-subtitle">june 2018 - february 2022</p>
 						<p className="entry-subtitle">arlington, va/new york city, ny</p>
-						<ul className="entry-items">
-							<li>item 1</li>
-							<li>item 2</li>
-							<li>item 3</li>
-						</ul>
 					</div>
 					<hr />
 					<div className="resume-main-content-left-entry">
 						<p className="entry-title">
-							<span>software consultant i</span> |{' '}
+							software consultant i{' '}
 							<a href="" target="_blank">
-								counterpoint consulting
+								| counterpoint consulting
 							</a>
 						</p>
 						<p className="entry-subtitle">february 2017 - may 2018</p>
 						<p className="entry-subtitle">vienna, va</p>
-						<ul className="entry-items">
-							<li>item 1</li>
-							<li>item 2</li>
-							<li>item 3</li>
-						</ul>
 					</div>
 					<hr />
 					<div className="resume-main-content-left-entry">
 						<p className="entry-title">
-							<span>operations lead</span> |{' '}
+							operations lead{' '}
 							<a href="" target="_blank">
-								cove
+								| cove
 							</a>
 						</p>
 						<p className="entry-subtitle">september 2013 - september 2016</p>
 						<p className="entry-subtitle">washington, dc</p>
-						<ul className="entry-items">
-							<li>item 1</li>
-							<li>item 2</li>
-							<li>item 3</li>
-						</ul>
 					</div>
 				</div>
 				<div className="resume-main-content-right">
+					{/* EDUCATION */}
 					<h3>education</h3>
 					<div className="resume-main-content-left-entry">
-						<h4>bachelor of arts - international affairs</h4>
-						<h4>august 2009 - december 2013</h4>
-						<h4>george washington university | washington, dc</h4>
+						<p className="entry-title">
+							<span>bachelor of arts, international affairs</span>
+						</p>
+						<p>george washington university | washington, dc</p>
+						<p>august 2009 - december 2013</p>
 					</div>
 					<div className="resume-main-content-left-entry">
-						<h4>certificate, web development immersive</h4>
-						<h4>september 2016 - december 2016</h4>
-						<h4>general assembly | washington, dc</h4>
+						<p className="entry-title">
+							<span>certificate, web development immersive</span>
+						</p>
+						<p>general assembly | washington, dc</p>
+						<p>september 2016 - december 2016</p>
 					</div>
-					<h3>skills</h3>
-					<h3>toolkit</h3>
-					<h3>awards/honors/press</h3>
+
+					{/* TOOLS/TECH */}
+					<h3>tools & tech</h3>
+					<h4>development</h4>
+					<ul className="tools">
+						<li>javascript</li>
+						<li>typescript</li>
+						<li>java</li>
+						<li>angular</li>
+						<li>react</li>
+						<li>redux</li>
+						<li>vue</li>
+						<li>node</li>
+						<li>next.js</li>
+						<li>d3</li>
+						<li>postgres</li>
+						<li>python</li>
+						<li>html</li>
+						<li>css/sass</li>
+					</ul>
+					<h4>infrastructure</h4>
+					<ul className="tools">
+						<li>git</li>
+						<li>docker</li>
+						<li>jenkins</li>
+						<li>gitlab</li>
+						<li>aws</li>
+						<li>sentry</li>
+						<li>kibana</li>
+						<li>mulesoft</li>
+						<li>kubernetes</li>
+						<li>kafka</li>
+						<li>terraform</li>
+					</ul>
+					<h4>design</h4>
+					<ul className="tools">
+						<li>figma</li>
+						<li>contentful</li>
+					</ul>
+					{/* <h3>awards/honors/press</h3> */}
 				</div>
 			</div>
 		</div>
