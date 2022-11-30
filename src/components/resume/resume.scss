@@ -5,6 +5,7 @@
 	flex-direction: column;
 	padding: 0 5%;
 	overflow-y: auto;
+	overflow-x: hidden;
 
 	.resume-header {
 		display: flex;
@@ -31,6 +32,37 @@
 		}
 
 		&-content {
+			.contact-container {
+				// .contact-links {
+				// 	// display: flex;
+				// 	// align-items: end;
+				// 	// width: 75%;
+
+				// 	.icon-grid {
+				// 		display: flex;
+				// 		flex-wrap: wrap;
+				// 		// gap: 50px;
+				// 		align-self: center;
+				// 		.icon-grid-link,
+				// 		.icon {
+				// 			max-height: 50px;
+				// 			width: 50px;
+				// 			cursor: alias;
+				// 		}
+				// 		.icon {
+				// 			// convert hex to css filter https://codepen.io/sosuke/pen/Pjoqqp
+				// 			filter: invert(84%) sepia(16%) saturate(844%) hue-rotate(157deg)
+				// 				brightness(88%) contrast(83%);
+				// 			transition: all 0.25s ease;
+
+				// 			&:hover {
+				// 				filter: invert(92%) sepia(16%) saturate(1143%) hue-rotate(331deg)
+				// 					brightness(96%) contrast(92%);
+				// 			}
+				// 		}
+				// 	}
+				// }
+			}
 			ul {
 				display: flex;
 				flex-direction: column;
