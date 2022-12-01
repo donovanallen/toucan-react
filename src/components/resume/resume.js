@@ -46,6 +46,35 @@ const Resume = () => {
 			{/* SUB CONTENT */}
 			<div className="resume-sub-content">
 				{/* <p>This is where a potential skills carousel could go</p> */}
+				<ul className="tools">
+					<li>javascript</li>
+					<li>typescript</li>
+					<li>java</li>
+					<li>angular</li>
+					<li>react</li>
+					<li>redux</li>
+					<li>vue</li>
+					<li>node</li>
+					<li>next.js</li>
+					<li>d3</li>
+					<li>postgres</li>
+					<li>python</li>
+					<li>html</li>
+					<li>css/sass</li>
+					<li>git</li>
+					<li>docker</li>
+					<li>jenkins</li>
+					<li>gitlab</li>
+					<li>aws</li>
+					<li>sentry</li>
+					<li>kibana</li>
+					<li>mulesoft</li>
+					<li>kubernetes</li>
+					<li>kafka</li>
+					<li>terraform</li>
+					<li>figma</li>
+					<li>contentful</li>
+				</ul>
 			</div>
 
 			{/* MAIN CONTENT */}

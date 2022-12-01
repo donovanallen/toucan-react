@@ -71,17 +71,28 @@
 				}
 			}
 		}
+		border-bottom: 1px solid $nord4;
 	}
 
 	.resume-sub-content {
 		text-align: center;
+		align-self: center;
+		max-width: 80%;
+		.tools {
+			display: flex;
+			justify-content: center;
+			align-self: center;
+			gap: 1rem;
+			list-style-type: none;
+			font-size: x-small;
+			letter-spacing: 0.005rem;
+		}
 	}
 
 	.resume-main-content {
 		padding: 0 10%;
 		display: flex;
 		gap: 10%;
-		border-top: 1px solid $nord4;
 
 		overflow-y: scroll;
 		scrollbar-width: none; /* Firefox */
