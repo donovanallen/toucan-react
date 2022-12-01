@@ -1,11 +1,8 @@
 import './resume.scss';
 
-import dribbble from '../../assets/dribbble.svg';
 import github from '../../assets/github.svg';
 import gmail from '../../assets/gmail.svg';
 import linkedin from '../../assets/linkedin.svg';
-import soundcloud from '../../assets/soundcloud.svg';
-// import twitter from "../../assets/twitter.svg";
 
 const Resume = () => {
 	return (
@@ -14,62 +11,32 @@ const Resume = () => {
 			<header className="resume-header">
 				<div className="resume-title">
 					<h1 className="resume-title-text">resume</h1>
+					<span className="resume-title-subtext">
+						neil donovan allen
+						<span className="resume-title-subtext-2"> | houston, tx, usa</span>
+					</span>
 					{/* <button className="resume-title-btn">download</button> */}
 				</div>
 				<div className="resume-header-content">
-					{/* CONTACT */}
 					<div className="contact-container">
-						<div className="contact-links">
-							<div className="icon-grid">
-								<div className="icon-grid-link">
-									<a href="mailto:hello@donovanallen.dev" target="_blank">
-										<img
-											className="icon float-shadow"
-											src={gmail}
-											alt="gmail icon"
-										/>
-									</a>
-								</div>
-								<div className="icon-grid-link">
-									<a href="https://www.github.com/donovanallen" target="_blank">
-										<img
-											className="icon float-shadow"
-											src={github}
-											alt="github icon"
-										/>
-									</a>
-								</div>
-								<div className="icon-grid-link">
-									<a
-										href="https://www.linkedin.com/in/donovan-allen"
-										target="_blank"
-									>
-										<img
-											className="icon float-shadow"
-											src={linkedin}
-											alt="linkedin icon"
-										/>
-									</a>
-								</div>
-								<div className="icon-grid-link">
-									<a href="https://dribbble.com/dnvn" target="_blank">
-										<img
-											className="icon float-shadow"
-											src={dribbble}
-											alt="dribbble icon"
-										/>
-									</a>
-								</div>
-
-								<div className="icon-grid-link">
-									<a href="https://soundcloud.com/itsdnvn" target="_blank">
-										<img
-											className="icon float-shadow"
-											src={soundcloud}
-											alt="soundcloud icon"
-										/>
-									</a>
-								</div>
+						<div className="icon-grid">
+							<div className="icon-grid-link">
+								<a href="mailto:hello@donovanallen.dev" target="_blank">
+									<img className="icon" src={gmail} alt="gmail icon" />
+								</a>
+							</div>
+							<div className="icon-grid-link">
+								<a href="https://www.github.com/donovanallen" target="_blank">
+									<img className="icon" src={github} alt="github icon" />
+								</a>
+							</div>
+							<div className="icon-grid-link">
+								<a
+									href="https://www.linkedin.com/in/donovan-allen"
+									target="_blank"
+								>
+									<img className="icon" src={linkedin} alt="linkedin icon" />
+								</a>
 							</div>
 						</div>
 					</div>
@@ -110,7 +77,7 @@ const Resume = () => {
 					<div className="resume-main-content-left-entry">
 						<p className="entry-title">
 							software consultant i{' '}
-							<a href="" target="_blank">
+							<a href="https://www.counterpointconsulting.com" target="_blank">
 								| counterpoint consulting
 							</a>
 						</p>
@@ -121,7 +88,7 @@ const Resume = () => {
 					<div className="resume-main-content-left-entry">
 						<p className="entry-title">
 							operations lead{' '}
-							<a href="" target="_blank">
+							<a href="https://www.cove.is/" target="_blank">
 								| cove
 							</a>
 						</p>
@@ -136,15 +103,23 @@ const Resume = () => {
 						<p className="entry-title">
 							<span>bachelor of arts, international affairs</span>
 						</p>
-						<p>george washington university | washington, dc</p>
-						<p>august 2009 - december 2013</p>
+						<p>
+							<a href="https://www.gwu.edu/" target="_blank">
+								george washington university
+							</a>{' '}
+							| washington, dc
+						</p>
+						<p className="entry-subtitle">august 2009 - december 2013</p>
 					</div>
 					<div className="resume-main-content-left-entry">
 						<p className="entry-title">
 							<span>certificate, web development immersive</span>
 						</p>
-						<p>general assembly | washington, dc</p>
-						<p>september 2016 - december 2016</p>
+						<p>
+							<a href="https://generalassemb.ly/">general assembly</a> |
+							washington, dc
+						</p>
+						<p className="entry-subtitle">september 2016 - december 2016</p>
 					</div>
 
 					{/* TOOLS/TECH */}
