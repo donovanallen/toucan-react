@@ -8,26 +8,18 @@ const Footer = () => {
 
 	return (
 		<div className="footer">
-			<div
-				className="footer-text"
-				onMouseEnter={toggleHover}
-				onMouseLeave={toggleHover}
-			>
-				<div className="footer-icon">
-					<Info color="white" strokeWidth={2} size={16} />
+			<a href="https://github.com/donovanallen/toucan-react" target="_blank">
+				<div
+					className="footer-text"
+					onMouseEnter={toggleHover}
+					onMouseLeave={toggleHover}
+				>
+					<Info color="white" strokeWidth={2} size={36} />
+					<span className={hovered ? 'show' : 'hide'}>
+						© 2022 Neil Donovan Allen
+					</span>
 				</div>
-				{hovered && (
-					<>
-						<a
-							className={hovered ? 'show' : 'hide'}
-							href="https://github.com/donovanallen/toucan-react"
-							target="_blank"
-						>
-							© 2022 Neil Donovan Allen
-						</a>
-					</>
-				)}
-			</div>
+			</a>
 			<div className="footer-arrow">
 				{/* <a href="contact">
           <ArrowDown color="white" strokeWidth={1} size={32} />

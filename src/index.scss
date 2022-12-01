@@ -1,19 +1,27 @@
 @import 'node_modules/nord/src/sass/nord.scss';
 
+// $nord0: #2e3440;
+// $nord1: #3b4252;
+// $nord2: #434c5e;
+// $nord3: #4c566a;
+// $nord4: #d8dee9;
+// $nord5: #e5e9f0;
+// $nord6: #eceff4;
+// $nord7: #8fbcbb;
+// $nord8: #88c0d0;
+// $nord9: #81a1c1;
+// $nord10: #5e81ac;
+// $nord11: #bf616a;
+// $nord12: #d08770;
+// $nord13: #ebcb8b;
+// $nord14: #a3be8c;
+// $nord15: #b48ead;
+
 body {
 	background-color: $nord1;
 	color: $nord5;
 	width: 100%;
 	overflow-x: hidden;
-
-	// AURORA GRADIENT //
-	position: relative;
-	background-image: radial-gradient(at top left, $nord1, transparent),
-		radial-gradient(at top right, $nord1, transparent),
-		radial-gradient(at bottom right, $nord10, transparent),
-		radial-gradient(at bottom left, $nord1, transparent);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
 
 	::selection {
 		background: $nord6;
@@ -36,12 +44,7 @@ code {
 
 a {
 	text-decoration: none;
-	color: $nord4;
-	transition: all 0.25s ease;
-
-	&:hover {
-		color: $nord7;
-	}
+	color: inherit;
 }
 
 @font-face {

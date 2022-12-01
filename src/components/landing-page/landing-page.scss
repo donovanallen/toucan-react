@@ -51,25 +51,35 @@
 }
 
 .hero-heading-text {
-	color: $nord12;
-	text-transform: lowercase;
-	margin: 0;
-
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
+	margin: 2% 0;
+
+	font-weight: 500;
 	letter-spacing: 0.3rem;
-	text-shadow: $nord3 3px 3px;
+	color: #fff;
+
+	// &:hover {
+	// 	cursor: default;
+	// }
+	border-bottom: 1px solid white;
 
 	&-landmark {
 		font-weight: 100;
-		color: $nord7;
+		color: $nord6;
 	}
 }
 
 .hero-marquee-text {
+	// text-shadow: $nord8 2px 2px;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-stroke: 2px #fff;
 	color: $nord6;
+	font-weight: 900;
+	text-transform: lowercase;
+	pointer-events: none;
+	cursor: default;
 	font-size: 48px;
-	font-weight: 200;
 	letter-spacing: 0.1rem;
 	text-indent: 10%;
 }

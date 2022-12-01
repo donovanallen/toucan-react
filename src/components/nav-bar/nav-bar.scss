@@ -17,19 +17,37 @@
 	.logo {
 		a {
 			font-weight: 900;
-			font-size: xx-large;
-			color: $nord3;
+			font-size: 3rem;
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+			-webkit-text-stroke: 1px $nord6;
+			transition: all 0.25s ease;
 			&:hover {
-				color: $nord12;
+				-webkit-text-fill-color: initial;
+				-webkit-background-clip: initial;
+				-webkit-text-stroke: initial;
+				color: #fff;
+				// color: $nord12;
 			}
 		}
 	}
 
 	.nav-links {
 		display: flex;
-		gap: 20px;
-		font-weight: 200;
+		gap: 2rem;
+		font-weight: 800;
 		letter-spacing: 0.1rem;
+		font-size: large;
+		a {
+			transition: all 0.25s ease;
+			color: #fff;
+			&:hover {
+				font-size: larger;
+				-webkit-text-fill-color: transparent;
+				-webkit-background-clip: text;
+				-webkit-text-stroke: 1px #fff;
+			}
+		}
 	}
 }
 
