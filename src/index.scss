@@ -1,54 +1,52 @@
-@import "node_modules/nord/src/sass/nord.scss";
+@import 'node_modules/nord/src/sass/nord.scss';
 
 body {
-  background-color: $nord1;
-  color: $nord5;
-  height: 100%;
-  // width: 100%;
-  width: calc(100% - 100px);
-  overflow: hidden;
+	background-color: $nord1;
+	color: $nord5;
+	width: 100%;
+	overflow-x: hidden;
 
-  // AURORA GRADIENT //
-  position: relative;
-  background-image: radial-gradient(at top left, $nord1, transparent),
-    radial-gradient(at top right, $nord1, transparent),
-    radial-gradient(at bottom right, $nord10, transparent),
-    radial-gradient(at bottom left, $nord1, transparent);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+	// AURORA GRADIENT //
+	position: relative;
+	background-image: radial-gradient(at top left, $nord1, transparent),
+		radial-gradient(at top right, $nord1, transparent),
+		radial-gradient(at bottom right, $nord10, transparent),
+		radial-gradient(at bottom left, $nord1, transparent);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 
-  ::selection {
-    background: $nord6;
-  }
+	::selection {
+		background: $nord6;
+	}
 }
 
 body {
-  margin: 0;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+		'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
 }
 
 a {
-  text-decoration: none;
-  color: $nord4;
-  transition: all 0.25s ease;
+	text-decoration: none;
+	color: $nord4;
+	transition: all 0.25s ease;
 
-  &:hover {
-    color: $nord7;
-  }
+	&:hover {
+		color: $nord7;
+	}
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"),
-    url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format("truetype");
-  /* other formats include: 'woff2', 'truetype, 'opentype', 'embedded-opentype', and 'svg' */
+	font-family: 'Montserrat';
+	src: local('Montserrat'),
+		url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format('truetype');
+	/* other formats include: 'woff2', 'truetype, 'opentype', 'embedded-opentype', and 'svg' */
 }

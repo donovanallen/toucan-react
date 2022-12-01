@@ -1,0 +1,167 @@
+@import 'node_modules/nord/src/sass/nord.scss';
+
+.resume-container {
+	display: flex;
+	flex-direction: column;
+	padding: 0 5%;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	.resume-header {
+		display: flex;
+		width: 100%;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		padding: 2% 0;
+
+		.resume-title {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			&-text {
+				margin: 0;
+				font-size: 170px;
+				color: $nord7;
+				font-weight: 300;
+				letter-spacing: 0.5rem;
+			}
+
+			&-subtext {
+				font-size: x-large;
+				font-weight: 500;
+
+				&-2 {
+					font-size: large;
+					font-weight: 300;
+					letter-spacing: 0.05rem;
+				}
+			}
+
+			&-btn {
+				//
+			}
+		}
+
+		&-content {
+			align-self: flex-end;
+			padding: 0 10%;
+			.contact-container {
+				.icon-grid {
+					display: flex;
+					gap: 25%;
+					&-link {
+						a {
+							.icon {
+								max-height: 35px;
+								width: 35px;
+								cursor: pointer;
+								// convert hex to css filter https://codepen.io/sosuke/pen/Pjoqqp
+								filter: invert(84%) sepia(16%) saturate(844%) hue-rotate(157deg)
+									brightness(88%) contrast(83%);
+								transition: all 0.25s ease;
+
+								&:hover {
+									filter: invert(96%) sepia(4%) saturate(1432%)
+										hue-rotate(183deg) brightness(97%) contrast(87%);
+									transform: scale(1.2);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.resume-sub-content {
+		text-align: center;
+	}
+
+	.resume-main-content {
+		padding: 0 10%;
+		display: flex;
+		gap: 10%;
+		border-top: 1px solid $nord4;
+
+		overflow-y: scroll;
+		scrollbar-width: none; /* Firefox */
+		-ms-overflow-style: none; /* Internet Explorer 10+ */
+		&::-webkit-scrollbar {
+			/* WebKit */
+			width: 0;
+			height: 0;
+		}
+
+		a {
+			font-weight: 600;
+		}
+
+		.entry-title {
+			font-size: larger;
+			margin-bottom: 8px;
+			letter-spacing: 0.03rem;
+			color: $nord13;
+			span {
+				font-weight: 400;
+			}
+		}
+
+		.entry-subtitle {
+			font-size: smaller;
+			margin: 5px auto;
+			color: $nord4;
+			letter-spacing: 0.02rem;
+			font-weight: 400;
+		}
+
+		&-left {
+			flex: 1;
+			max-width: 60%;
+			h2 {
+				font-size: 80px;
+				color: $nord12;
+				font-weight: 500;
+				letter-spacing: 0.3rem;
+				margin-top: 5%;
+				margin-bottom: 2%;
+			}
+			&-entry {
+				padding: 2% 0;
+			}
+		}
+		&-right {
+			display: flex;
+			flex-direction: column;
+			text-align: end;
+			max-width: 40%;
+
+			h3 {
+				font-size: 65px;
+				color: $nord12;
+				font-weight: 500;
+				letter-spacing: 0.3rem;
+				margin-top: 5%;
+				margin-bottom: 2%;
+			}
+
+			h4 {
+				color: $nord13;
+				font-weight: 500;
+				letter-spacing: 0.2rem;
+				margin: 0;
+			}
+
+			.tools {
+				display: flex;
+				justify-content: end;
+				align-self: flex-end;
+				gap: 0.5rem;
+				list-style-type: none;
+				flex-wrap: wrap;
+				font-size: smaller;
+				letter-spacing: 0.01rem;
+				max-width: 75%;
+			}
+		}
+	}
+}
