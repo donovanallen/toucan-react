@@ -1,63 +1,74 @@
-@import "node_modules/nord/src/sass/nord.scss";
+@import 'node_modules/nord/src/sass/nord.scss';
 
 @mixin boxShadow($box-shadow) {
-  -webkit-box-shadow: $box-shadow;
-  -moz-box-shadow: $box-shadow;
-  -ms-box-shadow: $box-shadow;
-  -o-box-shadow: $box-shadow;
-  box-shadow: $box-shadow;
+	-webkit-box-shadow: $box-shadow;
+	-moz-box-shadow: $box-shadow;
+	-ms-box-shadow: $box-shadow;
+	-o-box-shadow: $box-shadow;
+	box-shadow: $box-shadow;
 }
 
 @mixin transition($transition) {
-  -webkit-transition: $transition;
-  -moz-transition: $transition;
-  -ms-transition: $transition;
-  -o-transition: $transition;
-  transition: $transition;
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-ms-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
 }
 
 .about {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  padding: 0 10%;
-  gap: 7%;
-  &-content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    &-heading {
-      margin: 0;
-      line-height: 1rem;
-      font-size: 4rem;
-      letter-spacing: 0.1rem;
-      color: $nord12;
-      text-shadow: $nord3 3px 3px;
-      max-width: fit-content;
-    }
+	flex: 1;
+	display: flex;
+	align-items: center;
+	padding: 0 10%;
+	gap: 7%;
+	max-width: 70%;
+	&-content {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		&-heading {
+			max-width: fit-content;
+			color: #fff;
+			text-shadow: $nord0 2px 2px;
+			margin: 0;
 
-    &-text {
-      line-height: 1.3rem;
-      letter-spacing: 0.04rem;
-      .flood-right {
-        @include transition(0.25s ease-in-out);
-        @include boxShadow(inset 0px 0 0 0 $nord13);
-        overflow: hidden;
-        &:hover {
-          color: $nord2;
-          @include boxShadow(inset 500px 0 0 0 $nord13);
-        }
-      }
+			h1 {
+				font-size: 9rem;
+				line-height: 1rem;
+				letter-spacing: 0.3rem;
+				font-weight: 400;
+			}
+		}
 
-      a {
-        text-decoration: underline;
-      }
-    }
-  }
+		&-text {
+			line-height: 1.3rem;
+			letter-spacing: 0.04rem;
+			text-align: justify;
+			font-weight: 500;
+			background-color: rgba($color: $nord0, $alpha: 0.2);
+			padding: 2%;
+			border-radius: 28px;
+			.flood-right {
+				@include transition(0.25s ease-in-out);
+				@include boxShadow(inset 0px 0 0 0 $nord13);
+				overflow: hidden;
+				&:hover {
+					color: $nord2;
+					font-weight: 600;
+					@include boxShadow(inset 500px 0 0 0 $nord13);
+				}
+			}
 
-  &-content-secondary ul {
-    align-self: center;
-    text-align: right;
-    list-style: none;
-  }
+			a {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&-content-secondary ul {
+		align-self: center;
+		text-align: right;
+		list-style: none;
+	}
 }

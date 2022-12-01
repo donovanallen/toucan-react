@@ -18,23 +18,20 @@
 // $nord15: #b48ead;
 
 body {
-	background-color: $nord1;
-	color: $nord5;
-	width: 100%;
-	overflow-x: hidden;
-
-	::selection {
-		background: $nord6;
-	}
-}
-
-body {
 	margin: 0;
 	font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
 		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
 		'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: $nord1;
+	color: #fff;
+	width: 100%;
+	overflow-x: hidden;
+
+	::selection {
+		background: $nord6;
+	}
 }
 
 code {
