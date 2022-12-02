@@ -101,7 +101,7 @@ const Resume = () => {
 					<h3>education</h3>
 					<div className="resume-main-content-left-entry">
 						<p className="entry-title">
-							<span>bachelor of arts, international affairs</span>
+							bachelor of arts, international affairs
 						</p>
 						<p>
 							<a href="https://www.gwu.edu/" target="_blank">
@@ -113,7 +113,7 @@ const Resume = () => {
 					</div>
 					<div className="resume-main-content-left-entry">
 						<p className="entry-title">
-							<span>certificate, web development immersive</span>
+							certificate, web development immersive
 						</p>
 						<p>
 							<a href="https://generalassemb.ly/">general assembly</a> |
