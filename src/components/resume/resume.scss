@@ -2,6 +2,7 @@
 
 .resume-container {
 	display: flex;
+	flex: 1;
 	flex-direction: column;
 	padding: 0 5%;
 	overflow-y: auto;
@@ -12,7 +13,8 @@
 		width: 100%;
 		flex-direction: row-reverse;
 		justify-content: space-between;
-		padding: 2% 0;
+		padding-bottom: 1%;
+		margin-bottom: 1%;
 
 		.resume-title {
 			display: flex;
@@ -21,18 +23,19 @@
 			&-text {
 				margin: 0;
 				font-size: 170px;
-				color: $nord7;
-				font-weight: 300;
 				letter-spacing: 0.5rem;
+				color: $nord6;
+				font-weight: 500;
 			}
 
 			&-subtext {
 				font-size: x-large;
 				font-weight: 500;
+				color: #fff;
 
 				&-2 {
 					font-size: large;
-					font-weight: 300;
+					font-weight: 400;
 					letter-spacing: 0.05rem;
 				}
 			}
@@ -55,14 +58,15 @@
 								max-height: 35px;
 								width: 35px;
 								cursor: pointer;
+
 								// convert hex to css filter https://codepen.io/sosuke/pen/Pjoqqp
-								filter: invert(84%) sepia(16%) saturate(844%) hue-rotate(157deg)
-									brightness(88%) contrast(83%);
+								filter: invert(91%) sepia(19%) saturate(123%) hue-rotate(184deg)
+									brightness(94%) contrast(94%);
 								transition: all 0.25s ease;
 
 								&:hover {
-									filter: invert(96%) sepia(4%) saturate(1432%)
-										hue-rotate(183deg) brightness(97%) contrast(87%);
+									filter: invert(97%) sepia(3%) saturate(151%)
+										hue-rotate(226deg) brightness(114%) contrast(100%);
 									transform: scale(1.2);
 								}
 							}
@@ -71,6 +75,7 @@
 				}
 			}
 		}
+		border-bottom: 1px solid $nord6;
 	}
 
 	.resume-sub-content {
@@ -81,7 +86,9 @@
 		padding: 0 10%;
 		display: flex;
 		gap: 10%;
-		border-top: 1px solid $nord4;
+
+		background-color: rgba($color: #000, $alpha: 0.35);
+		border-radius: 24px;
 
 		overflow-y: scroll;
 		scrollbar-width: none; /* Firefox */
@@ -93,23 +100,23 @@
 		}
 
 		a {
-			font-weight: 600;
+			font-weight: 700;
 		}
 
 		.entry-title {
 			font-size: larger;
-			margin-bottom: 8px;
+			margin-bottom: 12px;
 			letter-spacing: 0.03rem;
-			color: $nord13;
+			color: $nord6;
+			font-weight: 500;
 			span {
-				font-weight: 400;
+				font-weight: 600;
 			}
 		}
 
 		.entry-subtitle {
 			font-size: smaller;
 			margin: 5px auto;
-			color: $nord4;
 			letter-spacing: 0.02rem;
 			font-weight: 400;
 		}
@@ -119,8 +126,8 @@
 			max-width: 60%;
 			h2 {
 				font-size: 80px;
-				color: $nord12;
-				font-weight: 500;
+				color: $nord13;
+				font-weight: 400;
 				letter-spacing: 0.3rem;
 				margin-top: 5%;
 				margin-bottom: 2%;
@@ -136,9 +143,9 @@
 			max-width: 40%;
 
 			h3 {
-				font-size: 65px;
-				color: $nord12;
-				font-weight: 500;
+				font-size: 80px;
+				color: $nord13;
+				font-weight: 400;
 				letter-spacing: 0.3rem;
 				margin-top: 5%;
 				margin-bottom: 2%;
@@ -146,8 +153,8 @@
 
 			h4 {
 				color: $nord13;
-				font-weight: 500;
-				letter-spacing: 0.2rem;
+				font-weight: 800;
+				letter-spacing: 0.08rem;
 				margin: 0;
 			}
 
@@ -161,6 +168,7 @@
 				font-size: smaller;
 				letter-spacing: 0.01rem;
 				max-width: 75%;
+				padding-bottom: 5%;
 			}
 		}
 	}
