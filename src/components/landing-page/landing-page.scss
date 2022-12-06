@@ -1,35 +1,91 @@
 @import 'node_modules/nord/src/sass/nord.scss';
 
-.app-container {
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	flex: 1;
-}
-
 .app-content {
 	display: flex;
-	flex-direction: row;
-	align-content: center;
-	justify-content: space-between;
 	flex: 1;
 	padding: 0 5%;
+
+	@media only screen and (max-width: 600px) {
+		justify-content: center;
+		align-items: flex-end;
+	}
+
+	@media only screen and (max-width: 992px) {
+		align-items: flex-end;
+		justify-content: space-around;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		flex-wrap: wrap;
+	}
+
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.app-header {
+	display: flex;
+	flex-direction: column;
+
+	.hero-heading-text {
+		margin: 2% 0;
+		@media only screen and (min-width: 1200px) {
+			font-size: 10rem;
+		}
+		font-size: 4rem;
+
+		font-weight: 600;
+		letter-spacing: 0.3rem;
+		color: #fff;
+
+		border-bottom: 1px solid white;
+
+		&-landmark {
+			font-weight: 200;
+			color: $nord6;
+		}
+	}
+
+	.hero-marquee-text {
+		@media only screen and (min-width: 1200px) {
+			font-size: 3rem;
+			font-weight: 900;
+		}
+		font-weight: 100;
+		font-size: 1.5rem;
+
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+		-webkit-text-stroke: 2px #fff;
+		color: $nord6;
+		text-transform: lowercase;
+		pointer-events: none;
+		cursor: default;
+		letter-spacing: 0.1rem;
+		text-indent: 10%;
+	}
 }
 
 .app-content-text {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
-	align-items: flex-end;
-	text-align: right;
+
+	@media only screen and (max-width: 600px) {
+		align-self: flex-end;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		text-align: end;
+	}
+
+	font-size: 0.85rem;
 	letter-spacing: 0.07rem;
-	font-size: x-small;
-	min-width: fit-content;
-	padding: 0;
-	margin: 0;
+	font-weight: 600;
 
 	p:not(p:first-child) {
-		font-size: smaller;
+		font-weight: 500;
 	}
 
 	a {
@@ -43,105 +99,8 @@
 	}
 }
 
-.app-header {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	font-size: calc(12px + 6vmin);
-}
-
-.hero-heading-text {
-	font-family: 'Montserrat', sans-serif;
-	margin: 2% 0;
-
-	font-weight: 600;
-	letter-spacing: 0.3rem;
-	color: #fff;
-
-	// &:hover {
-	// 	cursor: default;
-	// }
-	border-bottom: 1px solid white;
-
-	&-landmark {
-		font-weight: 200;
-		color: $nord6;
-	}
-}
-
-.hero-marquee-text {
-	// text-shadow: $nord8 2px 2px;
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-	-webkit-text-stroke: 2px #fff;
-	color: $nord6;
-	font-weight: 900;
-	text-transform: lowercase;
-	pointer-events: none;
-	cursor: default;
-	font-size: 48px;
-	letter-spacing: 0.1rem;
-	text-indent: 10%;
-}
-
-/* NEW CSS */
-
-@keyframes fly {
-	100% {
-		transform: rotate(1turn) translate(100px) rotate(-1turn);
-	}
-}
-
-@keyframes flyPlus {
-	100% {
-		transform: rotate(-1turn) translate(100px) rotate(1turn);
-	}
-}
-
-@keyframes blink-cursor {
-	0% {
-		background-color: transparent;
-	}
-	50% {
-		background-color: #213140;
-	}
-}
-
 @media only screen and (max-width: 600px) {
 	html {
-		font-size: 12px;
+		font-size: small;
 	}
-}
-
-.home-title-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	// width: 120%;
-	margin-left: -10%;
-	overflow-x: hidden;
-	/* // AURORA GRADIENT //
-  position: relative;
-  height: 100%;
-  background-color: #fff;
-  background-image: 
-    radial-gradient(at top left, #fff5e3, transparent),
-    radial-gradient(at top right, #bfbfbf, transparent),
-    radial-gradient(at bottom left, #ccbda1, transparent);
-  background-size: 100% 100%;
-  background-repeat: no-repeat; */
-}
-
-.home-title {
-	text-align: center;
-	z-index: 10;
-}
-
-.name {
-	font-family: 'Playfair Display', serif;
-	letter-spacing: 0.5rem;
-	/* // font-size: 230px; */
-	font-size: calc(10.5vw + 10.5vh);
-	font-weight: 800;
-	color: #485f73;
 }
