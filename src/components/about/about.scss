@@ -16,59 +16,68 @@
 	transition: $transition;
 }
 
-.about {
-	flex: 1;
-	display: flex;
-	align-items: center;
+.about-content {
 	padding: 0 10%;
-	gap: 7%;
-	max-width: 70%;
-	&-content {
-		display: flex;
-		flex-direction: column;
-		flex: 1;
-		&-heading {
-			max-width: fit-content;
-			color: #fff;
-			text-shadow: $nord12 2px 2px;
-			margin: 0;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
 
-			h1 {
-				font-size: 9rem;
-				line-height: 1rem;
-				letter-spacing: 0.2rem;
-				font-weight: 500;
-			}
-		}
+	&-heading {
+		color: #fff;
+		text-shadow: $nord12 2px 2px;
+		margin: 0;
+		width: 100%;
 
-		&-text {
-			line-height: 1.3rem;
-			letter-spacing: 0.04rem;
-			text-align: justify;
+		h1 {
+			font-size: 9rem;
+			line-height: 6rem;
+			letter-spacing: 0.2rem;
 			font-weight: 500;
-			background-color: rgba($color: $nord0, $alpha: 0.2);
-			padding: 2%;
-			border-radius: 28px;
-			.flood-right {
-				@include transition(0.25s ease-in-out);
-				@include boxShadow(inset 0px 0 0 0 $nord13);
-				overflow: hidden;
-				&:hover {
-					color: $nord2;
-					font-weight: 600;
-					@include boxShadow(inset 500px 0 0 0 $nord13);
-				}
+			max-height: 100%;
+
+			@media only screen and (max-width: 1200px) {
+				font-size: 5rem;
 			}
 
-			a {
-				text-decoration: underline;
+			@media only screen and (max-width: 600px) {
+				font-size: 3rem;
 			}
 		}
 	}
 
-	&-content-secondary ul {
-		align-self: center;
-		text-align: right;
-		list-style: none;
+	&-text {
+		line-height: 1.3rem;
+		letter-spacing: 0.04rem;
+		text-align: justify;
+		font-weight: 500;
+		background-color: rgba($color: $nord0, $alpha: 0.2);
+		border-radius: 8px;
+		overflow-y: auto;
+		padding: 1rem;
+
+		@media only screen and (max-width: 1200px) {
+			padding: 5%;
+			box-sizing: border-box;
+			max-height: 80%;
+		}
+		@media only screen and (max-width: 600px) {
+			box-sizing: border-box;
+			max-height: 70%;
+		}
+
+		.flood-right {
+			@include transition(0.25s ease-in-out);
+			@include boxShadow(inset 0px 0 0 0 $nord13);
+			overflow: hidden;
+			&:hover {
+				color: $nord2;
+				font-weight: 600;
+				@include boxShadow(inset 500px 0 0 0 $nord13);
+			}
+		}
+
+		a {
+			text-decoration: underline;
+		}
 	}
 }
