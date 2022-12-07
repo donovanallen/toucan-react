@@ -2,19 +2,23 @@
 
 .contact-content {
 	display: flex;
-	flex-direction: row;
 	flex: 1;
-	justify-content: space-around;
+	padding: 0 5%;
+	justify-content: space-between;
 	align-items: center;
-	min-width: 55%;
-	font-size: calc(12px + 3vmin);
 }
 
 .contact-heading-text {
+	@media only screen and (max-width: 990px) {
+		font-size: 3rem;
+		line-height: 3.5rem;
+	}
+	line-height: 5rem;
+	font-size: 5rem;
 	text-transform: lowercase;
 	margin: 0;
+	flex: 1;
 
-	font-family: 'Montserrat', sans-serif;
 	text-shadow: $nord12 2px 2px;
 	color: #fff;
 	letter-spacing: 0.2rem;
@@ -23,10 +27,14 @@
 
 .contact-heading-subtext {
 	text-transform: lowercase;
-	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	font-size: large;
 	margin: 1% 5%;
+	@media only screen and (max-width: 990px) {
+		font-size: 1rem;
+		margin: 0;
+		max-width: 85%;
+	}
 
 	.contact-heading-link {
 		text-decoration: underline;
@@ -44,12 +52,19 @@
 
 	.icon-grid {
 		display: flex;
-		flex-wrap: wrap;
 		gap: 50px;
+		@media only screen and (max-width: 1200px) {
+			flex-direction: column;
+		}
+
 		.icon-grid-link,
 		.icon {
 			max-height: 50px;
 			width: 50px;
+			@media only screen and (max-width: 990px) {
+				max-height: 35px;
+				width: 35px;
+			}
 		}
 		.icon {
 			// convert hex to css filter https://codepen.io/sosuke/pen/Pjoqqp
