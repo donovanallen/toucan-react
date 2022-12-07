@@ -4,7 +4,7 @@ import Footer from './components/footer/footer';
 import Contact from './components/contact/contact';
 import LandingPage from './components/landing-page/landing-page.js';
 import React, { useState, useEffect, useRef } from 'react';
-import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import About from './components/about/about';
 import Resume from './components/resume/resume';
 import FOG from 'vanta/dist/vanta.fog.min';
