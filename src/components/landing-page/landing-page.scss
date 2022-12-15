@@ -33,6 +33,7 @@
 		margin: 2% 0;
 		@media only screen and (min-width: 1200px) {
 			font-size: 10rem;
+			text-shadow: gray 1.5px 1.5px;
 		}
 		font-size: 4rem;
 
@@ -79,22 +80,32 @@
 	@media only screen and (min-width: 1200px) {
 		text-align: end;
 	}
-
 	font-size: 0.85rem;
-	letter-spacing: 0.07rem;
 	font-weight: 600;
+	letter-spacing: 0.01rem;
 
-	p:not(p:first-child) {
-		font-weight: 500;
+	.app-content-text-header {
+		font-size: 1.2rem;
+		font-weight: 400;
+		letter-spacing: 0.07rem;
+		text-shadow: gray 1px 1px;
+		margin-bottom: 0.5rem;
 	}
 
 	a {
-		text-decoration: underline;
+		transition: all 0.25s ease;
+		-webkit-text-fill-color: initial;
+		-webkit-background-clip: initial;
+		-webkit-text-stroke: initial;
+		font-size: 1.2rem;
+		text-shadow: gray 1px 1px;
 		&:hover {
-			color: $nord11;
-		}
-		&.secondary:hover {
-			color: $nord14;
+			text-shadow: none;
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+			-webkit-text-stroke: 1px #fff;
+			color: #fff;
+			font-size: 1.25rem;
 		}
 	}
 }

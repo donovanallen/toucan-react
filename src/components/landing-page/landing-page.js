@@ -37,24 +37,27 @@ const LandingPage = () => {
 				></Typed>
 			</header>
 			<div className="app-content-text">
+				<p className="app-content-text-header">currently:</p>
 				<p>
-					currently: <br /> creating digital elevated experiences at{' '}
-					<a href="https://shop.lululemon.com" target="_blank">
-						lululemon
+					<span>
+						creating digital elevated experiences at{' '}
+						<a href="https://shop.lululemon.com" target="_blank">
+							lululemon
+						</a>
+					</span>
+				</p>
+				<p>
+					bringing cutting-edge tech solutions to all at{' '}
+					<a href="https://scilent.digital" target="_blank">
+						scilent digital
 					</a>
 				</p>
 				<p>
-					previously: <br />
-					software engineer at{' '}
-					<a
-						className="secondary"
-						href="https://www.deloittedigital.com/"
-						target="_blank"
-					>
-						Deloitte Digital
+					expressing myself as{' '}
+					<a href="https://dnvn.haus" target="_blank">
+						dnvn
 					</a>
 				</p>
-				{/* <p>this site was built with react</p> */}
 				{/* <p>
             "Whatever our role, we are designers of information. Our choices
             alter the presentation and flow of human knowledge. We control how
