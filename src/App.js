@@ -25,12 +25,12 @@ function App() {
 			path: '/about',
 			element: <About />,
 		},
+		// {
+		// 	path: '/resume',
+		// 	element: <Resume />,
+		// },
 		{
 			path: '/resume',
-			element: <Resume />,
-		},
-		{
-			path: '/resume-two',
 			element: <ResumeTwo />,
 		},
 	]);

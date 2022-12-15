@@ -7,42 +7,6 @@ import linkedin from '../../assets/linkedin.svg';
 const ResumeTwo = () => {
 	return (
 		<div className="resume-container">
-			{/* HEADER */}
-			{/* <header className="resume-header">
-				<div className="resume-title">
-					<h1 className="resume-title-text">resume</h1>
-					<span className="resume-title-subtext">
-						neil donovan allen
-						<span className="resume-title-subtext-2"> | houston, tx, usa</span>
-					</span>
-					<button className="resume-title-btn">download</button>
-				</div>
-				<div className="resume-header-content">
-					<div className="contact-container">
-						<div className="icon-grid">
-							<div className="icon-grid-link">
-								<a href="mailto:hello@donovanallen.dev" target="_blank">
-									<img className="icon" src={gmail} alt="gmail icon" />
-								</a>
-							</div>
-							<div className="icon-grid-link">
-								<a href="https://www.github.com/donovanallen" target="_blank">
-									<img className="icon" src={github} alt="github icon" />
-								</a>
-							</div>
-							<div className="icon-grid-link">
-								<a
-									href="https://www.linkedin.com/in/donovan-allen"
-									target="_blank"
-								>
-									<img className="icon" src={linkedin} alt="linkedin icon" />
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header> */}
-
 			<header>
 				<div className="resume-header-title">
 					<h1>Donovan Allen</h1>
@@ -58,7 +22,6 @@ const ResumeTwo = () => {
 							<h3>engineer ii</h3>
 							<h5>lululemon</h5>
 							<h5>february 2022 - present | remote/houston, tx</h5>
-							<p>short description</p>
 						</div>
 						<div className="resume-content-entry">
 							<h3>sr. software engineer</h3>
@@ -67,13 +30,11 @@ const ResumeTwo = () => {
 								june 2018 - february 2022 | 3+ years | arlington, va/new york
 								city, ny
 							</h5>
-							<p>short description</p>
 						</div>
 						<div className="resume-content-entry">
 							<h3>software consultant</h3>
 							<h5>counterpoint consulting</h5>
 							<h5>february 2017 - may 2018 | 1+ year | vienna, va</h5>
-							<p>short description</p>
 						</div>
 						<div className="resume-content-entry">
 							<h3>operations lead</h3>
@@ -81,7 +42,6 @@ const ResumeTwo = () => {
 							<h5>
 								september 2013 - september 2016 | 3 years | washington, dc
 							</h5>
-							<p>short description</p>
 						</div>
 					</div>
 					<div className="resume-content-section">
@@ -99,94 +59,125 @@ const ResumeTwo = () => {
 					</div>
 				</div>
 				<div className="resume-content-right">
+					<ul className="resume-content-entry">
+						<li>
+							<span>email: </span>
+							<br />
+							hello@donovanallen.dev
+						</li>
+						<li>
+							<span>phone: </span>
+							<br />
+							+1 202 468 7022
+						</li>
+						<li>
+							<span>location: </span>
+							<br />
+							houston, tx
+						</li>
+					</ul>
 					<div>
-						<p>contact info here</p>
-					</div>
-					<div>
-						<h4>competencies</h4>
-						<ul>
-							<li>title</li>
-							<li>company</li>
-							<li>dates | length | location</li>
-							<li>short descripition</li>
+						<h4 className="resume-content-entry-heading">competencies</h4>
+						<ul className="resume-content-entry-long">
+							<li>full-stack software development</li>
+							<span>·</span>
+							<li>user experience</li>
+							<span>·</span>
+							<li>data visualization</li>
+							<span>·</span>
+							<li>software infrastructure</li>
+							<span>·</span>
+							<li>interaction design</li>
+							<span>·</span>
+							<li>rapid prototyping</li>
+							<span>·</span>
+							<li>agile development</li>
 						</ul>
-						<h4>tools & technologies</h4>
-						<ul>
-							<li>title</li>
-							<li>company</li>
-							<li>dates | length | location</li>
-							<li>short description</li>
-						</ul>
+						<h4 className="resume-content-entry-heading">
+							tools & technologies
+						</h4>
+						<div className="resume-content-sub-entry">
+							<h4 className="resume-content-entry-sub-heading">development</h4>
+							<ul className="resume-content-entry-long">
+								<li>javascript</li>
+								<span>·</span>
+								<li>typescript</li>
+								<span>·</span>
+								<li>java</li>
+								<span>·</span>
+								<li>angular</li>
+								<span>·</span>
+								<li>react</li>
+								<span>·</span>
+								<li>redux</li>
+								<span>·</span>
+								<li>vue</li>
+								<span>·</span>
+								<li>node</li>
+								<span>·</span>
+								<li>next.js</li>
+								<span>·</span>
+								<li>d3</li>
+								<span>·</span>
+								<li>postgres</li>
+								<span>·</span>
+								<li>python</li>
+								<span>·</span>
+								<li>html</li>
+								<span>·</span>
+								<li>css/sass</li>
+							</ul>
+							<h4 className="resume-content-entry-sub-heading">
+								infrastructure
+							</h4>
+							<ul className="resume-content-entry-long">
+								<li>git</li>
+								<span>·</span>
+								<li>docker</li>
+								<span>·</span>
+								<li>jenkins</li>
+								<span>·</span>
+								<li>gitlab</li>
+								<span>·</span>
+								<li>aws</li>
+								<span>·</span>
+								<li>sentry</li>
+								<span>·</span>
+								<li>kibana</li>
+								<span>·</span>
+								<li>mulesoft</li>
+								<span>·</span>
+								<li>kubernetes</li>
+								<span>·</span>
+								<li>kafka</li>
+								<span>·</span>
+								<li>terraform</li>
+								<span>·</span>
+							</ul>
+							<h4 className="resume-content-entry-sub-heading">ux/design</h4>
+							<ul className="resume-content-entry-long">
+								<li>figma</li>
+								<span>·</span>
+								<li>contentful</li>
+							</ul>
+						</div>
 						<h4>languages</h4>
-						<ul>
-							<li>title</li>
-							<li>company</li>
-							<li>dates | length | location</li>
-							<li>short description</li>
+						<ul className="resume-content-entry-long">
+							<li>english (native)</li>
+							<span>·</span>
+							<li>spanish (proficient)</li>
+							<span>·</span>
+							<li>farsi, afrikaans (beginner)</li>
 						</ul>
 						<h4>links</h4>
-						<ul>
-							<li>title</li>
-							<li>company</li>
-							<li>dates | length | location</li>
-							<li>short description</li>
+						<ul className="resume-content-entry">
+							<li>donovanallen.dev</li>
+							<li>github.com/donovanallen</li>
+							<li>linkedin.com/in/donovan-allen</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-
-			{/* SUB CONTENT */}
-			{/* <div className="resume-sub-content">
-			</div> */}
-
-			{/* MAIN CONTENT */}
-			{/* <div className="resume-main-content">
-				
-					
-					
-				</div>
-				<div className="resume-main-content-right">
-					
-
-					<h3>tools & tech</h3>
-					<h4>development</h4>
-					<ul className="tools">
-						<li>javascript</li>
-						<li>typescript</li>
-						<li>java</li>
-						<li>angular</li>
-						<li>react</li>
-						<li>redux</li>
-						<li>vue</li>
-						<li>node</li>
-						<li>next.js</li>
-						<li>d3</li>
-						<li>postgres</li>
-						<li>python</li>
-						<li>html</li>
-						<li>css/sass</li>
-					</ul>
-					<h4>infrastructure</h4>
-					<ul className="tools">
-						<li>git</li>
-						<li>docker</li>
-						<li>jenkins</li>
-						<li>gitlab</li>
-						<li>aws</li>
-						<li>sentry</li>
-						<li>kibana</li>
-						<li>mulesoft</li>
-						<li>kubernetes</li>
-						<li>kafka</li>
-						<li>terraform</li>
-					</ul>
-					<h4>design</h4>
-					<ul className="tools">
-						<li>figma</li>
-						<li>contentful</li>
-					</ul>
-				</div>
-			</div> */}
 		</div>
 	);
 };
