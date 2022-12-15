@@ -7,6 +7,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import About from './components/about/about';
 import Resume from './components/resume/resume';
+import ResumeTwo from './components/resume copy/resume';
 import FOG from 'vanta/dist/vanta.fog.min';
 
 function App() {
@@ -24,9 +25,13 @@ function App() {
 			path: '/about',
 			element: <About />,
 		},
+		// {
+		// 	path: '/resume',
+		// 	element: <Resume />,
+		// },
 		{
 			path: '/resume',
-			element: <Resume />,
+			element: <ResumeTwo />,
 		},
 	]);
 

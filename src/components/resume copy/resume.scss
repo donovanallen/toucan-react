@@ -1,0 +1,123 @@
+@import 'node_modules/nord/src/sass/nord.scss';
+
+.resume-container {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	padding: 2% 5%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: rgba($color: #fefefe, $alpha: 0.8);
+	color: black;
+	border-radius: 0.5rem;
+	margin: 0 15%;
+
+	header {
+		margin-bottom: 0;
+	}
+
+	.resume-content {
+		display: flex;
+		flex: 1;
+		justify-content: space-between;
+		gap: 3rem;
+		.resume-content-section {
+			padding: 1.5rem 0;
+		}
+
+		&-left {
+			flex: 1;
+			min-width: 60%;
+
+			.resume-content-section:not(.resume-content-section:last-of-type) {
+				border-bottom: 1px solid gray;
+			}
+		}
+		&-right {
+			ul:first-of-type {
+				margin-bottom: 2rem;
+			}
+
+			.resume-content-entry-sub-heading {
+				font-weight: 400;
+				margin: 0.5rem 0;
+				letter-spacing: 0.2rem;
+			}
+
+			.resume-content-sub-entry {
+				margin-top: 1rem;
+			}
+		}
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 600;
+		letter-spacing: 0.1rem;
+		color: $nord13;
+		margin-bottom: 0;
+	}
+	h2 {
+		font-size: 1.5rem;
+		font-weight: 400;
+		letter-spacing: 0.05rem;
+		color: gray;
+		margin-top: 0.5rem;
+	}
+	h3 {
+		letter-spacing: 0.05rem;
+		font-weight: 600;
+		margin: 0.5rem 0;
+	}
+	h4 {
+		font-size: 0.75rem;
+		letter-spacing: 0.3rem;
+		font-weight: 800;
+		color: gray;
+		margin: 0;
+	}
+	h5 {
+		font-size: 0.7rem;
+		font-weight: 400;
+		letter-spacing: 0.01rem;
+		margin: 0.5rem 0;
+	}
+	p {
+		font-size: 0.7rem;
+		margin: 0;
+	}
+
+	.resume-content-entry > h5:first-of-type {
+		color: gray;
+		font-size: 0.9rem;
+		font-weight: 600;
+		letter-spacing: 0.04rem;
+	}
+
+	.resume-content-entry {
+		margin: 1.2rem 0;
+
+		&-long {
+			display: flex;
+			gap: 0.4rem;
+			flex-wrap: wrap;
+			span {
+				font-weight: 600;
+			}
+		}
+	}
+
+	ul {
+		padding: 0;
+		li {
+			list-style: none;
+			font-size: 0.75rem;
+			margin: 0.3rem 0;
+			font-weight: 400;
+
+			span {
+				font-size: 0.6rem;
+				font-weight: 500;
+			}
+		}
+	}
+}
