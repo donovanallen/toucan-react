@@ -41,4 +41,14 @@ p {
 	font-size: 1.2rem;
 	letter-spacing: 0.1rem;
 	line-height: 2.5rem;
+
+	@media only screen and (min-width: 1200px) {
+		font-size: 1.6rem;
+		line-height: 3.2rem;
+	}
+
+	@media only screen and (max-width: 600px) {
+		font-size: 1rem;
+		line-height: 2rem;
+	}
 }

@@ -18,19 +18,24 @@
 }
 
 .about-content {
-	padding: 0 10%;
+	padding: 0 2%;
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	@media only screen and (min-width: 1200px) {
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-around;
-		padding: 0 5%;
+	flex-direction: row;
+	align-items: center;
+	@media only screen and (min-width: 900px) {
+		padding: 0 10%;
 		&-heading {
 			min-width: 55%;
 		}
 	}
+	// @media only screen and (max-width: 1200px) {
+	// 	padding: 0 2%;
+	// }
+	// @media only screen and (max-width: 600px) {
+	// 	padding: 0 1%;
+	// }
 
 	&-heading {
 		color: $scilentGray;
@@ -43,7 +48,6 @@
 			// line-height: 6rem;
 			// letter-spacing: 0.2rem;
 			// font-weight: 800;
-
 			max-height: 100%;
 
 			@media only screen and (max-width: 1200px) {
@@ -58,21 +62,15 @@
 
 	&-text {
 		text-align: justify;
-		// background-color: rgba($color: #fefefe, $alpha: 0.3);
-		border-radius: 8px;
 		overflow-y: auto;
-		// height: 100%;
-		padding: 0 6rem;
-		// max-height: 70%;
 
-		@media only screen and (max-width: 1200px) {
-			padding: 5%;
-			box-sizing: border-box;
-			max-height: 80%;
+		padding: 1rem 5rem;
+
+		@media only screen and (max-width: 375px) {
+			padding: 1rem 1rem;
 		}
 		@media only screen and (max-width: 600px) {
-			box-sizing: border-box;
-			max-height: 70%;
+			padding: 5rem 2rem;
 		}
 
 		.flood-right {
