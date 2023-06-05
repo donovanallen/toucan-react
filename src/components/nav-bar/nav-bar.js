@@ -1,10 +1,22 @@
 import './nav-bar.scss';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import dnvn from '../../assets/logo-main.png';
 
 const NavBar = () => {
 	const [hovered, setHovered] = useState(false);
 	const toggleHover = () => setHovered(!hovered);
+	const [mobile, setMobile] = useState(window.innerWidth <= 500);
+
+	const handleWindowSizeChange = () => {
+		setMobile(window.innerWidth <= 500);
+	};
+
+	useEffect(() => {
+		window.addEventListener('resize', handleWindowSizeChange);
+		return () => {
+			window.removeEventListener('resize', handleWindowSizeChange);
+		};
+	}, []);
 
 	return (
 		<nav className="nav-bar">
@@ -17,7 +29,7 @@ const NavBar = () => {
 			</div>
 			<div className="nav-links">
 				<a href="about">about</a>
-				{/* <a href="portfolio">portfolio</a> */}
+				{!mobile && <a href="portfolio">portfolio</a>}
 				<a href="resume">resume</a>
 				<a href="contact">contact</a>
 			</div>

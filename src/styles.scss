@@ -3,23 +3,18 @@ $scilentWhite: #d6d6d6;
 $scilentBlack: #000000;
 
 body {
-	margin: 0;
-
 	font-family: 'TTH-Regular', monospace;
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	color: $scilentBlack;
 
+	margin: 0;
+
 	::selection {
 		background: $scilentWhite;
 	}
 }
-
-// code {
-// 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-// 		monospace;
-// }
 
 a {
 	font-family: 'TTH-Light', monospace;
@@ -27,13 +22,30 @@ a {
 }
 
 h1 {
-	// font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-	// 	'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-	// 	'Helvetica Neue', sans-serif;
 	font-family: 'TTH-Regular', monospace;
 	font-size: 8rem;
 	letter-spacing: 0.8rem;
 	line-height: 12rem;
+}
+
+h2 {
+	font-family: 'TTH-SemiBold', monospace;
+	font-size: 2.6rem;
+	letter-spacing: 0.05rem;
+	line-height: 3rem;
+}
+
+h3 {
+	font-family: 'TTH-ExtraLight', monospace;
+	font-size: 1.4rem;
+	letter-spacing: 0.1rem;
+	line-height: 1.8rem;
+}
+
+li {
+	line-height: 1.6rem;
+	letter-spacing: 0.04rem;
+	font-family: 'TTH-Thin', monospace;
 }
 
 p {
@@ -42,8 +54,13 @@ p {
 	letter-spacing: 0.1rem;
 	line-height: 2.5rem;
 
-	@media only screen and (min-width: 1200px) {
+	@media only screen and (min-width: 1440px) {
 		font-size: 1.6rem;
+		line-height: 3.2rem;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		font-size: 1.3rem;
 		line-height: 3.2rem;
 	}
 
