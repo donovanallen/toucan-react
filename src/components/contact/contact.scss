@@ -1,34 +1,36 @@
 @import 'node_modules/nord/src/sass/nord.scss';
+@import '../../styles.scss';
 
 .contact-content {
 	display: flex;
 	flex: 1;
-	padding: 0 5%;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 }
 
 .contact-heading-text {
+	margin: 0;
+	flex: 1;
+
 	@media only screen and (max-width: 990px) {
 		font-size: 3rem;
 		line-height: 3.5rem;
 	}
-	line-height: 5rem;
-	font-size: 5rem;
-	text-transform: lowercase;
-	margin: 0;
-	flex: 1;
 
-	text-shadow: $nord12 2px 2px;
-	color: #fff;
+	font-family: 'TTH-Thin', sans-serif;
+
+	font-size: 5rem;
+	line-height: 5rem;
+	text-shadow: $scilentWhite 1px 1px;
+	color: $scilentGray;
 	letter-spacing: 0.2rem;
-	font-weight: 500;
 }
 
 .contact-heading-subtext {
-	text-transform: lowercase;
-	font-weight: 500;
-	font-size: large;
+	font-size: 0.8rem;
+	font-family: 'TTH-SemiBold', sans-serif;
+	letter-spacing: 0.08rem;
+
 	margin: 1% 5%;
 	@media only screen and (max-width: 990px) {
 		font-size: 1rem;
@@ -41,7 +43,7 @@
 		margin-left: 5px;
 		transition: all 0.25s ease;
 		&:hover {
-			color: $nord11;
+			color: $scilentBlack;
 		}
 	}
 }

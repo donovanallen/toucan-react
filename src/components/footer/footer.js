@@ -14,9 +14,9 @@ const Footer = () => {
 					onMouseEnter={toggleHover}
 					onMouseLeave={toggleHover}
 				>
-					<Info color="white" strokeWidth={2} size={36} />
+					<Info color="black" strokeWidth={2} size={32} />
 					<span className={hovered ? 'show' : 'hide'}>
-						© 2022 Neil Donovan Allen
+						© 2023 Neil Donovan Allen
 					</span>
 				</div>
 			</a>

@@ -1,4 +1,5 @@
 @import 'node_modules/nord/src/sass/nord.scss';
+@import '../../styles.scss';
 
 @mixin boxShadow($box-shadow) {
 	-webkit-box-shadow: $box-shadow;
@@ -32,16 +33,17 @@
 	}
 
 	&-heading {
-		color: #fff;
+		color: $scilentGray;
 		text-shadow: $nord12 2px 2px;
 		margin: 0;
 		width: 100%;
 
 		h1 {
-			font-size: 9rem;
-			line-height: 6rem;
-			letter-spacing: 0.2rem;
-			font-weight: 800;
+			// font-size: 9rem;
+			// line-height: 6rem;
+			// letter-spacing: 0.2rem;
+			// font-weight: 800;
+
 			max-height: 100%;
 
 			@media only screen and (max-width: 1200px) {
@@ -55,16 +57,12 @@
 	}
 
 	&-text {
-		font-size: 1.2rem;
-		line-height: 2rem;
-		letter-spacing: 0.04rem;
 		text-align: justify;
-		font-weight: 500;
 		background-color: rgba($color: #fefefe, $alpha: 0.3);
 		border-radius: 8px;
 		overflow-y: auto;
 		padding: 0 1%;
-		color: $nord2;
+		max-height: 70%;
 
 		@media only screen and (max-width: 1200px) {
 			padding: 5%;
@@ -81,7 +79,7 @@
 			@include boxShadow(inset 0px 0 0 0 $nord2);
 			overflow: hidden;
 			&:hover {
-				color: $nord13;
+				color: $scilentWhite;
 				font-weight: 600;
 				@include boxShadow(inset 500px 0 0 0 $nord2);
 			}

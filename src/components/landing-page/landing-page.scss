@@ -1,28 +1,25 @@
-@import 'node_modules/nord/src/sass/nord.scss';
+// @import 'node_modules/nord/src/sass/nord.scss';
+@import '../../styles.scss';
 
 .app-content {
-	display: flex;
 	flex: 1;
-	padding: 0 5%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0 2rem;
 
 	@media only screen and (max-width: 600px) {
 		justify-content: center;
-		align-items: flex-end;
+		align-items: center;
 	}
 
 	@media only screen and (max-width: 992px) {
-		align-items: flex-end;
-		justify-content: space-around;
+		justify-content: center;
 	}
 
 	@media only screen and (min-width: 1200px) {
 		flex-wrap: wrap;
 	}
-
-	flex-wrap: wrap;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
 }
 
 .app-header {
@@ -30,88 +27,110 @@
 	flex-direction: column;
 
 	.hero-heading-text {
-		margin: 2% 0;
-		@media only screen and (min-width: 1200px) {
-			font-size: 10rem;
-			text-shadow: gray 1.5px 1.5px;
+		margin: 2rem 0;
+		border-bottom: 1px solid $scilentGray;
+		color: $scilentGray;
+
+		@media only screen and (max-width: 1200px) {
+			font-size: 5rem;
+			line-height: 7rem;
 		}
-		font-size: 4rem;
 
-		font-weight: 600;
-		letter-spacing: 0.3rem;
-		color: #fff;
+		@media only screen and (max-width: 992px) {
+			padding: 2rem 0;
+			font-size: 4rem;
+			line-height: 3rem;
+		}
 
-		border-bottom: 1px solid white;
+		@media only screen and (max-width: 600px) {
+			padding: 2rem 0;
+			font-size: 2rem;
+			line-height: 2rem;
+		}
 
-		&-landmark {
-			font-weight: 200;
-			color: $nord6;
+		@media only screen and (max-width: 375px) {
+			padding: 2rem 0;
+			font-size: 1rem;
+			line-height: 2rem;
+			flex-wrap: wrap;
+		}
+
+		.landmark {
+			color: $scilentWhite;
 		}
 	}
 
 	.hero-marquee-text {
-		@media only screen and (min-width: 1200px) {
-			font-size: 3rem;
-			font-weight: 900;
-		}
-		font-weight: 100;
 		font-size: 1.5rem;
-
-		-webkit-text-fill-color: transparent;
-		-webkit-background-clip: text;
-		-webkit-text-stroke: 2px #fff;
-		color: $nord6;
-		text-transform: lowercase;
+		color: $scilentGray;
 		pointer-events: none;
 		cursor: default;
-		letter-spacing: 0.1rem;
-		text-indent: 10%;
-	}
-}
+		letter-spacing: 0.4rem;
+		font-family: 'TTH-ExtraLight';
 
-.app-content-text {
-	display: flex;
-	flex-direction: column;
+		@media only screen and (min-width: 1200px) {
+			font-size: 2.5rem;
+		}
 
-	@media only screen and (max-width: 600px) {
-		align-self: flex-end;
-	}
+		@media only screen and (max-width: 600px) {
+			font-size: 1.5rem;
+			line-height: 2rem;
+		}
 
-	@media only screen and (min-width: 1200px) {
-		text-align: end;
-	}
-	font-size: 0.85rem;
-	font-weight: 600;
-	letter-spacing: 0.01rem;
-
-	.app-content-text-header {
-		font-size: 1.2rem;
-		font-weight: 400;
-		letter-spacing: 0.07rem;
-		text-shadow: gray 1px 1px;
-		margin-bottom: 0.5rem;
-	}
-
-	a {
-		transition: all 0.25s ease;
-		-webkit-text-fill-color: initial;
-		-webkit-background-clip: initial;
-		-webkit-text-stroke: initial;
-		font-size: 1.2rem;
-		text-shadow: gray 1px 1px;
-		&:hover {
-			text-shadow: none;
-			-webkit-text-fill-color: transparent;
-			-webkit-background-clip: text;
-			-webkit-text-stroke: 1px #fff;
-			color: #fff;
-			font-size: 1.25rem;
+		@media only screen and (max-width: 375px) {
+			font-size: 1rem;
+			flex-wrap: wrap;
 		}
 	}
 }
 
-@media only screen and (max-width: 600px) {
-	html {
-		font-size: small;
-	}
-}
+// .app-content-text {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-self: flex-end;
+// 	justify-content: right;
+// 	// text-align: end;
+// 	font-size: 0.85rem;
+// 	font-weight: 600;
+// 	letter-spacing: 0.01rem;
+
+// 	@media only screen and (max-width: 600px) {
+// 		align-self: flex-end;
+// 	}
+
+// 	@media only screen and (min-width: 1200px) {
+// 		width: 100%;
+// 		text-align: end;
+// 	}
+
+// 	.app-content-text-header {
+// 		font-size: 1.2rem;
+// 		font-weight: 400;
+// 		letter-spacing: 0.07rem;
+// 		text-shadow: gray 1px 1px;
+// 		margin-bottom: 0.5rem;
+// 	}
+
+// 	a {
+// 		transition: all 0.25s ease;
+// 		-webkit-text-fill-color: initial;
+// 		-webkit-background-clip: initial;
+// 		-webkit-text-stroke: initial;
+// 		font-size: 1.2rem;
+// 		text-shadow: gray 1px 1px;
+// 		&:hover {
+// 			text-shadow: none;
+// 			-webkit-text-fill-color: transparent;
+// 			-webkit-background-clip: text;
+// 			-webkit-text-stroke: 1px #fff;
+// 			color: #fff;
+// 			font-size: 1.25rem;
+// 		}
+// 	}
+// }
+
+// @media only screen and (max-width: 600px) {
+// 	html {
+// 		font-size: small;
+// 	}
+// }

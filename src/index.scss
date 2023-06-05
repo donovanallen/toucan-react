@@ -1,50 +1,50 @@
-@import 'node_modules/nord/src/sass/nord.scss';
-
-// $nord0: #2e3440;
-// $nord1: #3b4252;
-// $nord2: #434c5e;
-// $nord3: #4c566a;
-// $nord4: #d8dee9;
-// $nord5: #e5e9f0;
-// $nord6: #eceff4;
-// $nord7: #8fbcbb;
-// $nord8: #88c0d0;
-// $nord9: #81a1c1;
-// $nord10: #5e81ac;
-// $nord11: #bf616a;
-// $nord12: #d08770;
-// $nord13: #ebcb8b;
-// $nord14: #a3be8c;
-// $nord15: #b48ead;
-
-body {
-	margin: 0;
-	font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-		'Helvetica Neue', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background-color: $nord1;
-	color: #fff;
-
-	::selection {
-		background: $nord6;
-	}
-}
-
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
-}
+// @import 'node_modules/nord/src/sass/nord.scss';
 
 @font-face {
 	font-family: 'Montserrat';
 	src: local('Montserrat'),
 		url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format('truetype');
+	/* other formats include: 'woff2', 'truetype, 'opentype', 'embedded-opentype', and 'svg' */
+}
+@font-face {
+	font-family: 'TTH-Black';
+	src: local('TTH-Black'),
+		url(./fonts/TT-Hoves/TT-Hoves-Black.otf) format('opentype');
+	/* other formats include: 'woff2', 'truetype, 'opentype', 'embedded-opentype', and 'svg' */
+}
+@font-face {
+	font-family: 'TTH-Bold';
+	src: local('TTH-Bold'),
+		url(./fonts/TT-Hoves/TT-Hoves-Bold.otf) format('opentype');
+	/* other formats include: 'woff2', 'truetype, 'opentype', 'embedded-opentype', and 'svg' */
+}
+@font-face {
+	font-family: 'TTH-SemiBold';
+	src: local('TTH-SemiBold'),
+		url(./fonts/TT-Hoves/TT-Hoves-SemiBold.otf) format('opentype');
+	/* other formats include: 'woff2', 'truetype, 'opentype', 'embedded-opentype', and 'svg' */
+}
+@font-face {
+	font-family: 'TTH-Regular';
+	src: local('TTH-Regular'),
+		url(./fonts/TT-Hoves/TT-Hoves-Regular.otf) format('opentype');
+	/* other formats include: 'woff2', 'truetype, 'opentype', 'embedded-opentype', and 'svg' */
+}
+@font-face {
+	font-family: 'TTH-Thin';
+	src: local('TTH-Thin'),
+		url(./fonts/TT-Hoves/TT-Hoves-Thin.otf) format('opentype');
+	/* other formats include: 'woff2', 'truetype, 'opentype', 'embedded-opentype', and 'svg' */
+}
+@font-face {
+	font-family: 'TTH-Light';
+	src: local('TTH-Light'),
+		url(./fonts/TT-Hoves/TT-Hoves-Light.otf) format('opentype');
+	/* other formats include: 'woff2', 'truetype, 'opentype', 'embedded-opentype', and 'svg' */
+}
+@font-face {
+	font-family: 'TTH-ExtraLight';
+	src: local('TTH-ExtraLight'),
+		url(./fonts/TT-Hoves/TT-Hoves-ExtraLight.otf) format('opentype');
 	/* other formats include: 'woff2', 'truetype, 'opentype', 'embedded-opentype', and 'svg' */
 }

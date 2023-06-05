@@ -2,20 +2,18 @@ import './landing-page.scss';
 import Typed from 'react-typed';
 
 const marqueeList = [
-	'web engineer',
+	'mobile + web engineer',
 	'creator',
 	'plant dad',
 	'human-centered designer',
 	'athlete',
 	'UI artisan',
 	'musician',
-	'code craftsman',
 	'amateur mixologist',
 	'tinkerer',
 	'favorite uncle x2',
 	'music producer',
 	'third-culture kid',
-	'he/him',
 ];
 
 const LandingPage = () => {
@@ -23,7 +21,8 @@ const LandingPage = () => {
 		<div className="app-content">
 			<header className="app-header">
 				<h1 className="hero-heading-text">
-					donovan<span className="hero-heading-text-landmark">allen</span>
+					d<span className="landmarkk">onovan</span>
+					<span className="landmark">allen</span>
 				</h1>
 				<Typed
 					className="hero-marquee-text"
@@ -36,7 +35,7 @@ const LandingPage = () => {
 					loop
 				></Typed>
 			</header>
-			<div className="app-content-text">
+			{/* <div className="app-content-text">
 				<p className="app-content-text-header">currently:</p>
 				<p>
 					<span>
@@ -58,7 +57,8 @@ const LandingPage = () => {
 						dnvn
 					</a>
 				</p>
-				{/* <p>
+			</div> */}
+			{/* <p>
             "Whatever our role, we are designers of information. Our choices
             alter the presentation and flow of human knowledge. We control how
             people find, understand, and use information in every facet of their
@@ -69,7 +69,6 @@ const LandingPage = () => {
             - Lisa Marie Marquis, "Everyday Information Architecture" (2019)
           </p>
           <ArrowDown className="content-arrow-down" size={36} strokeWidth={1} /> */}
-			</div>
 		</div>
 	);
 };

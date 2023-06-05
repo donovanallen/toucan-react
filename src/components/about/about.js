@@ -39,9 +39,9 @@ const About = () => {
 
 	return (
 		<div className="about-content">
-			<div className="about-content-heading">
+			{/* <div className="about-content-heading">
 				<h1 className="baffle">hey!</h1>
-			</div>
+			</div> */}
 			<div className="about-content-text">
 				<p>
 					I'm a third-culture kid born in{' '}
@@ -77,7 +77,7 @@ const About = () => {
 						target="_blank"
 						href="https://github.com/donovanallen/toucan-react#readme"
 					>
-						here
+						<span>here</span>
 					</a>
 					.
 				</p>

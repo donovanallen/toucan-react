@@ -14,14 +14,10 @@ const NavBar = () => {
 				onMouseLeave={toggleHover}
 			>
 				<a href="/">da</a>
-				{hovered && (
-					<a href="https://dnvn.haus" className={hovered ? 'show' : 'hide'}>
-						<img src={dnvn} alt="dnvn-logo" />
-					</a>
-				)}
 			</div>
 			<div className="nav-links">
 				<a href="about">about</a>
+				{/* <a href="portfolio">portfolio</a> */}
 				<a href="resume">resume</a>
 				<a href="contact">contact</a>
 			</div>

@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import About from './components/about/about';
 import Resume from './components/resume/resume';
 import ResumeTwo from './components/resume copy/resume';
+import Portfolio from './components/portfolio/portfolio';
 import FOG from 'vanta/dist/vanta.fog.min';
 
 function App() {
@@ -33,6 +34,10 @@ function App() {
 			path: '/resume',
 			element: <ResumeTwo />,
 		},
+		{
+			path: '/portfolio',
+			element: <Portfolio />,
+		},
 	]);
 
 	// VANTA.JS
@@ -46,21 +51,13 @@ function App() {
 					mouseControls: true,
 					touchControls: true,
 					gyroControls: true,
-					// FIERY
-					highlightColor: 0xffbb00,
-					midtoneColor: 0xff2000,
-
-					// NORD
-					// baseColor: 0x81a1c1,
-					// lowlightColor: 0xa3be8c,
-					// midtoneColor: 0xebcb8b,
-					// highlightColor: 0xd08770,
-					// blurFactor: 0.33,
+					baseColor: 0xffffff,
+					midtoneColor: 0xd6d6d6,
+					lowlightColor: 0xd6d6d6,
+					highlightColor: 0x383838,
 					blurFactor: 0.5,
-					speed: 0.5,
-					zoom: 0.7,
-					// minWidth: 200.0,
-					// minHeight: 50.0,
+					speed: 0.2,
+					zoom: 0.2,
 				})
 			);
 		}

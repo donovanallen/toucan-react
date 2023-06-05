@@ -1,4 +1,5 @@
 @import 'node_modules/nord/src/sass/nord.scss';
+@import '../../styles.scss';
 
 @keyframes hide {
 	from {
@@ -28,52 +29,52 @@
 	position: sticky;
 	display: flex;
 	flex-direction: row;
-	padding: 24px 48px;
+	padding: 1.5rem 2rem;
 	align-items: center;
 	justify-content: space-between;
 	max-height: 6vmin;
 
 	@media only screen and (max-width: 600px) {
 		flex-direction: column;
-	}
-
-	.app-logo {
-		height: 5vmin;
-		pointer-events: none;
+		gap: 1rem;
 	}
 
 	.logo {
 		display: flex;
 		flex-direction: column;
+		pointer-events: all;
 
 		a {
+			font-family: 'Montserrat', serif;
+			text-transform: lowercase;
 			font-weight: 900;
-			font-size: 3rem;
+			font-size: 4rem;
+			color: $scilentGray;
+
 			-webkit-text-fill-color: transparent;
 			-webkit-background-clip: text;
-			-webkit-text-stroke: 1px $nord6;
+			-webkit-text-stroke: 1px $scilentGray;
 			transition: all 0.25s ease;
+
 			&:hover {
 				-webkit-text-fill-color: initial;
 				-webkit-background-clip: initial;
 				-webkit-text-stroke: initial;
-				color: #fff;
-				// color: $nord12;
+				color: $scilentBlack;
 			}
 
-			img {
-				max-height: 35px;
-				margin: 1rem 0;
-				filter: none;
+			// img {
+			// 	max-height: 35px;
+			// 	margin: 1rem 0;
+			// 	filter: none;
 
-				&:hover {
-					filter: invert(97%) sepia(3%) saturate(151%) hue-rotate(226deg)
-						brightness(114%) contrast(100%);
-				}
-			}
+			// 	&:hover {
+			// 		filter: invert(97%) sepia(3%) saturate(151%) hue-rotate(226deg)
+			// 			brightness(114%) contrast(100%);
+			// 	}
+			// }
 		}
 
-		overflow: hidden;
 		a.show {
 			animation: show 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
 			overflow: hidden;
@@ -90,17 +91,24 @@
 	.nav-links {
 		display: flex;
 		gap: 2rem;
-		font-weight: 800;
-		letter-spacing: 0.1rem;
-		font-size: large;
+
 		a {
 			transition: all 0.25s ease;
-			color: #fff;
-			&:hover {
-				font-size: larger;
+			font-size: 16px;
+			letter-spacing: 0.1rem;
+			color: $scilentGray;
+			pointer-events: all;
+
+			&:hover,
+			&:focus {
+				font-family: 'TTH-Bold', monospace;
+				font-size: 18px;
+				letter-spacing: 0.2rem;
+				color: $scilentBlack;
+
 				-webkit-text-fill-color: transparent;
 				-webkit-background-clip: text;
-				-webkit-text-stroke: 1px #fff;
+				-webkit-text-stroke: 1px $scilentBlack;
 			}
 		}
 	}

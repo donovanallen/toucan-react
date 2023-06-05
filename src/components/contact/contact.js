@@ -60,7 +60,7 @@ const Contact = () => {
 							/>
 						</a>
 					</div>
-
+					{/* 
 					<div className="icon-grid-link">
 						<a href="https://soundcloud.com/itsdnvn" target="_blank">
 							<img
@@ -69,7 +69,7 @@ const Contact = () => {
 								alt="soundcloud icon"
 							/>
 						</a>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>
