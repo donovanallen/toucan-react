@@ -24,10 +24,11 @@
 	flex: 1;
 	flex-direction: row;
 	align-items: center;
+	justify-content: center;
 	overflow-y: auto;
 
 	@media only screen and (min-width: 900px) {
-		padding: 0 10%;
+		padding: 0 4%;
 		&-heading {
 			min-width: 55%;
 		}
@@ -64,7 +65,7 @@
 
 	&-text {
 		text-align: justify;
-		overflow-y: auto;
+		// height: 100%;
 
 		padding: 1rem 5rem;
 

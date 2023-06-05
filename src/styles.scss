@@ -50,18 +50,18 @@ li {
 
 p {
 	font-family: 'TTH-Regular', monospace;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	letter-spacing: 0.1rem;
-	line-height: 2.5rem;
+	line-height: 2.2rem;
 
 	@media only screen and (min-width: 1440px) {
-		font-size: 1.6rem;
+		font-size: 1.4rem;
 		line-height: 3.2rem;
 	}
 
 	@media only screen and (min-width: 1200px) {
-		font-size: 1.3rem;
-		line-height: 3.2rem;
+		font-size: 1.2rem;
+		line-height: 2.2rem;
 	}
 
 	@media only screen and (max-width: 600px) {

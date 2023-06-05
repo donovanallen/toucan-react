@@ -45,27 +45,31 @@ const About = () => {
 			<div className="about-content-text">
 				<p>
 					As a third-culture kid born in the{' '}
-					<span className="flood-right">southern US</span>, raised in{' '}
+					<span className="flood-right">Southern US</span>, raised in{' '}
 					<span className="flood-right">South Africa</span>, educated in{' '}
 					<span className="flood-right">Washington, D.C.</span>, and currently
-					based in <span className="flood-right">Houston, Texas</span>, I've
-					always valued human connection, growth, experiences, and expression.
-					My background has been important for me in exploring and expanding the
-					intersection of technology, art, communication, and design.
+					based in <span className="flood-right">Houston, Texas</span>, I have
+					developed a deep appreciation for human connection, personal growth,
+					meaningful experiences, and creative expression. My diverse background
+					has played a significant role in my exploration and expansion of the
+					intersection between technology, art, communication, and design.
 				</p>
 				<p>
-					I’m a technologist at heart, but specifically interested in web
-					design, human user experiences and pushing digital and creative
-					boundaries to bring the deepest of the web’s capabilities to everyone,
-					for now and the future.
+					I am a passionate technologist with a strong focus on web design and
+					creating exceptional user experiences. I am driven by the desire to
+					push the boundaries of digital innovation and ensure that the deepest
+					capabilities of the web are accessible to everyone, both now and in
+					the future.
 				</p>
 				<p>
-					When I’m not in front of my monitor, I like to play and watch{' '}
-					<span className="flood-right">soccer</span> and{' '}
-					<span className="flood-right">Formula 1</span>, make{' '}
-					<span className="flood-right">music</span>,{' '}
-					<span className="flood-right">explore</span> new places, and{' '}
-					<span className="flood-right">drive</span> fast cars.
+					In my free time, I love watching and playing{' '}
+					<span className="flood-right">soccer</span> and immersing myself in
+					the world of <span className="flood-right">Formula 1</span>. I also
+					have a passion for creating music and experiementing with the latest{' '}
+					<span className="flood-right">music tech</span>, exploring new corners
+					of <span className="flood-right">the world</span>, and the
+					exhilaration of <span className="flood-right">driving</span> fast
+					cars.
 				</p>
 			</div>
 		</div>
