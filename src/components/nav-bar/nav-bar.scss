@@ -31,7 +31,7 @@
 	flex-direction: row;
 	padding: 1.5rem 2rem;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	max-height: 6vmin;
 
 	@media only screen and (max-width: 600px) {
@@ -39,6 +39,24 @@
 		gap: 1rem;
 	}
 
+	a {
+		transition: all 0.25s ease;
+		letter-spacing: 0.1rem;
+		color: $scilentGray;
+		pointer-events: all;
+
+		&:hover,
+		&:focus {
+			font-family: 'TTH-Bold', monospace;
+			font-size: 1.2rem;
+			letter-spacing: 0.2rem;
+			color: $scilentBlack;
+
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+			-webkit-text-stroke: 1px $scilentBlack;
+		}
+	}
 	.logo {
 		display: flex;
 		flex-direction: column;
@@ -74,31 +92,6 @@
 		a.hide {
 			animation: hide 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
 			overflow: hidden;
-		}
-	}
-
-	.nav-links {
-		display: flex;
-		gap: 2rem;
-
-		a {
-			transition: all 0.25s ease;
-			font-size: 16px;
-			letter-spacing: 0.1rem;
-			color: $scilentGray;
-			pointer-events: all;
-
-			&:hover,
-			&:focus {
-				font-family: 'TTH-Bold', monospace;
-				font-size: 18px;
-				letter-spacing: 0.2rem;
-				color: $scilentBlack;
-
-				-webkit-text-fill-color: transparent;
-				-webkit-background-clip: text;
-				-webkit-text-stroke: 1px $scilentBlack;
-			}
 		}
 	}
 }

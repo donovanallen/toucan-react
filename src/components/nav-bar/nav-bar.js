@@ -20,6 +20,8 @@ const NavBar = () => {
 
 	return (
 		<nav className="nav-bar">
+			<a href="about">about</a>
+			{!mobile && <a href="portfolio">portfolio</a>}
 			<div
 				className="logo"
 				onMouseEnter={toggleHover}
@@ -27,12 +29,8 @@ const NavBar = () => {
 			>
 				<a href="/">da</a>
 			</div>
-			<div className="nav-links">
-				<a href="about">about</a>
-				{!mobile && <a href="portfolio">portfolio</a>}
-				<a href="resume">resume</a>
-				<a href="contact">contact</a>
-			</div>
+			<a href="resume">resume</a>
+			<a href="contact">contact</a>
 		</nav>
 	);
 };

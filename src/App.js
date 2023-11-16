@@ -9,6 +9,7 @@ import About from './components/about/about';
 import Resume from './components/resume/resume';
 import ResumeTwo from './components/resume copy/resume';
 import Portfolio from './components/portfolio/portfolio';
+import AnimatedCursor from 'react-animated-cursor';
 import FOG from 'vanta/dist/vanta.fog.min';
 
 function App() {
@@ -68,6 +69,17 @@ function App() {
 
 	return (
 		<div className="app" ref={bg}>
+			<AnimatedCursor
+				color="56, 56, 56"
+				innerSize={16}
+				outerSize={16}
+				outerAlpha={0.2}
+				innerScale={0.7}
+				outerScale={5}
+				outerStyle={{
+					mixBlendMode: 'exclusion',
+				}}
+			/>
 			<NavBar />
 			<RouterProvider router={router} />
 			<Footer />

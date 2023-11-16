@@ -4,7 +4,7 @@
 .app-content {
 	flex: 1;
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: flex-start;
 	padding: 0 2rem;
 
@@ -24,39 +24,54 @@
 
 .app-header {
 	display: flex;
-	flex-direction: column;
-
+	flex-direction: column-reverse;
 	.hero-heading-text {
-		margin: 2rem 0;
-		border-bottom: 1px solid $scilentGray;
+		display: flex;
+		flex-direction: row;
 		color: $scilentGray;
 
-		@media only screen and (max-width: 1200px) {
-			font-size: 5rem;
-			line-height: 7rem;
+		.hero-heading-vert {
+			writing-mode: vertical-lr;
+			text-orientation: sideways;
+
+			font-size: 2.5rem;
+			font-family: 'TTH-Thin';
+
+			letter-spacing: 1.2rem;
+			align-self: center;
+
+			// border: 1px solid red;
 		}
 
-		@media only screen and (max-width: 992px) {
-			padding: 2rem 0;
-			font-size: 4rem;
-			line-height: 3rem;
-		}
+		.hero-heading-h1 {
+			margin: 0;
+			@media only screen and (max-width: 1200px) {
+				font-size: 5rem;
+				line-height: 7rem;
+			}
 
-		@media only screen and (max-width: 600px) {
-			padding: 2rem 0;
-			font-size: 2rem;
-			line-height: 2rem;
-		}
+			@media only screen and (max-width: 992px) {
+				padding: 2rem 0;
+				font-size: 4rem;
+				line-height: 3rem;
+			}
 
-		@media only screen and (max-width: 375px) {
-			padding: 2rem 0;
-			font-size: 1rem;
-			line-height: 2rem;
-			flex-wrap: wrap;
-		}
+			@media only screen and (max-width: 600px) {
+				padding: 2rem 0;
+				font-size: 2rem;
+				line-height: 2rem;
+			}
 
+			@media only screen and (max-width: 375px) {
+				padding: 2rem 0;
+				font-size: 1rem;
+				line-height: 2rem;
+				flex-wrap: wrap;
+			}
+		}
 		.landmark {
 			color: $scilentWhite;
+			font-family: 'TTH-ExtraLight';
 		}
 	}
 
@@ -67,6 +82,7 @@
 		cursor: default;
 		letter-spacing: 0.4rem;
 		font-family: 'TTH-ExtraLight';
+		margin: 0 1rem;
 
 		@media only screen and (min-width: 1200px) {
 			font-size: 2.5rem;

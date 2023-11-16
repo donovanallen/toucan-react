@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './landing-page.scss';
 import Typed from 'react-typed';
 
@@ -17,13 +18,23 @@ const marqueeList = [
 ];
 
 const LandingPage = () => {
+	const [hovered, setHovered] = useState(false);
+	const toggleHover = () => setHovered(!hovered);
+
 	return (
 		<div className="app-content">
-			<header className="app-header">
-				<h1 className="hero-heading-text">
-					d<span className="landmarkk">onovan</span>
-					<span className="landmark">allen</span>
-				</h1>
+			<header
+				className="app-header"
+				// onMouseEnter={toggleHover}
+				// onMouseLeave={toggleHover}
+			>
+				<div className="hero-heading-text">
+					{/* <span className="hero-heading-vert">neil</span> */}
+					<h1 className="hero-heading-h1">
+						donovan
+						<span className="landmark">allen</span>
+					</h1>
+				</div>
 				<Typed
 					className="hero-marquee-text"
 					strings={marqueeList}
@@ -33,6 +44,7 @@ const LandingPage = () => {
 					cursorChar={'_'}
 					shuffle
 					loop
+					// stopped={hovered === true}
 				></Typed>
 			</header>
 			{/* <div className="app-content-text">
