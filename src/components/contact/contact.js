@@ -14,7 +14,7 @@ const Contact = () => {
 	return (
 		<div className="contact-content">
 			<div>
-				<h1 className="contact-heading-text">let's chat!</h1>
+				<h1 className="contact-heading-text">let's connect!</h1>
 				{/* <p className="contact-heading-subtext">
 					Found an issue or bug while visiting?
 					<a
