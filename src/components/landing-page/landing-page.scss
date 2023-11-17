@@ -1,6 +1,15 @@
 // @import 'node_modules/nord/src/sass/nord.scss';
 @import '../../styles.scss';
 
+@keyframes marquee {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+
 .app-content {
 	flex: 1;
 	display: flex;
@@ -25,10 +34,19 @@
 .app-header {
 	display: flex;
 	flex-direction: column-reverse;
+
+	// width: 100vw;
+	// max-width: 100%;
+	// overflow-x: hidden;
 	.hero-heading-text {
 		display: flex;
 		flex-direction: row;
 		color: $scilentGray;
+
+		// position: absolute;
+		// white-space: nowrap;
+		// will-change: transform;
+		// animation: marquee 10s linear infinite;
 
 		.hero-heading-vert {
 			writing-mode: vertical-lr;
@@ -39,12 +57,11 @@
 
 			letter-spacing: 1.2rem;
 			align-self: center;
-
-			// border: 1px solid red;
 		}
 
 		.hero-heading-h1 {
 			margin: 0;
+			display: flex;
 			@media only screen and (max-width: 1200px) {
 				font-size: 5rem;
 				line-height: 7rem;
@@ -68,10 +85,10 @@
 				line-height: 2rem;
 				flex-wrap: wrap;
 			}
-		}
-		.landmark {
-			color: $scilentWhite;
-			font-family: 'TTH-ExtraLight';
+			.landmark {
+				color: $scilentWhite;
+				font-family: 'TTH-ExtraLight';
+			}
 		}
 	}
 
@@ -99,54 +116,3 @@
 		}
 	}
 }
-
-// .app-content-text {
-// 	display: flex;
-// 	flex-direction: column;
-// 	align-self: flex-end;
-// 	justify-content: right;
-// 	// text-align: end;
-// 	font-size: 0.85rem;
-// 	font-weight: 600;
-// 	letter-spacing: 0.01rem;
-
-// 	@media only screen and (max-width: 600px) {
-// 		align-self: flex-end;
-// 	}
-
-// 	@media only screen and (min-width: 1200px) {
-// 		width: 100%;
-// 		text-align: end;
-// 	}
-
-// 	.app-content-text-header {
-// 		font-size: 1.2rem;
-// 		font-weight: 400;
-// 		letter-spacing: 0.07rem;
-// 		text-shadow: gray 1px 1px;
-// 		margin-bottom: 0.5rem;
-// 	}
-
-// 	a {
-// 		transition: all 0.25s ease;
-// 		-webkit-text-fill-color: initial;
-// 		-webkit-background-clip: initial;
-// 		-webkit-text-stroke: initial;
-// 		font-size: 1.2rem;
-// 		text-shadow: gray 1px 1px;
-// 		&:hover {
-// 			text-shadow: none;
-// 			-webkit-text-fill-color: transparent;
-// 			-webkit-background-clip: text;
-// 			-webkit-text-stroke: 1px #fff;
-// 			color: #fff;
-// 			font-size: 1.25rem;
-// 		}
-// 	}
-// }
-
-// @media only screen and (max-width: 600px) {
-// 	html {
-// 		font-size: small;
-// 	}
-// }

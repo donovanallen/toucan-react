@@ -11,18 +11,8 @@ import scilentImg6 from './images/scilent-digital/Screenshot 2023-05-24 at 3.25.
 import sdImg1 from './images/sd01/Login-2.png';
 import sdImg2 from './images/sd01/Player.png';
 import sdImg3 from './images/sd01/Review Engine-2.png';
-import sdImg4 from './images/sd01/IMG_1688.png';
-import sdImg5 from './images/sd01/IMG_1640.png';
-import sdImg6 from './images/sd01/IMG_1647.png';
-import sdImg7 from './images/sd01/IMG_1656.png';
-import sdImg8 from './images/sd01/IMG_1692.png';
-import sdImg9 from './images/sd01/Simulator Screen Recording - iPhone 12 Pro - 2023-04-14 at 17.27.40.mp4';
-import sdImg10 from './images/sd01/RPReplay_Final1684886971.MP4';
 
 import performImg1 from './images/perform/sample-form-app.png';
-import performImg2 from './images/perform/Asset 9@72x-100.jpg';
-import performImg3 from './images/perform/Asset 2.png';
-import performImg4 from './images/perform/Asset 7@72x-100.jpg';
 
 import dnvnImg1 from './images/dnvnhaus/DNVN Minimal.png';
 import dnvnImg2 from './images/dnvnhaus/DNVN.png';
@@ -44,44 +34,11 @@ const carouselItems1 = [
 	scilentImg6,
 ];
 
-const carouselItems2 = [
-	sdImg1,
-	sdImg2,
-	sdImg3,
-	// sdImg4,
-	// sdImg5,
-	// sdImg6,
-	// sdImg7,
-	// sdImg8,
-	// sdImg9,
-	// sdImg10,
-];
+const carouselItems2 = [sdImg1, sdImg2, sdImg3];
 
-const carouselItems3 = [
-	performImg1,
-	performImg2,
-	performImg3,
-	performImg4,
-	// sdImg5,
-	// sdImg6,
-	// sdImg7,
-	// sdImg8,
-	// sdImg9,
-	// sdImg10,
-];
+const carouselItems3 = [performImg1];
 
-const carouselItems4 = [
-	dnvnImg1,
-	dnvnImg2,
-	dnvnImg3,
-	dnvnImg4,
-	// sdImg5,
-	// sdImg6,
-	// sdImg7,
-	// sdImg8,
-	// sdImg9,
-	// sdImg10,
-];
+const carouselItems4 = [dnvnImg1, dnvnImg2, dnvnImg3, dnvnImg4];
 
 const Portfolio = () => {
 	return (

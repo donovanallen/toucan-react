@@ -14,8 +14,8 @@ const Contact = () => {
 	return (
 		<div className="contact-content">
 			<div>
-				<h1 className="contact-heading-text">let's collaborate</h1>
-				<p className="contact-heading-subtext">
+				<h1 className="contact-heading-text">let's chat!</h1>
+				{/* <p className="contact-heading-subtext">
 					Found an issue or bug while visiting?
 					<a
 						href="https://github.com/donovanallen/toucan-react/issues/new?assignees=&labels=&template=bug_report.md&title=%5BBUG%2FIMPROVEMENT%5D%5Bdonovanallen.dev%5D"
@@ -24,7 +24,7 @@ const Contact = () => {
 					>
 						Let me know!
 					</a>
-				</p>
+				</p> */}
 			</div>
 			<div className="contact-links">
 				<div className="icon-grid">
@@ -51,7 +51,7 @@ const Contact = () => {
 							/>
 						</a>
 					</div>
-					<div className="icon-grid-link">
+					{/* <div className="icon-grid-link">
 						<a href="https://dribbble.com/dnvn" target="_blank">
 							<img
 								className="icon float-shadow"
@@ -59,7 +59,7 @@ const Contact = () => {
 								alt="dribbble icon"
 							/>
 						</a>
-					</div>
+					</div> */}
 					{/* 
 					<div className="icon-grid-link">
 						<a href="https://soundcloud.com/itsdnvn" target="_blank">

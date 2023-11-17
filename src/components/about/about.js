@@ -61,7 +61,7 @@ const About = () => {
 					capabilities of the web are accessible to everyone, both now and in
 					the future.
 				</p>
-				<p>
+				{/* <p>
 					In my free time, I love watching and playing{' '}
 					<span className="flood-right">soccer</span> and immersing myself in
 					the world of <span className="flood-right">Formula 1</span>. I also
@@ -70,7 +70,7 @@ const About = () => {
 					of <span className="flood-right">the world</span>, and the
 					exhilaration of <span className="flood-right">driving</span> fast
 					cars.
-				</p>
+				</p> */}
 			</div>
 		</div>
 	);

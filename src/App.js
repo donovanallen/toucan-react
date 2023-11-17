@@ -73,16 +73,15 @@ function App() {
 				color="56, 56, 56"
 				innerSize={16}
 				outerSize={16}
-				outerAlpha={0.2}
 				innerScale={0.7}
 				outerScale={5}
-				outerStyle={{
-					mixBlendMode: 'exclusion',
-				}}
+				outerAlpha={0.1}
 			/>
+
 			<NavBar />
+
 			<RouterProvider router={router} />
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 }
