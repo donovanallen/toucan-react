@@ -15,7 +15,6 @@
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-start;
-	padding: 0 2rem;
 
 	@media only screen and (max-width: 600px) {
 		justify-content: center;
@@ -34,67 +33,22 @@
 .app-header {
 	display: flex;
 	flex-direction: column-reverse;
+	width: 100vw;
 
-	// width: 100vw;
-	// max-width: 100%;
-	// overflow-x: hidden;
-	.hero-heading-text {
-		display: flex;
-		flex-direction: row;
-		color: $scilentGray;
-
-		// position: absolute;
-		// white-space: nowrap;
-		// will-change: transform;
-		// animation: marquee 10s linear infinite;
-
-		.hero-heading-vert {
-			writing-mode: vertical-lr;
-			text-orientation: sideways;
-
-			font-size: 2.5rem;
-			font-family: 'TTH-Thin';
-
-			letter-spacing: 1.2rem;
-			align-self: center;
-		}
-
-		.hero-heading-h1 {
-			margin: 0;
-			display: flex;
-			@media only screen and (max-width: 1200px) {
-				font-size: 5rem;
-				line-height: 7rem;
-			}
-
-			@media only screen and (max-width: 992px) {
-				padding: 2rem 0;
-				font-size: 4rem;
-				line-height: 3rem;
-			}
-
-			@media only screen and (max-width: 600px) {
-				padding: 2rem 0;
-				font-size: 2rem;
-				line-height: 2rem;
-			}
-
-			@media only screen and (max-width: 375px) {
-				padding: 2rem 0;
-				font-size: 1rem;
-				line-height: 2rem;
-				flex-wrap: wrap;
-			}
+	.svg-container {
+		width: 100%;
+		.svg-text {
+			fill: $scilentGray;
 			.landmark {
-				color: $scilentWhite;
 				font-family: 'TTH-ExtraLight';
+				fill: $scilentWhite;
 			}
 		}
 	}
 
-	.hero-marquee-text {
+	.hero-typed-text {
 		font-size: 1.5rem;
-		color: $scilentGray;
+		color: $scilentBlack;
 		pointer-events: none;
 		cursor: default;
 		letter-spacing: 0.4rem;
