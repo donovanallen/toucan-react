@@ -2,93 +2,70 @@
 @import '../../styles.scss';
 
 .container {
-	flex: 1;
 	overflow-y: auto;
-	background:
-		/* Shadow covers */ linear-gradient(
-			transparent 30%,
-			rgba(255, 255, 255, 0)
-		),
-		linear-gradient(rgba(255, 255, 255, 0), transparent 70%) 0 100%,
-		/* Shadows */
-			radial-gradient(
-				50% 0,
-				farthest-side,
-				rgba(0, 0, 0, 0.2),
-				rgba(0, 0, 0, 0)
-			),
-		radial-gradient(
-				50% 100%,
-				farthest-side,
-				rgba(0, 0, 0, 0.2),
-				rgba(0, 0, 0, 0)
-			)
-			0 100%;
-	background:
-		/* Shadow covers */ linear-gradient(
-			transparent 30%,
-			rgba(255, 255, 255, 0)
-		),
-		linear-gradient(rgba(255, 255, 255, 0), transparent 70%) 0 100%,
-		/* Shadows */
-			radial-gradient(
-				farthest-side at 50% 0,
-				rgba(0, 0, 0, 0.2),
-				rgba(0, 0, 0, 0)
-			),
-		radial-gradient(
-				farthest-side at 50% 100%,
-				rgba(0, 0, 0, 0.2),
-				rgba(0, 0, 0, 0)
-			)
-			0 100%;
-	background-repeat: no-repeat;
-	background-color: transparent;
-	background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem 0;
 
-	/* Opera doesn’t support this in the shorthand */
-	background-attachment: local, local, scroll, scroll;
-	.portfolio-item {
-		display: flex;
-		// justify-content: space-evenly;
-		align-items: center;
-		flex: 1;
-		border-bottom: 1px solid white;
-		padding: 4%;
-		margin: 0 4%;
-		// border: 1px solid red;
-
-		&-content {
-			width: 60vw;
-
-			.carousel {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-			}
-			&-img {
-				vertical-align: middle;
-			}
-		}
-		&-text {
-			max-width: 25vw;
-			text-align: left;
-
-			ul {
-				padding: 0;
-				line-height: 2;
-				li {
-					list-style: none;
-				}
-			}
-		}
+	/* Hide scrollbar for IE, Edge and Firefox */
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+	/* Hide scrollbar for Chrome, Safari and Opera */
+	&::-webkit-scrollbar {
+		display: none;
 	}
-	.left {
-		flex-direction: row-reverse;
-		.portfolio-item {
-			&-text {
+
+	hr {
+		width: 90%;
+		margin: 2rem auto;
+	}
+
+	.portfolio-item {
+		margin: 0 auto;
+		width: 60%;
+
+		&-img {
+			width: 100%;
+			border-radius: 12px;
+			opacity: 0.7;
+			scale: 1;
+			filter: grayscale(1);
+			margin: 1.2rem 0;
+			transition: all 0.2s ease-in-out;
+
+			&:hover {
+				opacity: 1;
+				scale: 1.05;
+				box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+					rgba(0, 0, 0, 0.22) 0px 15px 12px;
+				filter: grayscale(0);
+				border: 0.75px solid $scilentBlack;
+			}
+		}
+
+		&-text {
+			margin: 1.2rem 0;
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			&-title {
+				margin: 0.5rem 0;
+			}
+			.portfolio-item-desc {
+				font-family: 'TTH-Regular', monospace;
+				line-height: 1.6rem;
+				letter-spacing: 0.01rem;
+				font-size: 1rem;
+				max-width: 70%;
+			}
+			.portfolio-item-skills {
+				max-width: 30%;
 				text-align: right;
+				span {
+					letter-spacing: 0.02rem;
+					font-family: 'TTH-Light', monospace; // border: 1px solid red;
+					font-size: 0.8rem;
+				}
 			}
 		}
 	}
