@@ -53,12 +53,12 @@ function App() {
 					touchControls: true,
 					gyroControls: true,
 					baseColor: 0xd6d6d6,
-					midtoneColor: 0x383838,
+					midtoneColor: 0x000,
 					lowlightColor: 0x383838,
-					highlightColor: 0xffffff,
+					highlightColor: 0xd6d6d6,
 					blurFactor: 0.5,
-					speed: 0.2,
-					zoom: 0.2,
+					speed: 0.3,
+					zoom: 0.25,
 				})
 			);
 		}
@@ -70,12 +70,12 @@ function App() {
 	return (
 		<div className="app" ref={bg}>
 			<AnimatedCursor
-				color="56, 56, 56"
-				innerSize={16}
-				outerSize={16}
+				color="249, 211, 180"
+				innerSize={12}
+				outerSize={12}
 				innerScale={0.7}
-				outerScale={5}
-				outerAlpha={0.1}
+				outerScale={2.5}
+				outerAlpha={0.3}
 			/>
 
 			<NavBar />
