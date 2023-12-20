@@ -1,0 +1,34 @@
+@import '../../styles.scss';
+
+.portfolio-page {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	width: 100vw;
+	overflow-y: auto;
+	align-items: center;
+
+	&-heading {
+		align-self: flex-start;
+		padding: 0 4rem;
+	}
+	&-overview {
+		align-self: flex-end;
+		padding: 0 4rem;
+	}
+	&-desc {
+		align-self: flex-start;
+		padding: 0 4rem;
+		max-width: 50%;
+		margin: 4rem 0;
+	}
+	&-hero-img {
+		max-width: 100vw;
+	}
+	&-feature {
+		&-desc {
+		}
+		&-img {
+		}
+	}
+}
