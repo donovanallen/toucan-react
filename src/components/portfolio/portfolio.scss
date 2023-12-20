@@ -7,14 +7,6 @@
 	flex-direction: column;
 	padding: 1rem 0;
 
-	/* Hide scrollbar for IE, Edge and Firefox */
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Firefox */
-	/* Hide scrollbar for Chrome, Safari and Opera */
-	&::-webkit-scrollbar {
-		display: none;
-	}
-
 	hr {
 		width: 90%;
 		margin: 2rem auto;
@@ -22,7 +14,7 @@
 
 	.portfolio-item {
 		margin: 0 auto;
-		width: 60%;
+		width: 70%;
 
 		&-img {
 			width: 100%;
