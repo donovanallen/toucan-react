@@ -3,6 +3,29 @@ $scilentGray: #383838;
 $scilentWhite: #d6d6d6;
 $scilentBlack: #000000;
 
+// FLUID GRID
+/* @link https://utopia.fyi/grid/calculator?c=329,17.333,1.618,1440,31.25,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,xs-l&g=s,l,l,12 */
+
+:root {
+	--grid-max-width: 98.44rem;
+	--grid-gutter: var(
+		--space-s-l,
+		clamp(1.0625rem, 0.3034rem + 3.6918vw, 3.9375rem)
+	);
+	--grid-columns: 12;
+}
+
+.u-container {
+	max-width: var(--grid-max-width);
+	padding-inline: var(--grid-gutter);
+	margin-inline: auto;
+}
+
+.u-grid {
+	display: grid;
+	gap: var(--grid-gutter);
+}
+
 // FLUID SPACING
 /* @link https://utopia.fyi/space/calculator?c=320,17.333,1.618,1440,31.25,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,xs-l&g=s,l,xl,12 */
 :root {
@@ -126,6 +149,15 @@ body {
 	::selection {
 		background: $scilentWhite;
 	}
+	* {
+		/* Hide scrollbar for IE, Edge and Firefox */
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+		/* Hide scrollbar for Chrome, Safari and Opera */
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
 }
 
 // ----------------------------------------------------------------
@@ -177,8 +209,8 @@ h3 {
 }
 
 h4 {
-	font-size: var(--font-size-base);
 	font-family: 'TTH-SemiBold', monospace;
+	font-size: var(--font-size-base);
 }
 
 p {
@@ -191,17 +223,17 @@ p {
 span,
 li,
 small {
+	font-family: 'TTH-Light', monospace;
 	font-size: var(--font-size-xs);
 	letter-spacing: 0.04rem;
 	text-transform: uppercase;
-	font-family: 'TTH-Light', monospace;
 	text-decoration: none;
 }
 
 a {
+	font-family: 'TTH-Light', monospace;
 	font-size: var(--font-size-sm);
 	letter-spacing: 0.2rem;
 	text-transform: uppercase;
-	font-family: 'TTH-Light', monospace;
 	text-decoration: none;
 }

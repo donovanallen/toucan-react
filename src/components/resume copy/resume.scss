@@ -12,18 +12,26 @@
 	color: black;
 	border-radius: 0.5rem;
 
+	.resume-header-title {
+		margin-bottom: var(--space-m);
+		h2 {
+			margin-bottom: var(--space-xs);
+		}
+	}
+
 	.resume-content {
 		display: flex;
 		flex: 1;
 		justify-content: space-between;
 		gap: var(--space-m);
+
 		.resume-content-section {
 			padding: var(--space-s) 0;
 		}
 
 		&-left {
 			flex: 1;
-			min-width: 60%;
+			min-width: 55%;
 
 			.resume-content-section:not(.resume-content-section:last-of-type) {
 				border-bottom: 1px solid gray;

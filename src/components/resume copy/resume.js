@@ -7,12 +7,10 @@ import linkedin from '../../assets/linkedin.svg';
 const ResumeTwo = () => {
 	return (
 		<div className="resume-container">
-			<header>
-				<div className="resume-header-title">
-					<h2>Donovan Allen</h2>
-					<h3>Senior Web Engineer</h3>
-				</div>
-			</header>
+			<div className="resume-header-title">
+				<h2>Donovan Allen</h2>
+				<h3>Senior Web Engineer</h3>
+			</div>
 
 			<div className="resume-content">
 				<div className="resume-content-left">
