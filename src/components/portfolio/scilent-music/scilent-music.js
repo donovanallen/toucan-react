@@ -6,17 +6,15 @@ const ScilentMusic = () => {
 	const nextPage = PortfolioData.items[2];
 
 	return (
-		<>
-			<PortfolioPage
-				title={scilentMusicContent.title}
-				subtitle={scilentMusicContent.subtitle}
-				desc={scilentMusicContent.description}
-				overview={scilentMusicContent.overview}
-				images={scilentMusicContent.images}
-				features={scilentMusicContent.features}
-				nextPage={nextPage}
-			/>
-		</>
+		<PortfolioPage
+			title={scilentMusicContent.title}
+			subtitle={scilentMusicContent.subtitle}
+			desc={scilentMusicContent.description}
+			overview={scilentMusicContent.overview}
+			images={scilentMusicContent.images}
+			features={scilentMusicContent.features}
+			nextPage={nextPage}
+		/>
 	);
 };
 

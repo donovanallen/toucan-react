@@ -14,10 +14,10 @@ const PortfolioPage = ({
 		<div className="portfolio-page">
 			<div className="portfolio-page-heading">
 				<h2 className="portfolio-page-heading-title">{title}</h2>
-				<h3 className="portfolio-page-subtitle">{subtitle}</h3>
+				<p className="portfolio-page-subtitle">{subtitle}</p>
 			</div>
 
-			{overview && <p className="portfolio-page-overview">{overview}</p>}
+			{overview && <h5 className="portfolio-page-overview">{overview}</h5>}
 
 			{images.length && images[0]?.src && (
 				<img className="portfolio-page-hero-img" src={images[0]?.src} />
@@ -43,19 +43,19 @@ const PortfolioPage = ({
 
 			{nextPage && (
 				<div className="portfolio-page-footer">
-					<hr />
-					<Link to={nextPage.link}>
+					<a href={nextPage.link}>
 						<div className="portfolio-page-footer-content">
 							<img
 								className="portfolio-page-footer-image"
 								src={nextPage.images[0].src}
 							/>
 							<div className="portfolio-page-footer-title">
-								<h3>{nextPage.title}</h3>
-								<p>{nextPage.subtitle}</p>
+								<span>Next Project</span>
+								<h4>{nextPage.title}</h4>
+								<h5>{nextPage.subtitle}</h5>
 							</div>
 						</div>
-					</Link>
+					</a>
 				</div>
 			)}
 		</div>

@@ -6,17 +6,15 @@ const GiftGuide = () => {
 	const nextPage = PortfolioData.items[1];
 
 	return (
-		<>
-			<PortfolioPage
-				title={giftGuideContent.title}
-				subtitle={giftGuideContent.subtitle}
-				desc={giftGuideContent.description}
-				overview={giftGuideContent.overview}
-				images={giftGuideContent.images}
-				features={giftGuideContent.features}
-				nextPage={nextPage}
-			/>
-		</>
+		<PortfolioPage
+			title={giftGuideContent.title}
+			subtitle={giftGuideContent.subtitle}
+			desc={giftGuideContent.description}
+			overview={giftGuideContent.overview}
+			images={giftGuideContent.images}
+			features={giftGuideContent.features}
+			nextPage={nextPage}
+		/>
 	);
 };
 

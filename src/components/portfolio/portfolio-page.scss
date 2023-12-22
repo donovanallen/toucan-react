@@ -10,20 +10,19 @@
 
 	&-heading {
 		align-self: flex-start;
-		padding: 0 4rem;
+		margin: var(--space-m);
 	}
 	&-overview {
 		align-self: flex-end;
-		padding: 0 4rem;
+		margin: var(--space-m);
 	}
 	&-desc {
 		align-self: flex-start;
-		padding: 0 4rem;
+		margin: var(--space-xl);
 		max-width: 50%;
-		margin: 4rem 0;
 	}
 	&-hero-img {
-		max-width: 100vw;
+		width: 100vw;
 	}
 	&-feature {
 		&-desc {
@@ -32,18 +31,16 @@
 		}
 	}
 	&-footer {
-		width: 100%;
-		margin: 2rem 0;
-
-		& > hr {
-			width: 90%;
-		}
+		width: 70%;
+		margin-top: var(--space-m);
+		padding: var(--space-s);
+		border-top: 1px solid $light;
 
 		&-content {
 			display: flex;
 			align-items: center;
-			padding: 2rem 4rem;
-			gap: 2rem;
+			justify-content: flex-start;
+			gap: var(--space-s);
 		}
 
 		&-image {

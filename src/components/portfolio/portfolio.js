@@ -1,6 +1,5 @@
 import './portfolio.scss';
 
-import { Link } from 'react-router-dom';
 import PortfolioData from './portfolio-data';
 
 const Portfolio = () => {
@@ -11,13 +10,13 @@ const Portfolio = () => {
 			{items.map((item) => (
 				<>
 					<div className="portfolio-item">
-						<Link to={item.link}>
+						<a href={item.link}>
 							<img
 								src={item.images[0].src}
 								alt={item.images[0].alt}
 								className="portfolio-item-img"
 							/>
-						</Link>
+						</a>
 
 						<div className="portfolio-item-text">
 							<div>
