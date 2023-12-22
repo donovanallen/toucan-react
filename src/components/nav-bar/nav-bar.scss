@@ -75,7 +75,7 @@
 			font-family: 'Montserrat', serif;
 			text-transform: lowercase;
 			font-weight: 900;
-			font-size: 4rem;
+			font-size: var(--font-size-md);
 			color: $scilentGray;
 
 			-webkit-text-fill-color: transparent;
