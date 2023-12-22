@@ -9,53 +9,55 @@ const PortfolioData = {
 	items: [
 		{
 			title: 'Holiday Gift Guide',
-			subtitle: 'web/mobile web experience',
+			subtitle: 'web + mobile web experience',
+			link: '/holiday-gift-guide',
 			overview: "lululemon's festive web experience for the holidays",
 			description:
-				'This is a an overview/description of the project. This should be a little more detailed than the previous page description, but short and sweet.',
-			skills: ['web development'],
+				"As a frontend engineer with lululemon's Digital Elevated Experiences team, I contributed to the redesign and implementation of the Holiday Gift Guide and related web experiences.",
+			skills: ['web development', 'frontend', 'react', 'Contentful CMS'],
 			images: [
 				{
 					src: luluCoverImage,
-					alt: '',
+					alt: 'gift guide cover image',
 				},
 				{
 					src: luluCoverImage2,
-					alt: '',
+					alt: 'gift guide cover image',
 				},
 			],
-			features: [
-				{
-					title: 'Feature 1',
-					description:
-						"The revamped gift guide's fresh layout and new components centered around product curation and ease-of-use",
-					images: [],
-				},
-				{
-					title: 'Feature 2',
-					description:
-						"Development ensured accessiblity and responsiveness regardless of user's device",
-					images: [],
-				},
-				{
-					title: 'Feature 3',
-					description:
-						'content author collaboration, contentful CMS integration - seamless workflow for content authors to draft/publish/ adjust gift guide categories and products',
-					images: [],
-				},
-			],
-			link: '/holiday-gift-guide',
+			// features: [
+			// 	{
+			// 		title: 'Feature 1',
+			// 		description:
+			// 			"The revamped gift guide's fresh layout and new components centered around product curation and ease-of-use",
+			// 		images: [],
+			// 	},
+			// 	{
+			// 		title: 'Feature 2',
+			// 		description:
+			// 			"Development ensured accessiblity and responsiveness regardless of user's device",
+			// 		images: [],
+			// 	},
+			// 	{
+			// 		title: 'Feature 3',
+			// 		description:
+			// 			'content author collaboration, contentful CMS integration - seamless workflow for content authors to draft/publish/ adjust gift guide categories and products',
+			// 		images: [],
+			// 	},
+			// ],
 		},
 		{
 			title: 'scilent music',
 			subtitle: 'mobile application',
+			link: '/scilent-music',
 			overview:
 				'An original music app designed to elevate the listening experience',
 			description:
-				'This is a an overview/description of the project. This should be a little more detailed than the previous page description, but short and sweet.',
+				'This ongoing project has served as a platform for my own re-imagining of the modern, integrated music listening experience focused around enhancing the ways in which listeners interact with the music they hear everyday.',
 			skills: [
 				'mobile development',
 				'web development',
+				'react native',
 				'ui/ux',
 				'visual design',
 				'interaction design',
@@ -63,74 +65,65 @@ const PortfolioData = {
 			images: [
 				{
 					src: smCoverImage,
-					alt: '',
-				},
-				{
-					src: smCoverImage,
-					alt: '',
+					alt: 'scilent music cover image',
 				},
 			],
-			features: [
-				{
-					title: 'Feature 1',
-					description:
-						"The revamped gift guide's fresh layout and new components centered around product curation and ease-of-use",
-					images: [],
-				},
-				{
-					title: 'Feature 2',
-					description:
-						"Development ensured accessiblity and responsiveness regardless of user's device",
-					images: [],
-				},
-				{
-					title: 'Feature 3',
-					description:
-						'content author collaboration, contentful CMS integration - seamless workflow for content authors to draft/publish/ adjust gift guide categories and products',
-					images: [],
-				},
-			],
-			link: '/scilent-music',
+			// features: [
+			// 	{
+			// 		title: 'Feature 1',
+			// 		description:
+			// 			"The revamped gift guide's fresh layout and new components centered around product curation and ease-of-use",
+			// 		images: [],
+			// 	},
+			// 	{
+			// 		title: 'Feature 2',
+			// 		description:
+			// 			"Development ensured accessiblity and responsiveness regardless of user's device",
+			// 		images: [],
+			// 	},
+			// 	{
+			// 		title: 'Feature 3',
+			// 		description:
+			// 			'content author collaboration, contentful CMS integration - seamless workflow for content authors to draft/publish/ adjust gift guide categories and products',
+			// 		images: [],
+			// 	},
+			// ],
 		},
 		{
 			title: 'F1 23 Redesign',
 			subtitle: 'UX Design Case Study',
+			link: '/f1-23',
 			overview:
 				'A case study on enhancing the user experience of EA Sports F1 23',
 			description:
-				'This is a an overview/description of the project. This should be a little more detailed than the previous page description, but short and sweet.',
-			skills: ['ui/ux', 'visual design'],
+				'This design exploration addresses the user experience and visual design of F1 23 in three main ways: data visualization, layout of information, and improved visual design cues.',
+			skills: ['ui/ux', 'visual design', 'figma', 'adobe cc'],
 			images: [
 				{
 					src: f1CoverImage,
-					alt: '',
-				},
-				{
-					src: f1CoverImage,
-					alt: '',
+					alt: 'f1 cover image',
 				},
 			],
-			features: [
-				{
-					title: 'Feature 1',
-					description:
-						"The revamped gift guide's fresh layout and new components centered around product curation and ease-of-use",
-					images: [],
-				},
-				{
-					title: 'Feature 2',
-					description:
-						"Development ensured accessiblity and responsiveness regardless of user's device",
-					images: [],
-				},
-				{
-					title: 'Feature 3',
-					description:
-						'content author collaboration, contentful CMS integration - seamless workflow for content authors to draft/publish/ adjust gift guide categories and products',
-					images: [],
-				},
-			],
-			link: '/f1-23',
+			// features: [
+			// 	{
+			// 		title: 'Feature 1',
+			// 		description:
+			// 			"The revamped gift guide's fresh layout and new components centered around product curation and ease-of-use",
+			// 		images: [],
+			// 	},
+			// 	{
+			// 		title: 'Feature 2',
+			// 		description:
+			// 			"Development ensured accessiblity and responsiveness regardless of user's device",
+			// 		images: [],
+			// 	},
+			// 	{
+			// 		title: 'Feature 3',
+			// 		description:
+			// 			'content author collaboration, contentful CMS integration - seamless workflow for content authors to draft/publish/ adjust gift guide categories and products',
+			// 		images: [],
+			// 	},
+			// ],
 		},
 	],
 };
