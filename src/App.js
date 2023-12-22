@@ -73,10 +73,10 @@ function App() {
 					mouseControls: true,
 					touchControls: true,
 					gyroControls: true,
-					baseColor: 0xd6d6d6,
-					midtoneColor: 0x000,
-					lowlightColor: 0x383838,
-					highlightColor: 0xd6d6d6,
+					baseColor: 0x8d99ae,
+					midtoneColor: 0xedf2f4,
+					lowlightColor: 0xedf2f4,
+					highlightColor: 0xedf2f4,
 					blurFactor: 0.5,
 					speed: 0.3,
 					zoom: 0.25,
@@ -91,7 +91,7 @@ function App() {
 	return (
 		<div className="app" ref={bg}>
 			<AnimatedCursor
-				color="249, 211, 180"
+				color="239, 35, 60"
 				innerSize={12}
 				outerSize={12}
 				innerScale={0.7}

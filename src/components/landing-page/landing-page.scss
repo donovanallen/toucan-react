@@ -31,10 +31,10 @@
 			font-size: var(--font-size-sm);
 			text-transform: uppercase;
 			font-family: 'TTH-SemiBold';
-			fill: $scilentBlack;
+			fill: $light;
 			.landmark {
 				font-family: 'TTH-ExtraLight';
-				fill: $scilentWhite;
+				fill: $med;
 			}
 		}
 	}
@@ -46,7 +46,7 @@
 			font-size: var(--font-size-lg);
 			letter-spacing: var(--space-3xs);
 			text-transform: uppercase;
-			color: $scilentGray;
+			color: $dark;
 		}
 	}
 }

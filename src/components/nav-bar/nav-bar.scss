@@ -43,7 +43,7 @@
 
 	a {
 		transition: all 0.25s ease;
-		color: $scilentGray;
+		color: $dark;
 		pointer-events: all;
 
 		&:hover,
@@ -51,11 +51,11 @@
 			font-family: 'TTH-Bold', monospace;
 			font-size: 1.2rem;
 			letter-spacing: 0.2rem;
-			color: $scilentBlack;
+			color: $dark;
 
 			-webkit-text-fill-color: transparent;
 			-webkit-background-clip: text;
-			-webkit-text-stroke: 1px $scilentBlack;
+			-webkit-text-stroke: 1px $dark;
 			&.active {
 				border: none;
 			}
@@ -63,7 +63,7 @@
 
 		&.active {
 			font-family: 'TTH-Bold', monospace;
-			border-bottom: 1px solid $scilentBlack;
+			border-bottom: 1px solid $accent;
 		}
 	}
 	.logo {
@@ -76,18 +76,18 @@
 			text-transform: lowercase;
 			font-weight: 900;
 			font-size: var(--font-size-lg);
-			color: $scilentGray;
+			color: $dark;
 
 			-webkit-text-fill-color: transparent;
 			-webkit-background-clip: text;
-			-webkit-text-stroke: 1px $scilentGray;
+			-webkit-text-stroke: 1px $dark;
 			transition: all 0.25s ease;
 
 			&:hover {
 				-webkit-text-fill-color: initial;
 				-webkit-background-clip: initial;
 				-webkit-text-stroke: initial;
-				color: $scilentGray;
+				color: $dark;
 			}
 		}
 	}
