@@ -50,16 +50,6 @@ const Contact = () => {
 							/>
 						</a>
 					</div> */}
-					{/* 
-					<div className="icon-grid-link">
-						<a href="https://soundcloud.com/itsdnvn" target="_blank">
-							<img
-								className="icon float-shadow"
-								src={soundcloud}
-								alt="soundcloud icon"
-							/>
-						</a>
-					</div> */}
 				</div>
 			</div>
 		</div>

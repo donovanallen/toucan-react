@@ -29,17 +29,12 @@
 	position: sticky;
 	display: flex;
 	flex-direction: row;
-	padding: 1.5rem;
+	padding: var(--space-s);
 	margin: 0 auto;
 	width: 85%;
 	align-items: center;
 	justify-content: space-between;
 	max-height: 6vmin;
-
-	@media only screen and (max-width: 600px) {
-		flex-direction: column;
-		gap: 1rem;
-	}
 
 	a {
 		transition: all 0.25s ease;

@@ -21,12 +21,7 @@ const NavBar = () => {
 	}, []);
 
 	return (
-		<motion.nav
-			initial={{ opacity: 0, y: -100 }}
-			animate={{ opacity: 1, y: 0 }}
-			transition={{ duration: 1 }}
-			className="nav-bar"
-		>
+		<nav className="nav-bar">
 			<motion.a
 				whileHover={{ scale: 1.1 }}
 				whileTap={{ scale: 0.9 }}
@@ -35,16 +30,15 @@ const NavBar = () => {
 			>
 				about
 			</motion.a>
-			{!mobile && (
-				<motion.a
-					whileHover={{ scale: 1.1 }}
-					whileTap={{ scale: 0.9 }}
-					href="portfolio"
-					className={pathname === '/portfolio' ? 'active' : ''}
-				>
-					work
-				</motion.a>
-			)}
+
+			<motion.a
+				whileHover={{ scale: 1.1 }}
+				whileTap={{ scale: 0.9 }}
+				href="portfolio"
+				className={pathname === '/portfolio' ? 'active' : ''}
+			>
+				work
+			</motion.a>
 			<motion.div
 				className="logo"
 				onMouseEnter={toggleHover}
@@ -74,7 +68,7 @@ const NavBar = () => {
 			>
 				contact
 			</motion.a>
-		</motion.nav>
+		</nav>
 	);
 };
 
