@@ -7,9 +7,22 @@ import linkedin from '../../assets/linkedin.svg';
 const ResumeTwo = () => {
 	return (
 		<div className="resume-container">
-			<div className="resume-header-title">
-				<h2>Donovan Allen</h2>
-				<h4>Senior Frontend Engineer</h4>
+			<div className="resume-header">
+				<div className="resume-header-title">
+					<h2>Donovan Allen</h2>
+					<h4>Senior Frontend Engineer</h4>
+				</div>
+				<div className="resume-header-icons">
+					<a href="mailto:hello@donovanallen.dev" target="_blank">
+						<img className="icon" src={gmail} alt="gmail icon" />
+					</a>
+					<a href="https://www.linkedin.com/in/donovan-allen" target="_blank">
+						<img className="icon" src={linkedin} alt="linkedin icon" />
+					</a>
+					<a href="https://www.github.com/donovanallen" target="_blank">
+						<img className="icon" src={github} alt="github icon" />
+					</a>
+				</div>
 			</div>
 
 			<div className="resume-content">
@@ -18,25 +31,33 @@ const ResumeTwo = () => {
 						<h3>experience</h3>
 						<div className="resume-content-entry">
 							<p>engineer ii</p>
-							<h5>lululemon</h5>
+							<a href="https://shop.lululemon.com/" target="_blank">
+								<h5>lululemon</h5>
+							</a>
 							<span>february 2022 - April 2023</span>
 							<span>remote/houston, tx</span>
 						</div>
 						<div className="resume-content-entry">
 							<p>sr. software engineer</p>
-							<h5>deloitte digital</h5>
+							<a href="https://www.deloittedigital.com/" target="_blank">
+								<h5>deloitte digital</h5>
+							</a>
 							<span>june 2018 - february 2022</span>
 							<span>arlington, va/new york city, ny</span>
 						</div>
 						<div className="resume-content-entry">
 							<p>software consultant</p>
-							<h5>counterpoint consulting</h5>
+							<a href="https://www.counterpointconsulting.com/" target="_blank">
+								<h5>counterpoint consulting</h5>
+							</a>
 							<span>february 2017 - may 2018</span>
 							<span>vienna, va</span>
 						</div>
 						<div className="resume-content-entry">
 							<p>operations lead</p>
-							<h5>cove</h5>
+							<a href="https://www.cove.is/" target="_blank">
+								<h5>cove</h5>
+							</a>
 							<span>september 2013 - september 2016</span>
 							<span>washington, dc</span>
 						</div>
@@ -45,12 +66,16 @@ const ResumeTwo = () => {
 						<h3>education</h3>
 						<div className="resume-content-entry">
 							<p>web development immersive</p>
-							<h5>general assembly</h5>
+							<a href="https://generalassemb.ly/" target="_blank">
+								<h5>general assembly</h5>
+							</a>
 							<span>september 2016 - december 2016 | washington, dc</span>
 						</div>
 						<div className="resume-content-entry">
 							<p>bachelor of arts, international affairs</p>
-							<h5>george washington university</h5>
+							<a href="https://www.gwu.edu/" target="_blank">
+								<h5>george washington university</h5>
+							</a>
 							<span>august 2009 - december 2013 | washington, dc</span>
 						</div>
 					</div>

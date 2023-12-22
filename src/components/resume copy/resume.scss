@@ -13,13 +13,36 @@
 	color: $dark;
 	border-radius: 0.5rem;
 
-	.resume-header-title {
-		margin: var(--space-s) 0;
-		h2 {
-			margin-bottom: var(--space-3xs);
+	.resume-header {
+		display: flex;
+		flex-direction: row;
+
+		&-title {
+			h2 {
+				margin-bottom: var(--space-3xs);
+			}
+			h4 {
+				color: $med;
+			}
 		}
-		h4 {
-			color: $med;
+		&-icons {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-evenly;
+			.icon {
+				height: 32px;
+				// convert hex to css filter https://codepen.io/sosuke/pen/Pjoqqp
+				filter: invert(11%) sepia(5%) saturate(6405%) hue-rotate(198deg)
+					brightness(90%) contrast(79%);
+				opacity: 0.7;
+				transition: all 0.25s ease;
+
+				&:hover {
+					opacity: 1;
+					transform: scale(1.2);
+				}
+			}
 		}
 	}
 
