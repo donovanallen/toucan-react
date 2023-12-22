@@ -1,175 +1,97 @@
 @import 'node_modules/nord/src/sass/nord.scss';
+@import '../../styles.scss';
 
 .resume-container {
 	display: flex;
 	flex: 1;
 	flex-direction: column;
-	padding: 0 5%;
+	padding: var(--space-l);
+	margin: 0 var(--space-3xl);
 	overflow-y: auto;
 	overflow-x: hidden;
+	background-color: rgba($color: $light, $alpha: 0.6);
+	color: $dark;
+	border-radius: 0.5rem;
 
 	.resume-header {
 		display: flex;
-		width: 100%;
-		flex-direction: row-reverse;
+		flex-direction: row;
 		justify-content: space-between;
-		padding-bottom: 1%;
-		margin-bottom: 1%;
 
-		.resume-title {
+		&-title {
+			h2 {
+				margin-bottom: var(--space-3xs);
+			}
+			h4 {
+				color: $med;
+			}
+		}
+		&-icons {
 			display: flex;
 			flex-direction: column;
-			align-items: flex-end;
-			&-text {
-				margin: 0;
-				font-size: 170px;
-				letter-spacing: 0.5rem;
-				color: $nord6;
-				font-weight: 500;
-			}
+			align-items: center;
+			justify-content: space-evenly;
+			.icon {
+				height: 32px;
+				// convert hex to css filter https://codepen.io/sosuke/pen/Pjoqqp
+				filter: invert(11%) sepia(5%) saturate(6405%) hue-rotate(198deg)
+					brightness(90%) contrast(79%);
+				opacity: 0.7;
+				transition: all 0.25s ease;
 
-			&-subtext {
-				font-size: x-large;
-				font-weight: 500;
-				color: #fff;
-
-				&-2 {
-					font-size: large;
-					font-weight: 400;
-					letter-spacing: 0.05rem;
-				}
-			}
-
-			&-btn {
-				//
-			}
-		}
-
-		&-content {
-			align-self: flex-end;
-			padding: 0 10%;
-			.contact-container {
-				.icon-grid {
-					display: flex;
-					gap: 25%;
-					&-link {
-						a {
-							.icon {
-								max-height: 35px;
-								width: 35px;
-								cursor: pointer;
-
-								// convert hex to css filter https://codepen.io/sosuke/pen/Pjoqqp
-								filter: invert(91%) sepia(19%) saturate(123%) hue-rotate(184deg)
-									brightness(94%) contrast(94%);
-								transition: all 0.25s ease;
-
-								&:hover {
-									filter: invert(97%) sepia(3%) saturate(151%)
-										hue-rotate(226deg) brightness(114%) contrast(100%);
-									transform: scale(1.2);
-								}
-							}
-						}
-					}
+				&:hover {
+					opacity: 1;
+					transform: scale(1.2);
 				}
 			}
 		}
-		border-bottom: 1px solid $nord6;
 	}
 
-	.resume-sub-content {
-		text-align: center;
-	}
-
-	.resume-main-content {
-		padding: 0 10%;
+	.resume-content {
 		display: flex;
-		gap: 10%;
+		flex: 1;
+		gap: var(--space-m);
 
-		background-color: rgba($color: #000, $alpha: 0.35);
-		border-radius: 24px;
-
-		overflow-y: scroll;
-		scrollbar-width: none; /* Firefox */
-		-ms-overflow-style: none; /* Internet Explorer 10+ */
-		&::-webkit-scrollbar {
-			/* WebKit */
-			width: 0;
-			height: 0;
-		}
-
-		a {
-			font-weight: 700;
-		}
-
-		.entry-title {
-			font-size: larger;
-			margin-bottom: 12px;
-			letter-spacing: 0.03rem;
-			color: $nord6;
-			font-weight: 500;
-			span {
-				font-weight: 600;
-			}
-		}
-
-		.entry-subtitle {
-			font-size: smaller;
-			margin: 5px auto;
-			letter-spacing: 0.02rem;
-			font-weight: 400;
+		.resume-content-section {
+			padding: var(--space-s) 0;
 		}
 
 		&-left {
-			flex: 1;
-			max-width: 60%;
-			h2 {
-				font-size: 80px;
-				color: $nord13;
-				font-weight: 400;
-				letter-spacing: 0.3rem;
-				margin-top: 5%;
-				margin-bottom: 2%;
-			}
-			&-entry {
-				padding: 2% 0;
-			}
+			min-width: 60%;
 		}
-		&-right {
+		.resume-content-section:not(.resume-content-section:last-of-type) {
+			border-bottom: 1px solid $light;
+		}
+	}
+
+	.resume-content-entry {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: var(--space-s) 0;
+
+		p {
+			margin: 0;
+		}
+		&-long {
 			display: flex;
-			flex-direction: column;
-			text-align: end;
-			max-width: 40%;
+			gap: var(--space-3xs);
+			flex-wrap: wrap;
+		}
+	}
+	h5 {
+		margin-bottom: var(--space-3xs);
+	}
+	h4 {
+		margin-bottom: var(--space-xs);
+	}
 
-			h3 {
-				font-size: 80px;
-				color: $nord13;
-				font-weight: 400;
-				letter-spacing: 0.3rem;
-				margin-top: 5%;
-				margin-bottom: 2%;
-			}
-
-			h4 {
-				color: $nord13;
-				font-weight: 800;
-				letter-spacing: 0.08rem;
-				margin: 0;
-			}
-
-			.tools {
-				display: flex;
-				justify-content: end;
-				align-self: flex-end;
-				gap: 0.5rem;
-				list-style-type: none;
-				flex-wrap: wrap;
-				font-size: smaller;
-				letter-spacing: 0.01rem;
-				max-width: 75%;
-				padding-bottom: 5%;
-			}
+	ul {
+		padding: 0;
+		li,
+		span {
+			list-style: none;
+			line-height: 1.7;
 		}
 	}
 }

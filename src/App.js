@@ -1,13 +1,11 @@
 import './App.scss';
 import NavBar from './components/nav-bar/nav-bar.js';
-import Footer from './components/footer/footer';
 import Contact from './components/contact/contact';
 import LandingPage from './components/landing-page/landing-page.js';
 import React, { useState, useEffect, useRef } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import About from './components/about/about';
-import Resume from './components/resume/resume';
-import ResumeTwo from './components/resume copy/resume';
+import Resume from './components/resume/resume.js';
 import Portfolio from './components/portfolio/portfolio';
 import ScilentMusic from './components/portfolio/scilent-music/scilent-music.js';
 import GiftGuide from './components/portfolio/gift-guide/gift-guide.js';
@@ -34,13 +32,9 @@ function App() {
 					path: 'about',
 					element: <About />,
 				},
-				// {
-				// 	path: '/resume',
-				// 	element: <Resume />,
-				// },
 				{
 					path: 'resume',
-					element: <ResumeTwo />,
+					element: <Resume />,
 				},
 				{
 					path: 'portfolio',
