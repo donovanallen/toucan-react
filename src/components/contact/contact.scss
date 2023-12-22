@@ -19,7 +19,7 @@
 
 	.icon-grid {
 		display: flex;
-		gap: 50px;
+		gap: var(--space-l);
 		@media only screen and (max-width: 1200px) {
 			flex-direction: column;
 		}

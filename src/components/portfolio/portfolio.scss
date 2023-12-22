@@ -5,11 +5,10 @@
 	overflow-y: auto;
 	display: flex;
 	flex-direction: column;
-	padding: 1rem 0;
+	padding: var(--space-xs) 0;
 
 	hr {
 		width: 90%;
-		margin: 2rem auto;
 	}
 
 	.portfolio-item {
@@ -22,7 +21,7 @@
 			opacity: 0.7;
 			scale: 1;
 			filter: grayscale(1);
-			margin: 1.2rem 0;
+			margin: var(--space-s) 0;
 			transition: all 0.2s ease-in-out;
 
 			&:hover {
@@ -36,12 +35,10 @@
 		}
 
 		&-text {
-			margin: 1.2rem 0;
 			display: flex;
 			align-items: flex-start;
 			justify-content: space-between;
 			&-title {
-				margin: 0.5rem 0;
 			}
 			.portfolio-item-desc {
 				max-width: 70%;

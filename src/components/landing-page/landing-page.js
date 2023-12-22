@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './landing-page.scss';
 import Typed from 'react-typed';
 
@@ -15,16 +14,9 @@ const marqueeList = [
 ];
 
 const LandingPage = () => {
-	// const [hovered, setHovered] = useState(false);
-	// const toggleHover = () => setHovered(!hovered);
-
 	return (
 		<div className="app-content">
-			<header
-				className="app-header"
-				// onMouseEnter={toggleHover}
-				// onMouseLeave={toggleHover}
-			>
+			<header className="app-header">
 				<svg className="svg-container" viewBox="0 0 152 14">
 					<text className="svg-text" x="-1.1%" y="100%">
 						donovan

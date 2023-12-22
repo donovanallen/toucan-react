@@ -43,7 +43,7 @@
 		span {
 			font-family: 'TTH-ExtraLight';
 			font-size: var(--font-size-lg);
-			letter-spacing: 0.4rem;
+			letter-spacing: var(--space-3xs);
 			text-transform: uppercase;
 			color: $scilentGray;
 		}

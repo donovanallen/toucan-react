@@ -1,24 +1,23 @@
 @import 'node_modules/nord/src/sass/nord.scss';
 @import '../../styles.scss';
 
-@mixin boxShadow($box-shadow) {
-	-webkit-box-shadow: $box-shadow;
-	-moz-box-shadow: $box-shadow;
-	-ms-box-shadow: $box-shadow;
-	-o-box-shadow: $box-shadow;
-	box-shadow: $box-shadow;
-}
+// @mixin boxShadow($box-shadow) {
+// 	-webkit-box-shadow: $box-shadow;
+// 	-moz-box-shadow: $box-shadow;
+// 	-ms-box-shadow: $box-shadow;
+// 	-o-box-shadow: $box-shadow;
+// 	box-shadow: $box-shadow;
+// }
 
-@mixin transition($transition) {
-	-webkit-transition: $transition;
-	-moz-transition: $transition;
-	-ms-transition: $transition;
-	-o-transition: $transition;
-	transition: $transition;
-}
+// @mixin transition($transition) {
+// 	-webkit-transition: $transition;
+// 	-moz-transition: $transition;
+// 	-ms-transition: $transition;
+// 	-o-transition: $transition;
+// 	transition: $transition;
+// }
 
 .about-content {
-	padding: 0 2%;
 	display: flex;
 	flex-direction: column;
 	flex: 1;
@@ -26,57 +25,40 @@
 	align-items: center;
 	justify-content: center;
 	overflow-y: auto;
+	padding: 0 var(--space-3xl);
 
-	@media only screen and (min-width: 900px) {
-		padding: 0 4%;
-		&-heading {
-			min-width: 55%;
-		}
-	}
-	// @media only screen and (max-width: 1200px) {
-	// 	padding: 0 2%;
-	// }
-	// @media only screen and (max-width: 600px) {
-	// 	padding: 0 1%;
+	// @media only screen and (min-width: 900px) {
+	// 	&-heading {
+	// 		min-width: 55%;
+	// 	}
 	// }
 
-	&-heading {
-		color: $scilentGray;
-		text-shadow: $nord12 2px 2px;
-		margin: 0;
-		width: 100%;
+	// &-heading {
+	// 	color: $scilentGray;
+	// 	text-shadow: $nord12 2px 2px;
+	// 	margin: 0;
+	// 	width: 100%;
 
-		// h1 {
-		// 	// font-size: 9rem;
-		// 	// line-height: 6rem;
-		// 	// letter-spacing: 0.2rem;
-		// 	// font-weight: 800;
-		// 	// max-height: 100%;
+	// 	// h1 {
+	// 	// 	// font-size: 9rem;
+	// 	// 	// line-height: 6rem;
+	// 	// 	// letter-spacing: 0.2rem;
+	// 	// 	// font-weight: 800;
+	// 	// 	// max-height: 100%;
 
-		// 	// @media only screen and (max-width: 1200px) {
-		// 	// 	font-size: 5rem;
-		// 	// }
+	// 	// 	// @media only screen and (max-width: 1200px) {
+	// 	// 	// 	font-size: 5rem;
+	// 	// 	// }
 
-		// 	// @media only screen and (max-width: 600px) {
-		// 	// 	font-size: 3rem;
-		// 	// }
-		// }
-	}
+	// 	// 	// @media only screen and (max-width: 600px) {
+	// 	// 	// 	font-size: 3rem;
+	// 	// 	// }
+	// 	// }
+	// }
 
 	&-text {
 		text-align: justify;
 		text-wrap: pretty;
-		// height: 100%;
-
-		padding: 1rem 5rem;
-
-		@media only screen and (max-width: 375px) {
-			padding: 1rem 1rem;
-		}
-		@media only screen and (max-width: 600px) {
-			padding: 5rem 2rem;
-		}
-
 		// .flood-right {
 		// 	@include transition(0.25s ease-in-out);
 		// 	@include boxShadow(inset 0px 0 0 0 $nord2);
