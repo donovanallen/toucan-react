@@ -30,7 +30,6 @@ const NavBar = () => {
 			>
 				about
 			</motion.a>
-
 			<motion.a
 				whileHover={{ scale: 1.1 }}
 				whileTap={{ scale: 0.9 }}
@@ -52,14 +51,16 @@ const NavBar = () => {
 					da
 				</motion.a>
 			</motion.div>
-			<motion.a
-				whileHover={{ scale: 1.1 }}
-				whileTap={{ scale: 0.9 }}
-				href="resume"
-				className={pathname === '/resume' ? 'active' : ''}
-			>
-				resume
-			</motion.a>
+			{!mobile && (
+				<motion.a
+					whileHover={{ scale: 1.1 }}
+					whileTap={{ scale: 0.9 }}
+					href="resume"
+					className={pathname === '/resume' ? 'active' : ''}
+				>
+					resume
+				</motion.a>
+			)}
 			<motion.a
 				whileHover={{ scale: 1.1 }}
 				whileTap={{ scale: 0.9 }}
