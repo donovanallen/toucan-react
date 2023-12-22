@@ -11,41 +11,6 @@
 .contact-heading-text {
 	margin: 0;
 	flex: 1;
-
-	@media only screen and (max-width: 990px) {
-		font-size: 3rem;
-		line-height: 3.5rem;
-	}
-
-	font-family: 'TTH-Thin', sans-serif;
-
-	font-size: 5rem;
-	line-height: 5rem;
-	text-shadow: $scilentWhite 1px 1px;
-	color: $scilentGray;
-	letter-spacing: 0.2rem;
-}
-
-.contact-heading-subtext {
-	font-size: 0.8rem;
-	font-family: 'TTH-SemiBold', sans-serif;
-	letter-spacing: 0.08rem;
-
-	margin: 1% 5%;
-	@media only screen and (max-width: 990px) {
-		font-size: 1rem;
-		margin: 0;
-		max-width: 85%;
-	}
-
-	.contact-heading-link {
-		text-decoration: underline;
-		margin-left: 5px;
-		transition: all 0.25s ease;
-		&:hover {
-			color: $scilentBlack;
-		}
-	}
 }
 
 .contact-links {

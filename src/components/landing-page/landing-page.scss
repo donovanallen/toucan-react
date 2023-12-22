@@ -1,15 +1,6 @@
 // @import 'node_modules/nord/src/sass/nord.scss';
 @import '../../styles.scss';
 
-@keyframes marquee {
-	from {
-		transform: translateX(0);
-	}
-	to {
-		transform: translateX(-100%);
-	}
-}
-
 .app-content {
 	flex: 1;
 	display: flex;
@@ -36,9 +27,11 @@
 	width: 100vw;
 
 	.svg-container {
-		width: 100%;
 		.svg-text {
-			fill: $scilentGray;
+			font-size: var(--font-size-sm);
+			text-transform: uppercase;
+			font-family: 'TTH-SemiBold';
+			fill: $scilentBlack;
 			.landmark {
 				font-family: 'TTH-ExtraLight';
 				fill: $scilentWhite;
@@ -47,26 +40,12 @@
 	}
 
 	.hero-typed-text {
-		font-size: 1.5rem;
-		color: $scilentBlack;
-		pointer-events: none;
-		cursor: default;
-		letter-spacing: 0.4rem;
-		font-family: 'TTH-ExtraLight';
-		margin: 0 1rem;
-
-		@media only screen and (min-width: 1200px) {
-			font-size: 2.5rem;
-		}
-
-		@media only screen and (max-width: 600px) {
-			font-size: 1.5rem;
-			line-height: 2rem;
-		}
-
-		@media only screen and (max-width: 375px) {
-			font-size: 1rem;
-			flex-wrap: wrap;
+		span {
+			font-family: 'TTH-ExtraLight';
+			font-size: var(--font-size-lg);
+			letter-spacing: 0.4rem;
+			text-transform: uppercase;
+			color: $scilentGray;
 		}
 	}
 }

@@ -25,13 +25,12 @@ const LandingPage = () => {
 				// onMouseEnter={toggleHover}
 				// onMouseLeave={toggleHover}
 			>
-				<svg className="svg-container" viewBox="0 0 124 14">
+				<svg className="svg-container" viewBox="0 0 152 14">
 					<text className="svg-text" x="-1.1%" y="100%">
 						donovan
 						<tspan className="landmark">allen</tspan>
 					</text>
 				</svg>
-
 				<Typed
 					className="hero-typed-text"
 					strings={marqueeList}

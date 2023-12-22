@@ -1,10 +1,66 @@
+// COLORS
 $scilentGray: #383838;
 $scilentWhite: #d6d6d6;
 $scilentBlack: #000000;
 
+// FLUID TYPE SCALE
+// https://www.fluid-type-scale.com/
+
+// ---- CONFIG ---- //
+// MIN (MOBILE)
+// base font (px) = 17.333
+// min screen width (px) = 320
+// scale = 1.25
+// MAX (DESKTOP)
+// base font (px) = 31.25
+// max screen width (px) = 1440
+// scale = 1.618
+// ---------------- //
+
+/* Fluid font size variables, for browsers that support clamp */
+@supports (font-size: clamp(1rem, 1vw, 1rem)) {
+	:root {
+		--font-size-xs: clamp(0.69rem, 0.08vw + 0.68rem, 0.75rem);
+		--font-size-sm: clamp(0.87rem, 0.49vw + 0.77rem, 1.21rem);
+		--font-size-base: clamp(1.08rem, 1.24vw + 0.83rem, 1.95rem);
+		--font-size-md: clamp(1.35rem, 2.58vw + 0.84rem, 3.16rem);
+		--font-size-lg: clamp(1.69rem, 4.89vw + 0.72rem, 5.11rem);
+		--font-size-xl: clamp(2.12rem, 8.8vw + 0.36rem, 8.27rem);
+		--font-size-xxl: clamp(2.64rem, 15.34vw + -0.42rem, 13.39rem);
+		--font-size-xxxl: clamp(3.31rem, 26.22vw + -1.94rem, 21.66rem);
+	}
+}
+/* Fallback variables for browsers that don't support clamp */
+@supports not (font-size: clamp(1rem, 1vw, 1rem)) {
+	:root {
+		--font-size-xs: 0.69rem;
+		--font-size-sm: 0.87rem;
+		--font-size-base: 1.08rem;
+		--font-size-md: 1.35rem;
+		--font-size-lg: 1.69rem;
+		--font-size-xl: 2.12rem;
+		--font-size-xxl: 2.64rem;
+		--font-size-xxxl: 3.31rem;
+	}
+	@media screen and (min-width: 1440px) {
+		:root {
+			--font-size-xs: 0.75rem;
+			--font-size-sm: 1.21rem;
+			--font-size-base: 1.95rem;
+			--font-size-md: 3.16rem;
+			--font-size-lg: 5.11rem;
+			--font-size-xl: 8.27rem;
+			--font-size-xxl: 13.39rem;
+			--font-size-xxxl: 21.66rem;
+		}
+	}
+}
+
 body {
 	font-family: 'TTH-Regular', monospace;
-	text-transform: uppercase;
+	line-height: 1.5;
+	font-size: var(--font-size-base);
+
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	color: $scilentBlack;
@@ -16,55 +72,80 @@ body {
 	}
 }
 
-a {
+// ----------------------------------------------------------------
+
+// SCALE OPTIONS
+// Mega (r = 3)
+// h1 { font-size: 3em; }
+// h2 { font-size: 2.0801em; }
+// h3 { font-size: 1.4422em; }
+// small { font-size: .6934em; }
+// html { font-size: 1.25em; }
+
+// Major Third (r = 1.25)
+// h1 { font-size: 2.058em; }
+// h2 { font-size: 1.6179em; }
+// h3 { font-size: 1.272em; }
+// small { font-size: .7862em; }
+// html { font-size: 1.25em; }
+
+// Golden (r = 1.618)
+// h1 { font-size: 3em; }
+// h2 { font-size: 2.0801em; }
+// h3 { font-size: 1.4422em; }
+// small { font-size: .6934em; }
+// html { font-size: 1.618em; }
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'TTH-Light', monospace;
+	text-transform: uppercase;
+	line-height: 1.2;
+	margin: 0;
+}
+
+h1 {
+	font-size: var(--font-size-xl);
+}
+
+h2 {
+	font-size: var(--font-size-lg);
+	letter-spacing: 0.2rem;
+}
+
+h3 {
+	font-size: var(--font-size-md);
+	letter-spacing: 0.1rem;
+}
+
+h4 {
+	font-size: var(--font-size-base);
+	font-family: 'TTH-SemiBold', monospace;
+}
+
+p {
+	font-size: var(--font-size-sm);
+	letter-spacing: 0.04rem;
+	line-height: 1.7;
+	text-transform: uppercase;
+}
+
+span,
+li,
+small {
+	font-size: var(--font-size-xs);
+	letter-spacing: 0.04rem;
+	text-transform: uppercase;
 	font-family: 'TTH-Light', monospace;
 	text-decoration: none;
 }
 
-h1 {
+a {
+	font-size: var(--font-size-sm);
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
 	font-family: 'TTH-Light', monospace;
-	font-size: 12rem;
-	letter-spacing: 0.8rem;
-	line-height: 14rem;
-}
-
-h2 {
-	font-family: 'TTH-SemiBold', monospace;
-	font-size: 2.6rem;
-	letter-spacing: 0.05rem;
-	line-height: 3rem;
-}
-
-h3 {
-	font-family: 'TTH-SemiBold', monospace;
-	font-size: 1.6rem;
-	line-height: 1.8rem;
-}
-
-li {
-	line-height: 1.6rem;
-	letter-spacing: 0.04rem;
-	font-family: 'TTH-Thin', monospace;
-}
-
-p {
-	font-family: 'TTH-Regular', monospace;
-	font-size: 1rem;
-	letter-spacing: 0.1rem;
-	line-height: 2.2rem;
-
-	@media only screen and (min-width: 1440px) {
-		font-size: 1.4rem;
-		line-height: 3.2rem;
-	}
-
-	@media only screen and (min-width: 1200px) {
-		font-size: 1.2rem;
-		line-height: 2.2rem;
-	}
-
-	@media only screen and (max-width: 600px) {
-		font-size: 1rem;
-		line-height: 2rem;
-	}
+	text-decoration: none;
 }

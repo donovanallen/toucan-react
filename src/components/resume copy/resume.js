@@ -9,8 +9,8 @@ const ResumeTwo = () => {
 		<div className="resume-container">
 			<header>
 				<div className="resume-header-title">
-					<h1>Donovan Allen</h1>
-					<h2>Senior Web Engineer</h2>
+					<h2>Donovan Allen</h2>
+					<h3>Senior Web Engineer</h3>
 				</div>
 			</header>
 
@@ -19,65 +19,62 @@ const ResumeTwo = () => {
 					<div className="resume-content-section">
 						<h4>experience</h4>
 						<div className="resume-content-entry">
-							<h3>engineer ii</h3>
-							<h5>lululemon</h5>
-							<h5>february 2022 - present | remote/houston, tx</h5>
+							<p>engineer ii</p>
+							<p>lululemon</p>
+							<span>february 2022 - present | remote/houston, tx</span>
 						</div>
 						<div className="resume-content-entry">
-							<h3>sr. software engineer</h3>
-							<h5>deloitte digital</h5>
-							<h5>
+							<p>sr. software engineer</p>
+							<p>deloitte digital</p>
+							<span>
 								june 2018 - february 2022 | 3+ years | arlington, va/new york
 								city, ny
-							</h5>
+							</span>
 						</div>
 						<div className="resume-content-entry">
-							<h3>software consultant</h3>
-							<h5>counterpoint consulting</h5>
-							<h5>february 2017 - may 2018 | 1+ year | vienna, va</h5>
+							<p>software consultant</p>
+							<p>counterpoint consulting</p>
+							<span>february 2017 - may 2018 | 1+ year | vienna, va</span>
 						</div>
 						<div className="resume-content-entry">
-							<h3>operations lead</h3>
-							<h5>cove</h5>
-							<h5>
+							<p>operations lead</p>
+							<p>cove</p>
+							<span>
 								september 2013 - september 2016 | 3 years | washington, dc
-							</h5>
+							</span>
 						</div>
 					</div>
 					<div className="resume-content-section">
 						<h4>education</h4>
 						<div className="resume-content-entry">
-							<h3>certificate, web development immersive</h3>
-							<h5>general assembly</h5>
-							<h5>september 2016 - december 2016 | washington, dc</h5>
+							<p>certificate, web development immersive</p>
+							<p>general assembly</p>
+							<span>september 2016 - december 2016 | washington, dc</span>
 						</div>
 						<div className="resume-content-entry">
-							<h3>bachelor of arts, international affairs</h3>
-							<h5>george washington university</h5>
-							<h5>august 2009 - december 2013 | washington, dc</h5>
+							<p>bachelor of arts, international affairs</p>
+							<p>george washington university</p>
+							<span>august 2009 - december 2013 | washington, dc</span>
 						</div>
 					</div>
 				</div>
 				<div className="resume-content-right">
 					<ul className="resume-content-entry">
 						<li>
-							<span>email: </span>
-							<br />
+							<p>email: </p>
 							hello@donovanallen.dev
 						</li>
 						<li>
-							<span>phone: </span>
-							<br />
+							<p>phone: </p>
 							+1 202 468 7022
 						</li>
 						<li>
-							<span>location: </span>
-							<br />
+							<p>location: </p>
 							houston, tx
 						</li>
 					</ul>
 					<div>
-						<h4 className="resume-content-entry-heading">competencies</h4>
+						<p className="resume-content-entry-heading">competencies</p>
 						<ul className="resume-content-entry-long">
 							<li>full-stack software development</li>
 							<span>·</span>
@@ -93,11 +90,9 @@ const ResumeTwo = () => {
 							<span>·</span>
 							<li>agile development</li>
 						</ul>
-						<h4 className="resume-content-entry-heading">
-							tools & technologies
-						</h4>
+						<p className="resume-content-entry-heading">tools & technologies</p>
 						<div className="resume-content-sub-entry">
-							<h4 className="resume-content-entry-sub-heading">development</h4>
+							<p className="resume-content-entry-sub-heading">development</p>
 							<ul className="resume-content-entry-long">
 								<li>javascript</li>
 								<span>·</span>
@@ -127,9 +122,7 @@ const ResumeTwo = () => {
 								<span>·</span>
 								<li>css/sass</li>
 							</ul>
-							<h4 className="resume-content-entry-sub-heading">
-								infrastructure
-							</h4>
+							<p className="resume-content-entry-sub-heading">infrastructure</p>
 							<ul className="resume-content-entry-long">
 								<li>git</li>
 								<span>·</span>
@@ -154,14 +147,14 @@ const ResumeTwo = () => {
 								<li>terraform</li>
 								<span>·</span>
 							</ul>
-							<h4 className="resume-content-entry-sub-heading">ux/design</h4>
+							<p className="resume-content-entry-sub-heading">ux/design</p>
 							<ul className="resume-content-entry-long">
 								<li>figma</li>
 								<span>·</span>
 								<li>contentful</li>
 							</ul>
 						</div>
-						<h4>languages</h4>
+						<p>languages</p>
 						<ul className="resume-content-entry-long">
 							<li>english (native)</li>
 							<span>·</span>
@@ -169,7 +162,7 @@ const ResumeTwo = () => {
 							<span>·</span>
 							<li>farsi, afrikaans (beginner)</li>
 						</ul>
-						<h4>links</h4>
+						<p>links</p>
 						<ul className="resume-content-entry">
 							<li>donovanallen.dev</li>
 							<li>github.com/donovanallen</li>

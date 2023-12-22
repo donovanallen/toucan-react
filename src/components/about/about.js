@@ -44,15 +44,13 @@ const About = () => {
 			</div> */}
 			<div className="about-content-text">
 				<p>
-					As a third-culture kid born in the{' '}
-					<span className="flood-right">Southern US</span>, raised in{' '}
-					<span className="flood-right">South Africa</span>, educated in{' '}
-					<span className="flood-right">Washington, D.C.</span>, and currently
-					based in <span className="flood-right">Houston, Texas</span>, I have
-					developed a deep appreciation for human connection, personal growth,
-					meaningful experiences, and creative expression. My diverse background
-					has played a significant role in my exploration and expansion of the
-					intersection between technology, art, communication, and design.
+					As a third-culture kid born in the Southern US, raised in South
+					Africa, educated in Washington, D.C., and currently based in Houston,
+					Texas, I have developed a deep appreciation for human connection,
+					personal growth, meaningful experiences, and creative expression. My
+					diverse background has played a significant role in my exploration and
+					expansion of the intersection between technology, art, communication,
+					and design.
 				</p>
 				<p>
 					I am a passionate technologist with a strong focus on web design and

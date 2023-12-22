@@ -14,17 +14,7 @@ const Contact = () => {
 	return (
 		<div className="contact-content">
 			<div>
-				<h1 className="contact-heading-text">let's connect!</h1>
-				{/* <p className="contact-heading-subtext">
-					Found an issue or bug while visiting?
-					<a
-						href="https://github.com/donovanallen/toucan-react/issues/new?assignees=&labels=&template=bug_report.md&title=%5BBUG%2FIMPROVEMENT%5D%5Bdonovanallen.dev%5D"
-						target="_blank"
-						className="contact-heading-link"
-					>
-						Let me know!
-					</a>
-				</p> */}
+				<h2 className="contact-heading-text">let's connect!</h2>
 			</div>
 			<div className="contact-links">
 				<div className="icon-grid">

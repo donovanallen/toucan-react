@@ -44,20 +44,11 @@
 				margin: 0.5rem 0;
 			}
 			.portfolio-item-desc {
-				font-family: 'TTH-Regular', monospace;
-				line-height: 1.6rem;
-				letter-spacing: 0.01rem;
-				font-size: 1rem;
 				max-width: 70%;
 			}
 			.portfolio-item-skills {
 				max-width: 30%;
 				text-align: right;
-				span {
-					letter-spacing: 0.02rem;
-					font-family: 'TTH-Light', monospace; // border: 1px solid red;
-					font-size: 0.8rem;
-				}
 			}
 		}
 	}

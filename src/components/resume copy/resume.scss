@@ -39,9 +39,7 @@
 			}
 
 			.resume-content-entry-sub-heading {
-				font-weight: 400;
 				margin: 0.5rem 0;
-				letter-spacing: 0.2rem;
 			}
 
 			.resume-content-sub-entry {
@@ -49,44 +47,8 @@
 			}
 		}
 	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 600;
-		letter-spacing: 0.1rem;
-		color: #f9d3b4;
-		margin-bottom: 0;
-	}
-	h2 {
-		font-size: 1.5rem;
-		font-weight: 400;
-		letter-spacing: 0.05rem;
-		color: gray;
-		margin-top: 0.5rem;
-	}
-	h3 {
-		letter-spacing: 0.05rem;
-		font-weight: 600;
-		margin: 0.5rem 0;
-	}
-	h4 {
-		font-size: 0.75rem;
-		letter-spacing: 0.3rem;
-		font-weight: 800;
-		color: gray;
-		margin: 0;
-	}
-	h5 {
-		font-size: 0.7rem;
-		font-weight: 400;
-		letter-spacing: 0.01rem;
-		margin: 0.5rem 0;
-	}
-	p {
-		font-size: 0.7rem;
-		margin: 0;
-	}
 
-	.resume-content-entry > h5:first-of-type {
+	.resume-content-entry > p:last-of-type {
 		color: gray;
 		font-size: 0.9rem;
 		font-weight: 600;
@@ -100,9 +62,6 @@
 			display: flex;
 			gap: 0.4rem;
 			flex-wrap: wrap;
-			span {
-				font-weight: 600;
-			}
 		}
 	}
 
@@ -110,14 +69,7 @@
 		padding: 0;
 		li {
 			list-style: none;
-			font-size: 0.75rem;
 			margin: 0.3rem 0;
-			font-weight: 400;
-
-			span {
-				font-size: 0.6rem;
-				font-weight: 500;
-			}
 		}
 	}
 }

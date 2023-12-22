@@ -46,25 +46,26 @@
 		margin: 0;
 		width: 100%;
 
-		h1 {
-			// font-size: 9rem;
-			// line-height: 6rem;
-			// letter-spacing: 0.2rem;
-			// font-weight: 800;
-			max-height: 100%;
+		// h1 {
+		// 	// font-size: 9rem;
+		// 	// line-height: 6rem;
+		// 	// letter-spacing: 0.2rem;
+		// 	// font-weight: 800;
+		// 	// max-height: 100%;
 
-			@media only screen and (max-width: 1200px) {
-				font-size: 5rem;
-			}
+		// 	// @media only screen and (max-width: 1200px) {
+		// 	// 	font-size: 5rem;
+		// 	// }
 
-			@media only screen and (max-width: 600px) {
-				font-size: 3rem;
-			}
-		}
+		// 	// @media only screen and (max-width: 600px) {
+		// 	// 	font-size: 3rem;
+		// 	// }
+		// }
 	}
 
 	&-text {
 		text-align: justify;
+		text-wrap: pretty;
 		// height: 100%;
 
 		padding: 1rem 5rem;
@@ -76,19 +77,15 @@
 			padding: 5rem 2rem;
 		}
 
-		.flood-right {
-			@include transition(0.25s ease-in-out);
-			@include boxShadow(inset 0px 0 0 0 $nord2);
-			overflow: hidden;
-			&:hover {
-				color: $scilentWhite;
-				font-weight: 600;
-				@include boxShadow(inset 500px 0 0 0 $nord2);
-			}
-		}
-
-		a {
-			text-decoration: underline;
-		}
+		// .flood-right {
+		// 	@include transition(0.25s ease-in-out);
+		// 	@include boxShadow(inset 0px 0 0 0 $nord2);
+		// 	overflow: hidden;
+		// 	&:hover {
+		// 		color: $scilentWhite;
+		// 		font-weight: 600;
+		// 		@include boxShadow(inset 500px 0 0 0 $nord2);
+		// 	}
+		// }
 	}
 }
