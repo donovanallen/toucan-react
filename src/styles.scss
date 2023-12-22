@@ -10,7 +10,6 @@ $accent: #ef233c;
 
 // FLUID GRID
 /* @link https://utopia.fyi/grid/calculator?c=329,17.333,1.618,1440,31.25,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,xs-l&g=s,l,l,12 */
-
 :root {
 	--grid-max-width: 98.44rem;
 	--grid-gutter: var(
@@ -192,7 +191,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
 	font-family: 'TTH-Light', monospace;
 	text-transform: uppercase;
 	line-height: 1.2;
@@ -214,8 +214,16 @@ h3 {
 }
 
 h4 {
-	font-family: 'TTH-SemiBold', monospace;
+	font-family: 'TTH-Regular', monospace;
 	font-size: var(--font-size-base);
+	letter-spacing: 0.07rem;
+}
+
+h5 {
+	font-family: 'TTH-SemiBold', monospace;
+	font-size: var(--font-size-sm);
+	color: $med;
+	letter-spacing: 0.05rem;
 }
 
 p {
@@ -228,7 +236,7 @@ p {
 span,
 li,
 small {
-	font-family: 'TTH-Light', monospace;
+	font-family: 'TTH-Regular', monospace;
 	font-size: var(--font-size-xs);
 	letter-spacing: 0.04rem;
 	text-transform: uppercase;

@@ -9,55 +9,54 @@ const ResumeTwo = () => {
 		<div className="resume-container">
 			<div className="resume-header-title">
 				<h2>Donovan Allen</h2>
-				<h3>Senior Web Engineer</h3>
+				<h4>Senior Frontend Engineer</h4>
 			</div>
 
 			<div className="resume-content">
 				<div className="resume-content-left">
 					<div className="resume-content-section">
-						<h4>experience</h4>
+						<h3>experience</h3>
 						<div className="resume-content-entry">
 							<p>engineer ii</p>
-							<p>lululemon</p>
-							<span>february 2022 - present | remote/houston, tx</span>
+							<h5>lululemon</h5>
+							<span>february 2022 - April 2023</span>
+							<span>remote/houston, tx</span>
 						</div>
 						<div className="resume-content-entry">
 							<p>sr. software engineer</p>
-							<p>deloitte digital</p>
-							<span>
-								june 2018 - february 2022 | 3+ years | arlington, va/new york
-								city, ny
-							</span>
+							<h5>deloitte digital</h5>
+							<span>june 2018 - february 2022</span>
+							<span>arlington, va/new york city, ny</span>
 						</div>
 						<div className="resume-content-entry">
 							<p>software consultant</p>
-							<p>counterpoint consulting</p>
-							<span>february 2017 - may 2018 | 1+ year | vienna, va</span>
+							<h5>counterpoint consulting</h5>
+							<span>february 2017 - may 2018</span>
+							<span>vienna, va</span>
 						</div>
 						<div className="resume-content-entry">
 							<p>operations lead</p>
-							<p>cove</p>
-							<span>
-								september 2013 - september 2016 | 3 years | washington, dc
-							</span>
+							<h5>cove</h5>
+							<span>september 2013 - september 2016</span>
+							<span>washington, dc</span>
 						</div>
 					</div>
 					<div className="resume-content-section">
-						<h4>education</h4>
+						<h3>education</h3>
 						<div className="resume-content-entry">
-							<p>certificate, web development immersive</p>
-							<p>general assembly</p>
+							<p>web development immersive</p>
+							<h5>general assembly</h5>
 							<span>september 2016 - december 2016 | washington, dc</span>
 						</div>
 						<div className="resume-content-entry">
 							<p>bachelor of arts, international affairs</p>
-							<p>george washington university</p>
+							<h5>george washington university</h5>
 							<span>august 2009 - december 2013 | washington, dc</span>
 						</div>
 					</div>
 				</div>
 				<div className="resume-content-right">
-					<ul className="resume-content-entry">
+					{/* <ul className="resume-content-entry">
 						<li>
 							<p>email: </p>
 							hello@donovanallen.dev
@@ -70,102 +69,121 @@ const ResumeTwo = () => {
 							<p>location: </p>
 							houston, tx
 						</li>
-					</ul>
+					</ul> */}
 					<div>
-						<p className="resume-content-entry-heading">competencies</p>
-						<ul className="resume-content-entry-long">
-							<li>full-stack software development</li>
-							<span>·</span>
-							<li>user experience</li>
-							<span>·</span>
-							<li>data visualization</li>
-							<span>·</span>
-							<li>software infrastructure</li>
-							<span>·</span>
-							<li>interaction design</li>
-							<span>·</span>
-							<li>rapid prototyping</li>
-							<span>·</span>
-							<li>agile development</li>
-						</ul>
-						<p className="resume-content-entry-heading">tools & technologies</p>
-						<div className="resume-content-sub-entry">
-							<p className="resume-content-entry-sub-heading">development</p>
+						<div className="resume-content-section">
+							<h4 className="resume-content-entry-heading">skills</h4>
 							<ul className="resume-content-entry-long">
-								<li>javascript</li>
+								<li>full-stack software development</li>
 								<span>·</span>
-								<li>typescript</li>
+								<li>user experience</li>
 								<span>·</span>
-								<li>java</li>
+								<li>data visualization</li>
 								<span>·</span>
-								<li>angular</li>
+								<li>software architecture</li>
 								<span>·</span>
-								<li>react</li>
+								<li>visual design</li>
 								<span>·</span>
-								<li>redux</li>
+								<li>interaction design</li>
 								<span>·</span>
-								<li>vue</li>
+								<li>rapid prototyping</li>
 								<span>·</span>
-								<li>node</li>
+								<li>content management</li>
 								<span>·</span>
-								<li>next.js</li>
-								<span>·</span>
-								<li>d3</li>
-								<span>·</span>
-								<li>postgres</li>
-								<span>·</span>
-								<li>python</li>
-								<span>·</span>
-								<li>html</li>
-								<span>·</span>
-								<li>css/sass</li>
-							</ul>
-							<p className="resume-content-entry-sub-heading">infrastructure</p>
-							<ul className="resume-content-entry-long">
-								<li>git</li>
-								<span>·</span>
-								<li>docker</li>
-								<span>·</span>
-								<li>jenkins</li>
-								<span>·</span>
-								<li>gitlab</li>
-								<span>·</span>
-								<li>aws</li>
-								<span>·</span>
-								<li>sentry</li>
-								<span>·</span>
-								<li>kibana</li>
-								<span>·</span>
-								<li>mulesoft</li>
-								<span>·</span>
-								<li>kubernetes</li>
-								<span>·</span>
-								<li>kafka</li>
-								<span>·</span>
-								<li>terraform</li>
-								<span>·</span>
-							</ul>
-							<p className="resume-content-entry-sub-heading">ux/design</p>
-							<ul className="resume-content-entry-long">
-								<li>figma</li>
-								<span>·</span>
-								<li>contentful</li>
+								<li>agile development</li>
 							</ul>
 						</div>
-						<p>languages</p>
-						<ul className="resume-content-entry-long">
-							<li>english (native)</li>
-							<span>·</span>
-							<li>spanish (proficient)</li>
-							<span>·</span>
-							<li>farsi, afrikaans (beginner)</li>
-						</ul>
-						<p>links</p>
-						<ul className="resume-content-entry">
-							<li>donovanallen.dev</li>
-							<li>github.com/donovanallen</li>
-							<li>linkedin.com/in/donovan-allen</li>
-						</ul>
+						<div className="resume-content-section">
+							<h4 className="resume-content-entry-heading">technologies</h4>
+							<div className="resume-content-sub-entry">
+								<h5 className="resume-content-entry-sub-heading">
+									development
+								</h5>
+								<ul className="resume-content-entry-long">
+									<li>javascript</li>
+									<span>·</span>
+									<li>typescript</li>
+									<span>·</span>
+									<li>java</li>
+									<span>·</span>
+									<li>angular</li>
+									<span>·</span>
+									<li>react</li>
+									<span>·</span>
+									<li>react native</li>
+									<span>·</span>
+									<li>redux</li>
+									<span>·</span>
+									<li>vue</li>
+									<span>·</span>
+									<li>node</li>
+									<span>·</span>
+									<li>next.js</li>
+									<span>·</span>
+									<li>d3</li>
+									<span>·</span>
+									<li>postgres</li>
+									<span>·</span>
+									<li>python</li>
+									<span>·</span>
+									<li>html</li>
+									<span>·</span>
+									<li>css/sass</li>
+								</ul>
+
+								<h5 className="resume-content-entry-sub-heading">
+									infrastructure
+								</h5>
+								<ul className="resume-content-entry-long">
+									<li>git</li>
+									<span>·</span>
+									<li>docker</li>
+									<span>·</span>
+									<li>jenkins</li>
+									<span>·</span>
+									<li>gitlab</li>
+									<span>·</span>
+									<li>aws</li>
+									<span>·</span>
+									<li>sentry</li>
+									<span>·</span>
+									<li>kibana</li>
+									<span>·</span>
+									<li>mulesoft</li>
+									<span>·</span>
+									<li>kubernetes</li>
+									<span>·</span>
+									<li>kafka</li>
+									<span>·</span>
+									<li>terraform</li>
+								</ul>
+								<h5 className="resume-content-entry-sub-heading">ux/design</h5>
+								<ul className="resume-content-entry-long">
+									<li>figma</li>
+									<span>·</span>
+									<li>contentful</li>
+								</ul>
+							</div>
+						</div>
+						<div className="resume-content-section">
+							<h4>languages</h4>
+							<ul className="resume-content-entry-long">
+								<li>english (native)</li>
+								<span>·</span>
+								<li>spanish (proficient)</li>
+								<span>·</span>
+								<li>farsi, afrikaans (beginner)</li>
+							</ul>
+						</div>
+
+						<div className="resume-content-section">
+							<h4>links</h4>
+							<ul className="resume-content-entry">
+								<li>donovanallen.dev</li>
+								<li>github.com/donovanallen</li>
+								<li>linkedin.com/in/donovan-allen</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

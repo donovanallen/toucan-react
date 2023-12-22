@@ -1,28 +1,31 @@
 @import 'node_modules/nord/src/sass/nord.scss';
+@import '../../styles.scss';
 
 .resume-container {
 	display: flex;
 	flex: 1;
 	flex-direction: column;
-	padding: var(--space-xl);
+	padding: var(--space-l);
 	margin: 0 var(--space-3xl);
 	overflow-y: auto;
 	overflow-x: hidden;
-	background-color: rgba($color: #fefefe, $alpha: 0.6);
-	color: black;
+	background-color: rgba($color: $light, $alpha: 0.6);
+	color: $dark;
 	border-radius: 0.5rem;
 
 	.resume-header-title {
-		margin-bottom: var(--space-m);
+		margin: var(--space-s) 0;
 		h2 {
-			margin-bottom: var(--space-xs);
+			margin-bottom: var(--space-3xs);
+		}
+		h4 {
+			color: $med;
 		}
 	}
 
 	.resume-content {
 		display: flex;
 		flex: 1;
-		justify-content: space-between;
 		gap: var(--space-m);
 
 		.resume-content-section {
@@ -30,45 +33,39 @@
 		}
 
 		&-left {
-			flex: 1;
-			min-width: 55%;
-
-			.resume-content-section:not(.resume-content-section:last-of-type) {
-				border-bottom: 1px solid gray;
-			}
+			min-width: 60%;
 		}
-		&-right {
-			ul:first-of-type {
-				// margin-bottom: 2rem;
-			}
-
-			.resume-content-entry-sub-heading {
-				// margin: 0.5rem 0;
-			}
-
-			.resume-content-sub-entry {
-				// margin-top: 1rem;
-			}
+		.resume-content-section:not(.resume-content-section:last-of-type) {
+			border-bottom: 1px solid $light;
 		}
-	}
-
-	.resume-content-entry > p:last-of-type {
-		color: gray;
-		font-size: 0.9rem;
-		font-weight: 600;
 	}
 
 	.resume-content-entry {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: var(--space-s) 0;
+
+		p {
+			margin: 0;
+		}
 		&-long {
 			display: flex;
 			gap: var(--space-3xs);
 			flex-wrap: wrap;
 		}
 	}
+	h5 {
+		margin-bottom: var(--space-3xs);
+	}
+	h4 {
+		margin-bottom: var(--space-xs);
+	}
 
 	ul {
 		padding: 0;
-		li {
+		li,
+		span {
 			list-style: none;
 			line-height: 1.7;
 		}

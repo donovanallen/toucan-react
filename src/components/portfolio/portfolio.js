@@ -21,8 +21,8 @@ const Portfolio = () => {
 
 						<div className="portfolio-item-text">
 							<div>
-								<h3 className="portfolio-item-text-title">{item.title}</h3>
-								<p className="portfolio-item-desc">{item.overview}</p>
+								<h4 className="portfolio-item-text-title">{item.title}</h4>
+								<h5 className="portfolio-item-desc">{item.overview}</h5>
 							</div>
 							<div className="portfolio-item-skills">
 								{item.skills.map((skill, index) => {

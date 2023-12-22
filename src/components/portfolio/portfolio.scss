@@ -39,9 +39,11 @@
 			align-items: flex-start;
 			justify-content: space-between;
 			&-title {
+				margin-bottom: var(--space-xs);
 			}
 			.portfolio-item-desc {
 				max-width: 70%;
+				margin-bottom: var(--space-xs);
 			}
 			.portfolio-item-skills {
 				max-width: 35%;
