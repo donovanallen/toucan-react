@@ -24,6 +24,15 @@ const Contact = () => {
 						</a>
 					</div>
 					<div className="icon-grid-link">
+						<a href="https://www.linkedin.com/in/donovan-allen" target="_blank">
+							<img
+								className="icon float-shadow"
+								src={linkedin}
+								alt="linkedin icon"
+							/>
+						</a>
+					</div>
+					<div className="icon-grid-link">
 						<a href="https://www.github.com/donovanallen" target="_blank">
 							<img
 								className="icon float-shadow"
@@ -33,15 +42,6 @@ const Contact = () => {
 						</a>
 					</div>
 					<div className="icon-grid-link">
-						<a href="https://www.linkedin.com/in/donovan-allen" target="_blank">
-							<img
-								className="icon float-shadow"
-								src={linkedin}
-								alt="linkedin icon"
-							/>
-						</a>
-					</div>
-					{/* <div className="icon-grid-link">
 						<a href="https://dribbble.com/dnvn" target="_blank">
 							<img
 								className="icon float-shadow"
@@ -49,7 +49,7 @@ const Contact = () => {
 								alt="dribbble icon"
 							/>
 						</a>
-					</div> */}
+					</div>
 				</div>
 			</div>
 		</div>
