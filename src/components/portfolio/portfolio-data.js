@@ -2,6 +2,9 @@ import luluCoverImage from './images/lululemon/lululemon_gg_desktop-3.png';
 import luluCoverImage2 from './images/lululemon/lululemon_gg_browser_light-3.png';
 
 import smCoverImage from './images/sd01/sm_mockup_mobile3-logo2.png';
+import smFeatureRelease from './images/sd01/Release Hub-2.png';
+import smFeatureReview from './images/sd01/Review Engine-Updated 2.png';
+import smFeatureAura from './images/sd01/123shots_so.png';
 
 import f1CoverImage from './images/f1/Design Case Study - F123.001.jpeg';
 
@@ -68,26 +71,27 @@ const PortfolioData = {
 					alt: 'scilent music cover image',
 				},
 			],
-			// features: [
-			// 	{
-			// 		title: 'Feature 1',
-			// 		description:
-			// 			"The revamped gift guide's fresh layout and new components centered around product curation and ease-of-use",
-			// 		images: [],
-			// 	},
-			// 	{
-			// 		title: 'Feature 2',
-			// 		description:
-			// 			"Development ensured accessiblity and responsiveness regardless of user's device",
-			// 		images: [],
-			// 	},
-			// 	{
-			// 		title: 'Feature 3',
-			// 		description:
-			// 			'content author collaboration, contentful CMS integration - seamless workflow for content authors to draft/publish/ adjust gift guide categories and products',
-			// 		images: [],
-			// 	},
-			// ],
+			features: [
+				{
+					title: 'Release Day Central',
+					description: "A central hub for all your favorite artists' releases",
+					images: [{ src: smFeatureRelease, alt: 'scilent music release hub' }],
+				},
+				{
+					title: 'Listen in stereo',
+					description:
+						'Aggregated listening data and real-time insights to give you and your followers a full view of your listening experience, tendencies, departures, and discoveries',
+					images: [{ src: smFeatureAura, alt: 'scilent music data insights' }],
+				},
+				{
+					title: 'Be heard',
+					description:
+						'An all-new Verified Review Engine TM that ensures real and authentic reviews and reactions from real fans and listeners.',
+					images: [
+						{ src: smFeatureReview, alt: 'scilent music review engine' },
+					],
+				},
+			],
 		},
 		{
 			title: 'F1 23 Redesign',

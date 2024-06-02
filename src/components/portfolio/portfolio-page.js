@@ -23,7 +23,12 @@ const PortfolioPage = ({
 				<img className="portfolio-page-hero-img" src={images[0]?.src} />
 			)}
 
-			{desc && <p className="portfolio-page-desc">{desc}</p>}
+			{desc && (
+				<>
+					<h4 className="portfolio-page-desc">{desc}</h4>
+					<hr />
+				</>
+			)}
 
 			{images.length && images[1]?.src && (
 				<img className="portfolio-page-hero-img" src={images[1]?.src} />

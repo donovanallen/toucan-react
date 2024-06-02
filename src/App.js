@@ -13,6 +13,7 @@ import F123 from './components/portfolio/f1-23/f1-23.js';
 
 import AnimatedCursor from 'react-animated-cursor';
 import FOG from 'vanta/dist/vanta.fog.min';
+import { motion } from 'framer-motion';
 
 function App() {
 	const router = createBrowserRouter([
@@ -83,7 +84,13 @@ function App() {
 	}, [vantaEffect]);
 
 	return (
-		<div className="app" ref={bg}>
+		<motion.div
+			className="app"
+			ref={bg}
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			transition={{ duration: 0.6 }}
+		>
 			<AnimatedCursor
 				color="239, 35, 60"
 				innerSize={12}
@@ -93,11 +100,13 @@ function App() {
 				outerAlpha={0.3}
 			/>
 
+			{/* <motion.div> */}
 			<NavBar />
+			{/* </motion.div> */}
 
 			<RouterProvider router={router} />
 			{/* <Footer /> */}
-		</div>
+		</motion.div>
 	);
 }
 

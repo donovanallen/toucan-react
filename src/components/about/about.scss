@@ -57,9 +57,9 @@
 	// }
 
 	&-text {
-		text-align: justify;
+		text-align: center;
 		text-wrap: pretty;
-		margin: 0 var(--space-xl);
+		margin: 0 var(--space-lg);
 		// .flood-right {
 		// 	@include transition(0.25s ease-in-out);
 		// 	@include boxShadow(inset 0px 0 0 0 $nord2);

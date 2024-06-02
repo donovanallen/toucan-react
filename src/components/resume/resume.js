@@ -30,7 +30,7 @@ const ResumeTwo = () => {
 					<div className="resume-content-section">
 						<h3>experience</h3>
 						<div className="resume-content-entry">
-							<p>engineer ii</p>
+							<p>frontend engineer</p>
 							<a href="https://shop.lululemon.com/" target="_blank">
 								<h5>lululemon</h5>
 							</a>
@@ -78,6 +78,13 @@ const ResumeTwo = () => {
 							</a>
 							<span>august 2009 - december 2013 | washington, dc</span>
 						</div>
+						<div className="resume-content-entry">
+							<p>hs diploma, international baccalaureate</p>
+							<a href="https://www.aisj-jhb.com/" target="_blank">
+								<h5>american international school of johannesburg</h5>
+							</a>
+							<span>2005 - 2009 | johannesburg, south africa</span>
+						</div>
 					</div>
 				</div>
 				<div className="resume-content-right">
@@ -100,6 +107,8 @@ const ResumeTwo = () => {
 							<h4 className="resume-content-entry-heading">skills</h4>
 							<ul className="resume-content-entry-long">
 								<li>full-stack software development</li>
+								<span>·</span>
+								<li>mobile development</li>
 								<span>·</span>
 								<li>user experience</li>
 								<span>·</span>
@@ -137,8 +146,6 @@ const ResumeTwo = () => {
 									<span>·</span>
 									<li>react native</li>
 									<span>·</span>
-									<li>redux</li>
-									<span>·</span>
 									<li>vue</li>
 									<span>·</span>
 									<li>node</li>
@@ -153,7 +160,7 @@ const ResumeTwo = () => {
 									<span>·</span>
 									<li>html</li>
 									<span>·</span>
-									<li>css/sass</li>
+									<li>css/sass/tailwind</li>
 								</ul>
 
 								<h5 className="resume-content-entry-sub-heading">
@@ -169,6 +176,10 @@ const ResumeTwo = () => {
 									<li>gitlab</li>
 									<span>·</span>
 									<li>aws</li>
+									<span>·</span>
+									<li>gcp</li>
+									<span>·</span>
+									<li>vercel</li>
 									<span>·</span>
 									<li>sentry</li>
 									<span>·</span>
@@ -187,6 +198,8 @@ const ResumeTwo = () => {
 									<li>figma</li>
 									<span>·</span>
 									<li>contentful</li>
+									<span>·</span>
+									<li>adobe cc</li>
 								</ul>
 							</div>
 						</div>

@@ -220,26 +220,27 @@ h4 {
 }
 
 h5 {
-	font-family: 'TTH-SemiBold', monospace;
+	font-family: 'TTH-Regular', monospace;
 	font-size: var(--font-size-sm);
-	color: $med;
-	letter-spacing: 0.05rem;
+	color: $light;
+	letter-spacing: 0.04rem;
 }
 
 p {
-	font-family: 'TTH-Light', monospace;
-	font-size: var(--font-size-base);
-	letter-spacing: 0.05rem;
-	line-height: 1.6;
+	font-family: 'TTH-Regular', monospace;
+	font-size: var(--font-size-sm);
+	letter-spacing: 0.02rem;
+	line-height: 1.4;
 	text-transform: uppercase;
+	text-wrap: pretty;
 }
 
 span,
 li,
 small {
-	font-family: 'TTH-Regular', monospace;
+	font-family: 'TTH-SemiBold', monospace;
 	font-size: var(--font-size-xs);
-	letter-spacing: 0.04rem;
+	letter-spacing: 0.02rem;
 	text-transform: uppercase;
 	text-decoration: none;
 }

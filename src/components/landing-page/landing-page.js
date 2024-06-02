@@ -1,14 +1,17 @@
 import './landing-page.scss';
 import Typed from 'react-typed';
+import { motion } from 'framer-motion';
 
 const marqueeList = [
-	'web + mobile engineer',
+	'web + mobile developer',
 	'ui/ux designer',
+	'full-stack software engineer',
 	'creator',
 	'plant dad',
 	'athlete',
+	'coach',
 	'musician',
-	'technologist',
+	'design technologist',
 	'third-culture kid',
 	'available for work',
 ];

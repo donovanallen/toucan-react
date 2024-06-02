@@ -20,6 +20,7 @@ const About = () => {
 		return greetings[index];
 	};
 
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	const scrambleText = () => {
 		const b = baffle('.baffle');
 		b.start()

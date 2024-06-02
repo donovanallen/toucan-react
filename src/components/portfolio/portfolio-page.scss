@@ -15,19 +15,28 @@
 	&-overview {
 		align-self: flex-end;
 		margin: var(--space-m);
+		color: $dark;
 	}
 	&-desc {
-		align-self: flex-start;
-		margin: var(--space-xl);
-		max-width: 50%;
+		align-self: center;
+		margin: var(--space-m);
+		max-width: 80%;
+		text-align: center;
+		text-wrap: pretty;
 	}
 	&-hero-img {
 		width: 100vw;
 	}
 	&-feature {
+		width: 80vw;
 		&-desc {
+			align-self: start;
+			text-align: start;
 		}
 		&-img {
+			width: 100%;
+			margin: 0 auto;
+			border-radius: 32px;
 		}
 	}
 	&-footer {
