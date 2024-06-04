@@ -4,9 +4,9 @@
 	"private": true,
 	"dependencies": {
 		"@react-hook/window-size": "^3.1.1",
-		"@testing-library/jest-dom": "^5.16.5",
-		"@testing-library/react": "^13.4.0",
-		"@testing-library/user-event": "^13.5.0",
+		"@testing-library/jest-dom": "^6.0.0",
+		"@testing-library/react": "^16.0.0",
+		"@testing-library/user-event": "^14.0.0",
 		"baffle": "^0.3.6",
 		"framer-motion": "^10.16.5",
 		"gh-pages": "^4.0.0",
