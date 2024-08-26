@@ -10,7 +10,7 @@
 		"baffle": "^0.3.6",
 		"framer-motion": "^10.16.5",
 		"gh-pages": "^4.0.0",
-		"lucide-react": "^0.95.0",
+		"lucide-react": "^0.436.0",
 		"nord": "^0.2.1",
 		"normalize-wheel": "^1.0.1",
 		"react": "^18.2.0",
