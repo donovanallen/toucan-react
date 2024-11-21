@@ -71,6 +71,7 @@
 	.features {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 		gap: var(--space-m);
 		max-height: 100svh;
 

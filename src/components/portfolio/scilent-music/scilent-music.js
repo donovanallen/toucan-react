@@ -11,8 +11,11 @@ import {
 	Rocket,
 } from 'lucide-react';
 import loginMockup from '../images/sd01/Login-2.png';
+import loginProto from '../images/sd01/IMG_1639.png';
 import profileMockup from '../images/sd01/Profile-1.png';
+import profileProto from '../images/sd01/Profile_Prototype.png';
 import reviewMockup from '../images/sd01/Review Engine-2.png';
+import reviewProto from '../images/sd01/IMG_1656.png';
 import heroImage from '../images/sd01/sm_mockup_mobile3-logo2.png';
 import reviewBeta from '../images/sd01/reviews-feature-mockup-desktop.png';
 import insightsBeta from '../images/sd01/insights-feature-mockup-mobile_2.png';
@@ -43,22 +46,22 @@ const ScilentMusic = () => {
 				functional pillars that, when working in concert, can provide a
 				revolution digital music experience for listeners and fans of all types.{' '}
 			</p>
-			<ul>
-				<li>
+			<ul className='features'>
+				<li className='feature'>
 					<div className="feature-li">
 						<Activity size={60} />
 						<p>music data + visualization</p>
 					</div>
 				</li>
 				<Plus size={60} />
-				<li>
+				<li className='feature'>
 					<div className="feature-li">
 						<MessageSquare size={60} />
 						<p>social/sharing features</p>
 					</div>
 				</li>
 				<Plus size={60} />
-				<li>
+				<li className='feature'>
 					<div className="feature-li">
 						<Music size={60} />
 						<p>new/upcoming releases</p>
@@ -161,27 +164,17 @@ const ScilentMusic = () => {
 				particular data intensive features. This became the foundation for the
 				private and public beta versions to be released soon.
 			</p>
-			<h3>More coming soon...</h3>
-			{/* <div className="features">
-				<div className="feature">
-					<div className="feature-li">
-						<h4 className="feature-heading">v0</h4>
-						<Phone size={60} />
-					</div>
+			<div className="features">
+				<div className="feature scilent-music-media-item">
+					<img src={loginProto} alt="scilent music login mockup" />
 				</div>
-				<div className="feature">
-					<div className="feature-li">
-						<h4 className="feature-heading">current</h4>
-						<Laptop size={60} />
-					</div>
+				<div className="feature scilent-music-media-item">
+					<img src={profileProto} alt="scilent music profile mockup" />
 				</div>
-				<div className="feature">
-					<div className="feature-li">
-						<h4 className="feature-heading">future</h4>
-						<Rocket size={60} />
-					</div>
+				<div className="feature scilent-music-media-item">
+					<img src={reviewProto} alt="scilent music review mockup" />
 				</div>
-			</div> */}
+			</div>
 			<hr />
 
 			{/* DEVELOPMENT */}
@@ -210,7 +203,7 @@ const ScilentMusic = () => {
 			>
 				<h4>Sign up for the beta at:</h4>
 				<a
-					href="https://scilent-music-web.vercel.app/beta"
+					href="https://scilentmusic.com/beta"
 					style={{
 						alignSelf: 'center',
 						justifySelf: 'center',

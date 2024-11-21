@@ -11,45 +11,6 @@ import f1CoverImage from './images/f1/Design Case Study - F123.001.jpeg';
 const PortfolioData = {
 	items: [
 		{
-			title: 'Holiday Gift Guide',
-			subtitle: 'web + mobile web experience',
-			link: '/holiday-gift-guide',
-			overview: "lululemon's festive web experience for the holidays",
-			description:
-				"As a frontend engineer with lululemon's Digital Elevated Experiences team, I contributed to the redesign and implementation of the Holiday Gift Guide and related web experiences.",
-			skills: ['web development', 'frontend', 'react', 'Contentful CMS'],
-			images: [
-				{
-					src: luluCoverImage,
-					alt: 'gift guide cover image',
-				},
-				{
-					src: luluCoverImage2,
-					alt: 'gift guide cover image',
-				},
-			],
-			// features: [
-			// 	{
-			// 		title: 'Feature 1',
-			// 		description:
-			// 			"The revamped gift guide's fresh layout and new components centered around product curation and ease-of-use",
-			// 		images: [],
-			// 	},
-			// 	{
-			// 		title: 'Feature 2',
-			// 		description:
-			// 			"Development ensured accessiblity and responsiveness regardless of user's device",
-			// 		images: [],
-			// 	},
-			// 	{
-			// 		title: 'Feature 3',
-			// 		description:
-			// 			'content author collaboration, contentful CMS integration - seamless workflow for content authors to draft/publish/ adjust gift guide categories and products',
-			// 		images: [],
-			// 	},
-			// ],
-		},
-		{
 			title: 'scilent music',
 			subtitle: 'mobile application',
 			link: '/scilent-music',
@@ -92,6 +53,45 @@ const PortfolioData = {
 					],
 				},
 			],
+		},
+		{
+			title: 'Holiday Gift Guide',
+			subtitle: 'web + mobile web experience',
+			link: '/holiday-gift-guide',
+			overview: "lululemon's festive web experience for the holidays",
+			description:
+				"As a frontend engineer with lululemon's Digital Elevated Experiences team, I contributed to the redesign and implementation of the Holiday Gift Guide and related web experiences.",
+			skills: ['web development', 'frontend', 'react', 'Contentful CMS'],
+			images: [
+				{
+					src: luluCoverImage,
+					alt: 'gift guide cover image',
+				},
+				{
+					src: luluCoverImage2,
+					alt: 'gift guide cover image',
+				},
+			],
+			// features: [
+			// 	{
+			// 		title: 'Feature 1',
+			// 		description:
+			// 			"The revamped gift guide's fresh layout and new components centered around product curation and ease-of-use",
+			// 		images: [],
+			// 	},
+			// 	{
+			// 		title: 'Feature 2',
+			// 		description:
+			// 			"Development ensured accessiblity and responsiveness regardless of user's device",
+			// 		images: [],
+			// 	},
+			// 	{
+			// 		title: 'Feature 3',
+			// 		description:
+			// 			'content author collaboration, contentful CMS integration - seamless workflow for content authors to draft/publish/ adjust gift guide categories and products',
+			// 		images: [],
+			// 	},
+			// ],
 		},
 		{
 			title: 'F1 23 Redesign',
