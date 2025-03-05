@@ -1,19 +1,14 @@
 import './landing-page.scss';
 import Typed from 'react-typed';
-import { motion } from 'framer-motion';
 
 const marqueeList = [
-	'web + mobile developer',
-	'ui/ux designer',
-	'full-stack software engineer',
+	'design engineer',
 	'creator',
 	'plant dad',
 	'athlete',
 	'coach',
 	'musician',
-	'design technologist',
 	'third-culture kid',
-	'available for work',
 ];
 
 const LandingPage = () => {
