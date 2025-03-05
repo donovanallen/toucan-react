@@ -45,17 +45,10 @@ const About = () => {
 			</div> */}
 			<div className="about-content-text">
 				<p>
-					As a third-culture kid born in the Southern US, raised in South
-					Africa, educated in Washington, D.C., and currently based in Houston,
-					Texas, I've gained a deep appreciation for creative expression through
-					universal human connection.
-				</p>
-				<p>
-					I'm driven by the mission of enhancing the intersections between
-					technology, art, communication, and design through unforgettable user
-					experiences and pushing the boundaries of digital innovation to ensure
-					that the deepest capabilities of the web are accessible to everyone,
-					now and in the future.
+					I'm a Frontend + Design Engineer with 10+ years of experience and a proven track record delivering high-impact features
+					driving revenue, enhancing user experience, and improving code resilience and developer experience across a wide range of industries, organizations, and user bases.
+					I'm specialized in rapid prototyping, micro-frontend architecture, design systems and developing advanced, human-centered UI and elevated digital
+					experiences.
 				</p>
 			</div>
 		</div>
