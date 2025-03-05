@@ -10,6 +10,7 @@ import Portfolio from './components/portfolio/portfolio';
 import ScilentMusic from './components/portfolio/scilent-music/scilent-music.js';
 import GiftGuide from './components/portfolio/gift-guide/gift-guide.js';
 import F123 from './components/portfolio/f1-23/f1-23.js';
+import ScilentUI from './components/portfolio/scilent-ui/scilent-ui.js';
 
 import AnimatedCursor from 'react-animated-cursor';
 import FOG from 'vanta/dist/vanta.fog.min';
@@ -48,6 +49,10 @@ function App() {
 				{
 					path: 'scilent-music',
 					element: <ScilentMusic />,
+				},
+				{
+					path: 'scilent-ui',
+					element: <ScilentUI />,
 				},
 				{
 					path: 'f1-23',
