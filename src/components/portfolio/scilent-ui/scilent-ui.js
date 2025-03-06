@@ -1,10 +1,11 @@
 import './scilent-ui.scss';
 import { useState } from 'react';
 import { Figma, Github } from 'lucide-react';
+import sgCoverImg from '../images/scilent-ui/Scilent UI - Music UI Kit - Cover.png';
 import typogImg from '../images/scilent-ui/Scilent UI - Music UI Kit - Typography.png';
 import colorsImg from '../images/scilent-ui/Scilent UI - Music UI Kit - Color.png';
 
-import heroImage from '../images/scilent-ui/Scilent UI - Music UI Kit - Cover.png';
+import heroImage from '../images/scilent-ui/Scilent UI - Cover.png';
 
 const ScilentMusic = () => {
 	const [fullscreenImage, setFullscreenImage] = useState(null);
@@ -24,10 +25,9 @@ const ScilentMusic = () => {
 			<h3 style={{ textAlign: 'center' }}>
 				A component and utility library for digital music interfaces
 			</h3>
-			{/* <img src={heroImage} alt="scilent music hero" /> */}
+			<img src={heroImage} alt="scilent music hero" />
 			<hr />
 
-			{/* <h3>design guidelines</h3> */}
 			<a
 				href="https://github.com/donovanallen/scilent-ui/blob/main/DESIGN.md"
 				target="_blank"
@@ -37,14 +37,13 @@ const ScilentMusic = () => {
 			</a>
 			<hr />
 			<h3>style guide</h3>
-
 			<div className="features">
 				<div className="feature scilent-music-media-item">
 					<img
-						src={heroImage}
+						src={sgCoverImg}
 						alt="scilent music hero"
-						onClick={() => toggleFullscreen(heroImage)}
-						className={fullscreenImage === heroImage ? 'fullscreen' : ''}
+						onClick={() => toggleFullscreen(sgCoverImg)}
+						className={fullscreenImage === sgCoverImg ? 'fullscreen' : ''}
 					/>
 				</div>
 				<div className="feature scilent-music-media-item">
